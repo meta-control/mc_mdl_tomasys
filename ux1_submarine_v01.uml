@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:ModelElements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/ModelElements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:tomasys="http:///schemas/tomasys/_DDT7YLtAEeiX_4bJ7riLSQ/12" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML/ModelElements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//modelelements http:///schemas/tomasys/_DDT7YLtAEeiX_4bJ7riLSQ/12 tomasys.profile.uml#_DDYz4LtAEeiX_4bJ7riLSQ">
-  <uml:Model xmi:id="_QnPKELHiEeiL9tKfQ31fIA" name="ux1_control_arch">
+  <uml:Model xmi:id="_QnPKELHiEeiL9tKfQ31fIA" name="ux1_control_arch" URI="">
     <ownedComment xmi:type="uml:Comment" xmi:id="_GX-McLaSEeibmbzv24Y0uw">
       <body>Function designs for the submarines movements as reflected in Gonzalo's thesis Tables 5.3 and 5.4 (PDF page 39)</body>
     </ownedComment>
@@ -45,11 +45,9 @@ This SysML model with the tomasys profile is a test case using the UNEMIX</body>
       <packagedElement xmi:type="uml:Class" xmi:id="_vwzbYLHoEeiL9tKfQ31fIA" name="Control2"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_xLpBsLHoEeiL9tKfQ31fIA" name="Nav1"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_z_AhMLHoEeiL9tKfQ31fIA" name="Nav2"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_2cm78LaREeibmbzv24Y0uw" name="Move_down"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_5AT34LHoEeiL9tKfQ31fIA" name="Move_up"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_7WK8ALHoEeiL9tKfQ31fIA" name="PropulsionSystem_up_2a">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_i0TacLajEeibmbzv24Y0uw" name="test">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_KiIqMLqMEeiJqsn3UpdfJg" name="motorA" type="_QdpRYLaREeibmbzv24Y0uw" aggregation="composite" association="_R26fYLqMEeiJqsn3UpdfJg">
           <defaultValue xmi:type="uml:InstanceValue" xmi:id="_1p7LkLqTEeiJqsn3UpdfJg" instance="_InuMELaTEeibmbzv24Y0uw"/>
         </ownedAttribute>
@@ -57,9 +55,15 @@ This SysML model with the tomasys profile is a test case using the UNEMIX</body>
           <defaultValue xmi:type="uml:InstanceValue" xmi:id="_k6Ct4LqTEeiJqsn3UpdfJg" instance="_F8qUALaTEeibmbzv24Y0uw"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_2cm78LaREeibmbzv24Y0uw" name="Move_down"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_wJ5LQLaSEeibmbzv24Y0uw" name="PropulsionSystem_up_2b"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_y5j2gLaSEeibmbzv24Y0uw" name="Propulsion_System_up_3a"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_wJ5LQLaSEeibmbzv24Y0uw" name="PropulsionSystem_up_2b">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_-c2j4L_wEeiRmt3s1nZ51w" name="motorA" type="_ROSrMLaREeibmbzv24Y0uw" aggregation="composite" association="_KszSkL_xEeiRmt3s1nZ51w"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_NJrksL_xEeiRmt3s1nZ51w" name="motorB" type="_UlBWcLaREeibmbzv24Y0uw" aggregation="composite" association="_O_kvUL_xEeiRmt3s1nZ51w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_y5j2gLaSEeibmbzv24Y0uw" name="Propulsion_System_up_3a">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_dJrBEL_yEeiRmt3s1nZ51w" name="motorA" type="_QdpRYLaREeibmbzv24Y0uw" aggregation="composite" association="_fL1GEL_yEeiRmt3s1nZ51w"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_hL-Y4L_yEeiRmt3s1nZ51w" name="motorB" type="_ROSrMLaREeibmbzv24Y0uw" aggregation="composite" association="_38wMkL_zEeiRmt3s1nZ51w"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_7JDwgL_zEeiRmt3s1nZ51w" name="motorC" type="_T2KFULaREeibmbzv24Y0uw" aggregation="composite" association="_9kWHML_zEeiRmt3s1nZ51w"/>
+      </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_QAYUwL_gEeiRmt3s1nZ51w" name="Specifications">
         <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_F8qUALaTEeibmbzv24Y0uw" name="motorA_propulsionSystem_up_2a"/>
         <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_InuMELaTEeibmbzv24Y0uw" name="motorB_propulsionSystem_up_2a"/>
@@ -75,6 +79,21 @@ This SysML model with the tomasys profile is a test case using the UNEMIX</body>
           <ownedEnd xmi:type="uml:Property" xmi:id="_DSU_ILqNEeiJqsn3UpdfJg" type="_7WK8ALHoEeiL9tKfQ31fIA" association="_DSQGoLqNEeiJqsn3UpdfJg"/>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_KszSkL_xEeiRmt3s1nZ51w" memberEnd="_-c2j4L_wEeiRmt3s1nZ51w _Ks3kAL_xEeiRmt3s1nZ51w">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Ks3kAL_xEeiRmt3s1nZ51w" type="_wJ5LQLaSEeibmbzv24Y0uw" association="_KszSkL_xEeiRmt3s1nZ51w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_O_kvUL_xEeiRmt3s1nZ51w" memberEnd="_NJrksL_xEeiRmt3s1nZ51w _O_sEEL_xEeiRmt3s1nZ51w">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_O_sEEL_xEeiRmt3s1nZ51w" type="_wJ5LQLaSEeibmbzv24Y0uw" association="_O_kvUL_xEeiRmt3s1nZ51w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_fL1GEL_yEeiRmt3s1nZ51w" memberEnd="_dJrBEL_yEeiRmt3s1nZ51w _fL3iUL_yEeiRmt3s1nZ51w">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_fL3iUL_yEeiRmt3s1nZ51w" type="_y5j2gLaSEeibmbzv24Y0uw" association="_fL1GEL_yEeiRmt3s1nZ51w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_38wMkL_zEeiRmt3s1nZ51w" memberEnd="_hL-Y4L_yEeiRmt3s1nZ51w _38yo0L_zEeiRmt3s1nZ51w">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_38yo0L_zEeiRmt3s1nZ51w" type="_y5j2gLaSEeibmbzv24Y0uw" association="_38wMkL_zEeiRmt3s1nZ51w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_9kWHML_zEeiRmt3s1nZ51w" memberEnd="_7JDwgL_zEeiRmt3s1nZ51w _9kYjcL_zEeiRmt3s1nZ51w">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_9kYjcL_zEeiRmt3s1nZ51w" type="_y5j2gLaSEeibmbzv24Y0uw" association="_9kWHML_zEeiRmt3s1nZ51w"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_XyY4gL_gEeiRmt3s1nZ51w" name="RuntimeConfigurations">
       <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_NQt6ALafEeibmbzv24Y0uw" name="fg_propulsionsystem_2a" classifier="_7WK8ALHoEeiL9tKfQ31fIA">
@@ -89,7 +108,7 @@ This SysML model with the tomasys profile is a test case using the UNEMIX</body>
       <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_i2B1kLafEeibmbzv24Y0uw" name="motor5"/>
       <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_kjFNQLafEeibmbzv24Y0uw" name="motor6"/>
       <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_lh9QULafEeibmbzv24Y0uw" name="motor7">
-        <slot xmi:type="uml:Slot" xmi:id="_8d8uILajEeibmbzv24Y0uw" definingFeature="_i0TacLajEeibmbzv24Y0uw"/>
+        <slot xmi:type="uml:Slot" xmi:id="_8d8uILajEeibmbzv24Y0uw"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Q4EbYLHiEeiL9tKfQ31fIA">
@@ -221,4 +240,9 @@ This SysML model with the tomasys profile is a test case using the UNEMIX</body>
   <ModelElements:Rationale xmi:id="_c40uML_dEeiRmt3s1nZ51w" base_Comment="_c4syYL_dEeiRmt3s1nZ51w"/>
   <ModelElements:Rationale xmi:id="_Q6gsoL_eEeiRmt3s1nZ51w" base_Comment="_Q6amAL_eEeiRmt3s1nZ51w"/>
   <ModelElements:Rationale xmi:id="_8-ueML_eEeiRmt3s1nZ51w" base_Comment="_8-plsL_eEeiRmt3s1nZ51w"/>
+  <tomasys:role xmi:id="_hOAOoL_xEeiRmt3s1nZ51w" base_Property="_-c2j4L_wEeiRmt3s1nZ51w"/>
+  <tomasys:role xmi:id="_icjFYL_xEeiRmt3s1nZ51w" base_Property="_NJrksL_xEeiRmt3s1nZ51w"/>
+  <tomasys:role xmi:id="_TLJ3kL_0EeiRmt3s1nZ51w" base_Property="_hL-Y4L_yEeiRmt3s1nZ51w"/>
+  <tomasys:role xmi:id="_Ua0IoL_0EeiRmt3s1nZ51w" base_Property="_dJrBEL_yEeiRmt3s1nZ51w"/>
+  <tomasys:role xmi:id="_Vcx78L_0EeiRmt3s1nZ51w" base_Property="_7JDwgL_zEeiRmt3s1nZ51w"/>
 </xmi:XMI>

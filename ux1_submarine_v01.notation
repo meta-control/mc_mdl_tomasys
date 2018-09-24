@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:nattable="http://www.eclipse.org/papyrus/nattable/model" xmlns:nattableaxis="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxis" xmlns:nattableaxisconfiguration="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisconfiguration" xmlns:nattableaxisprovider="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisprovider" xmlns:nattableconfiguration="http://www.eclipse.org/papyrus/nattable/model/nattableconfiguration" xmlns:nattablestyle="http://www.eclipse.org/papyrus/nattable/model/table/nattablestyle" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxis http://www.eclipse.org/papyrus/nattable/model#//nattableaxis http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisconfiguration http://www.eclipse.org/papyrus/nattable/model#//nattableaxisconfiguration http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisprovider http://www.eclipse.org/papyrus/nattable/model#//nattableaxisprovider http://www.eclipse.org/papyrus/nattable/model/nattableconfiguration http://www.eclipse.org/papyrus/nattable/model#//nattableconfiguration http://www.eclipse.org/papyrus/nattable/model/table/nattablestyle http://www.eclipse.org/papyrus/nattable/model#//nattablestyle">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:nattable="http://www.eclipse.org/papyrus/nattable/model" xmlns:nattableaxis="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxis" xmlns:nattableaxisconfiguration="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisconfiguration" xmlns:nattableaxisprovider="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisprovider" xmlns:nattablecelleditor="http://www.eclipse.org/papyrus/nattable/model/table/nattablecelleditor" xmlns:nattableconfiguration="http://www.eclipse.org/papyrus/nattable/model/nattableconfiguration" xmlns:nattablestyle="http://www.eclipse.org/papyrus/nattable/model/table/nattablestyle" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxis http://www.eclipse.org/papyrus/nattable/model#//nattableaxis http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisconfiguration http://www.eclipse.org/papyrus/nattable/model#//nattableaxisconfiguration http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisprovider http://www.eclipse.org/papyrus/nattable/model#//nattableaxisprovider http://www.eclipse.org/papyrus/nattable/model/table/nattablecelleditor http://www.eclipse.org/papyrus/nattable/model#//nattablecelleditor http://www.eclipse.org/papyrus/nattable/model/nattableconfiguration http://www.eclipse.org/papyrus/nattable/model#//nattableconfiguration http://www.eclipse.org/papyrus/nattable/model/table/nattablestyle http://www.eclipse.org/papyrus/nattable/model#//nattablestyle">
   <notation:Diagram xmi:id="_AOWoYLHoEeiL9tKfQ31fIA" type="PapyrusUMLClassDiagram" name="Submarine functions and alternative designs" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_VbhwwLHoEeiL9tKfQ31fIA" type="Class_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_VbiX0LHoEeiL9tKfQ31fIA" type="Class_NameLabel"/>
@@ -323,6 +323,11 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z_issrHoEeiL9tKfQ31fIA" x="200"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_5AdB0LHoEeiL9tKfQ31fIA" type="Class_Shape">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HtEqsL_0EeiRmt3s1nZ51w" source="PapyrusHyperLink_Object" references="_SQlFELaFEeibmbzv24Y0uw">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HtEqsb_0EeiRmt3s1nZ51w" key="tooltip_text"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HtEqsr_0EeiRmt3s1nZ51w" key="pageName" value="PapyrusHyperLink_Object"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HtEqs7_0EeiRmt3s1nZ51w" key="is_default_navigation" value="true"/>
+      </eAnnotations>
       <children xmi:type="notation:DecorationNode" xmi:id="_5AdB0rHoEeiL9tKfQ31fIA" type="Class_NameLabel"/>
       <children xmi:type="notation:DecorationNode" xmi:id="_5AdB07HoEeiL9tKfQ31fIA" type="Class_FloatingNameLabel">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_5AdB1LHoEeiL9tKfQ31fIA" y="5"/>
@@ -365,7 +370,7 @@
       <children xmi:type="notation:Compartment" xmi:id="_5Ak9orHoEeiL9tKfQ31fIA" type="Flow Properties"/>
       <children xmi:type="notation:Compartment" xmi:id="_5Ak9o7HoEeiL9tKfQ31fIA" type="Parameters"/>
       <element xmi:type="uml:Class" href="ux1_submarine_v01.uml#_5AT34LHoEeiL9tKfQ31fIA"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5AdB0bHoEeiL9tKfQ31fIA" x="760" y="40"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5AdB0bHoEeiL9tKfQ31fIA" x="860" y="40"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_5AlksLHoEeiL9tKfQ31fIA" type="StereotypeComment">
       <styles xmi:type="notation:TitleStyle" xmi:id="_5AlksbHoEeiL9tKfQ31fIA"/>
@@ -418,7 +423,7 @@
       <children xmi:type="notation:Compartment" xmi:id="_7WeeAbHoEeiL9tKfQ31fIA" type="Flow Properties"/>
       <children xmi:type="notation:Compartment" xmi:id="_7WeeArHoEeiL9tKfQ31fIA" type="Parameters"/>
       <element xmi:type="uml:Class" href="ux1_submarine_v01.uml#_7WK8ALHoEeiL9tKfQ31fIA"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7WTe4bHoEeiL9tKfQ31fIA" x="720" y="240"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7WTe4bHoEeiL9tKfQ31fIA" x="700" y="240"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_7WfFELHoEeiL9tKfQ31fIA" type="StereotypeComment">
       <styles xmi:type="notation:TitleStyle" xmi:id="_7WfFEbHoEeiL9tKfQ31fIA"/>
@@ -427,6 +432,134 @@
       </styles>
       <element xsi:nil="true"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7WfFErHoEeiL9tKfQ31fIA" x="200"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_zLNtAL_vEeiRmt3s1nZ51w" type="Class_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_zLNtAr_vEeiRmt3s1nZ51w" type="Class_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_zLNtA7_vEeiRmt3s1nZ51w" type="Class_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_zLNtBL_vEeiRmt3s1nZ51w" y="5"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_zLNtBb_vEeiRmt3s1nZ51w" type="Class_AttributeCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_zLNtBr_vEeiRmt3s1nZ51w"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_zLNtB7_vEeiRmt3s1nZ51w"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_zLNtCL_vEeiRmt3s1nZ51w"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zLNtCb_vEeiRmt3s1nZ51w"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_zLOUEL_vEeiRmt3s1nZ51w" type="Class_OperationCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_zLOUEb_vEeiRmt3s1nZ51w"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_zLOUEr_vEeiRmt3s1nZ51w"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_zLOUE7_vEeiRmt3s1nZ51w"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zLOUFL_vEeiRmt3s1nZ51w"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_zLOUFb_vEeiRmt3s1nZ51w" type="Class_NestedClassifierCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_zLOUFr_vEeiRmt3s1nZ51w"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_zLOUF7_vEeiRmt3s1nZ51w"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_zLOUGL_vEeiRmt3s1nZ51w"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zLOUGb_vEeiRmt3s1nZ51w"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_zLTMkL_vEeiRmt3s1nZ51w" type="StereotypeLabel">
+        <styles xmi:type="notation:StringValueStyle" xmi:id="_zLTMkb_vEeiRmt3s1nZ51w" name="stereotype" stringValue="SysML::Blocks::Block"/>
+        <element xmi:type="uml:Stereotype" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zLTMkr_vEeiRmt3s1nZ51w"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_zLTMk7_vEeiRmt3s1nZ51w" type="StereotypeBrace">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_zLTMlL_vEeiRmt3s1nZ51w"/>
+        <styles xmi:type="notation:StringValueStyle" xmi:id="_zLTMlb_vEeiRmt3s1nZ51w" name="stereotype" stringValue="SysML::Blocks::Block"/>
+        <element xmi:type="uml:Stereotype" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zLTMlr_vEeiRmt3s1nZ51w"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_zLTzor_vEeiRmt3s1nZ51w" type="StereotypeLabel">
+        <styles xmi:type="notation:StringValueStyle" xmi:id="_zLTzo7_vEeiRmt3s1nZ51w" name="stereotype" stringValue="tomasys::FunctionDesign"/>
+        <element xmi:type="uml:Stereotype" href="tomasys.profile.uml#_f9E2MLHjEeiL9tKfQ31fIA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zLTzpL_vEeiRmt3s1nZ51w"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_zLTzpb_vEeiRmt3s1nZ51w" type="StereotypeBrace">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_zLTzpr_vEeiRmt3s1nZ51w"/>
+        <styles xmi:type="notation:StringValueStyle" xmi:id="_zLTzp7_vEeiRmt3s1nZ51w" name="stereotype" stringValue="tomasys::FunctionDesign"/>
+        <element xmi:type="uml:Stereotype" href="tomasys.profile.uml#_f9E2MLHjEeiL9tKfQ31fIA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zLTzqL_vEeiRmt3s1nZ51w"/>
+      </children>
+      <children xmi:type="notation:Compartment" xmi:id="_zLVo0L_vEeiRmt3s1nZ51w" type="Flow Ports"/>
+      <children xmi:type="notation:Compartment" xmi:id="_zLVo0b_vEeiRmt3s1nZ51w" type="constraints"/>
+      <children xmi:type="notation:Compartment" xmi:id="_zLVo0r_vEeiRmt3s1nZ51w" type="Parts"/>
+      <children xmi:type="notation:Compartment" xmi:id="_zLVo07_vEeiRmt3s1nZ51w" type="Proxy Ports"/>
+      <children xmi:type="notation:Compartment" xmi:id="_zLVo1L_vEeiRmt3s1nZ51w" type="Full Ports"/>
+      <children xmi:type="notation:Compartment" xmi:id="_zLVo1b_vEeiRmt3s1nZ51w" type="References"/>
+      <children xmi:type="notation:Compartment" xmi:id="_zLWP4L_vEeiRmt3s1nZ51w" type="Flow Properties"/>
+      <children xmi:type="notation:Compartment" xmi:id="_zLWP4b_vEeiRmt3s1nZ51w" type="Parameters"/>
+      <element xmi:type="uml:Class" href="ux1_submarine_v01.uml#_wJ5LQLaSEeibmbzv24Y0uw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zLNtAb_vEeiRmt3s1nZ51w" x="900" y="240"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_zLeLs7_vEeiRmt3s1nZ51w" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_zLeLtL_vEeiRmt3s1nZ51w"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_zLeLtr_vEeiRmt3s1nZ51w" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="ux1_submarine_v01.uml#_wJ5LQLaSEeibmbzv24Y0uw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zLeLtb_vEeiRmt3s1nZ51w" x="200"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_1KrqYL_vEeiRmt3s1nZ51w" type="Class_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_1KrqYr_vEeiRmt3s1nZ51w" type="Class_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_1KrqY7_vEeiRmt3s1nZ51w" type="Class_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_1KrqZL_vEeiRmt3s1nZ51w" y="5"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_1KrqZb_vEeiRmt3s1nZ51w" type="Class_AttributeCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_1KrqZr_vEeiRmt3s1nZ51w"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_1KrqZ7_vEeiRmt3s1nZ51w"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_1KrqaL_vEeiRmt3s1nZ51w"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1Krqab_vEeiRmt3s1nZ51w"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_1Krqar_vEeiRmt3s1nZ51w" type="Class_OperationCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_1Krqa7_vEeiRmt3s1nZ51w"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_1KrqbL_vEeiRmt3s1nZ51w"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_1Krqbb_vEeiRmt3s1nZ51w"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1Krqbr_vEeiRmt3s1nZ51w"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_1Krqb7_vEeiRmt3s1nZ51w" type="Class_NestedClassifierCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_1KrqcL_vEeiRmt3s1nZ51w"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_1Krqcb_vEeiRmt3s1nZ51w"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_1Krqcr_vEeiRmt3s1nZ51w"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1Krqc7_vEeiRmt3s1nZ51w"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_1Kv70L_vEeiRmt3s1nZ51w" type="StereotypeLabel">
+        <styles xmi:type="notation:StringValueStyle" xmi:id="_1Kv70b_vEeiRmt3s1nZ51w" name="stereotype" stringValue="SysML::Blocks::Block"/>
+        <element xmi:type="uml:Stereotype" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1Kv70r_vEeiRmt3s1nZ51w"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_1Kwi4L_vEeiRmt3s1nZ51w" type="StereotypeBrace">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_1Kwi4b_vEeiRmt3s1nZ51w"/>
+        <styles xmi:type="notation:StringValueStyle" xmi:id="_1Kwi4r_vEeiRmt3s1nZ51w" name="stereotype" stringValue="SysML::Blocks::Block"/>
+        <element xmi:type="uml:Stereotype" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1Kwi47_vEeiRmt3s1nZ51w"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_1Kwi5r_vEeiRmt3s1nZ51w" type="StereotypeLabel">
+        <styles xmi:type="notation:StringValueStyle" xmi:id="_1Kwi57_vEeiRmt3s1nZ51w" name="stereotype" stringValue="tomasys::FunctionDesign"/>
+        <element xmi:type="uml:Stereotype" href="tomasys.profile.uml#_f9E2MLHjEeiL9tKfQ31fIA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1Kwi6L_vEeiRmt3s1nZ51w"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_1Kwi6b_vEeiRmt3s1nZ51w" type="StereotypeBrace">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_1Kwi6r_vEeiRmt3s1nZ51w"/>
+        <styles xmi:type="notation:StringValueStyle" xmi:id="_1Kwi67_vEeiRmt3s1nZ51w" name="stereotype" stringValue="tomasys::FunctionDesign"/>
+        <element xmi:type="uml:Stereotype" href="tomasys.profile.uml#_f9E2MLHjEeiL9tKfQ31fIA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1Kwi7L_vEeiRmt3s1nZ51w"/>
+      </children>
+      <children xmi:type="notation:Compartment" xmi:id="_1KyYEL_vEeiRmt3s1nZ51w" type="Flow Ports"/>
+      <children xmi:type="notation:Compartment" xmi:id="_1KyYEb_vEeiRmt3s1nZ51w" type="constraints"/>
+      <children xmi:type="notation:Compartment" xmi:id="_1Ky_IL_vEeiRmt3s1nZ51w" type="Parts"/>
+      <children xmi:type="notation:Compartment" xmi:id="_1Ky_Ib_vEeiRmt3s1nZ51w" type="Proxy Ports"/>
+      <children xmi:type="notation:Compartment" xmi:id="_1Ky_Ir_vEeiRmt3s1nZ51w" type="Full Ports"/>
+      <children xmi:type="notation:Compartment" xmi:id="_1Ky_I7_vEeiRmt3s1nZ51w" type="References"/>
+      <children xmi:type="notation:Compartment" xmi:id="_1KzmML_vEeiRmt3s1nZ51w" type="Flow Properties"/>
+      <children xmi:type="notation:Compartment" xmi:id="_1K0NQL_vEeiRmt3s1nZ51w" type="Parameters"/>
+      <element xmi:type="uml:Class" href="ux1_submarine_v01.uml#_y5j2gLaSEeibmbzv24Y0uw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1KrqYb_vEeiRmt3s1nZ51w" x="1100" y="240"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_1K-lU7_vEeiRmt3s1nZ51w" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_1K-lVL_vEeiRmt3s1nZ51w"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_1K-lVr_vEeiRmt3s1nZ51w" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="ux1_submarine_v01.uml#_y5j2gLaSEeibmbzv24Y0uw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1K-lVb_vEeiRmt3s1nZ51w" x="200"/>
     </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_AOWoYbHoEeiL9tKfQ31fIA" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_AOWoYrHoEeiL9tKfQ31fIA"/>
@@ -514,6 +647,26 @@
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7WfFF7HoEeiL9tKfQ31fIA"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7WfFGLHoEeiL9tKfQ31fIA"/>
     </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_zLeywL_vEeiRmt3s1nZ51w" type="StereotypeCommentLink" source="_zLNtAL_vEeiRmt3s1nZ51w" target="_zLeLs7_vEeiRmt3s1nZ51w">
+      <styles xmi:type="notation:FontStyle" xmi:id="_zLeywb_vEeiRmt3s1nZ51w"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_zLeyxb_vEeiRmt3s1nZ51w" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="ux1_submarine_v01.uml#_wJ5LQLaSEeibmbzv24Y0uw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zLeywr_vEeiRmt3s1nZ51w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zLeyw7_vEeiRmt3s1nZ51w"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zLeyxL_vEeiRmt3s1nZ51w"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_1K-lV7_vEeiRmt3s1nZ51w" type="StereotypeCommentLink" source="_1KrqYL_vEeiRmt3s1nZ51w" target="_1K-lU7_vEeiRmt3s1nZ51w">
+      <styles xmi:type="notation:FontStyle" xmi:id="_1K-lWL_vEeiRmt3s1nZ51w"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_1K_MYL_vEeiRmt3s1nZ51w" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="ux1_submarine_v01.uml#_y5j2gLaSEeibmbzv24Y0uw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1K-lWb_vEeiRmt3s1nZ51w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1K-lWr_vEeiRmt3s1nZ51w"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1K-lW7_vEeiRmt3s1nZ51w"/>
+    </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_SQlFELaFEeibmbzv24Y0uw" type="PapyrusUMLClassDiagram" name="Move Up Function Designs" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_Y9iFQLaFEeibmbzv24Y0uw" type="Class_Shape">
@@ -577,6 +730,30 @@
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xeWJcLs3EeiX_4bJ7riLSQ" key="visible" value="true"/>
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nibZQLs_EeiX_4bJ7riLSQ" key="collapsed" value="true"/>
         </eAnnotations>
+        <children xmi:type="notation:Shape" xmi:id="__OHeML_vEeiRmt3s1nZ51w" type="SysML::Block::Part_label" fontName="Ubuntu">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__OIFQL_vEeiRmt3s1nZ51w" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__OIsUL_vEeiRmt3s1nZ51w" key="lineColor" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__OIsUb_vEeiRmt3s1nZ51w" key="fontHeight" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__OIsUr_vEeiRmt3s1nZ51w" key="bold" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__OIsU7_vEeiRmt3s1nZ51w" key="italic" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__OIsVL_vEeiRmt3s1nZ51w" key="fontColor" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__OIsVb_vEeiRmt3s1nZ51w" key="fillColor" value="true"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="ux1_submarine_v01.uml#_KiIqMLqMEeiJqsn3UpdfJg"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="__OHeMb_vEeiRmt3s1nZ51w"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="__OIsVr_vEeiRmt3s1nZ51w" type="SysML::Block::Part_label" fontName="Ubuntu">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__OJTYL_vEeiRmt3s1nZ51w" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__OJTYb_vEeiRmt3s1nZ51w" key="lineColor" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__OJTYr_vEeiRmt3s1nZ51w" key="fontHeight" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__OJTY7_vEeiRmt3s1nZ51w" key="bold" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__OJTZL_vEeiRmt3s1nZ51w" key="italic" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__OJTZb_vEeiRmt3s1nZ51w" key="fontColor" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__OJTZr_vEeiRmt3s1nZ51w" key="fillColor" value="true"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="ux1_submarine_v01.uml#_7bAdkLqMEeiJqsn3UpdfJg"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="__OIsV7_vEeiRmt3s1nZ51w"/>
+        </children>
       </children>
       <children xmi:type="notation:Compartment" xmi:id="_Y91AMLaFEeibmbzv24Y0uw" type="Proxy Ports"/>
       <children xmi:type="notation:Compartment" xmi:id="_Y91AMbaFEeibmbzv24Y0uw" type="Full Ports"/>
@@ -712,7 +889,7 @@
     <children xmi:type="notation:Shape" xmi:id="_GYETELaSEeibmbzv24Y0uw" type="Comment_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_GYE6ILaSEeibmbzv24Y0uw" type="Comment_BodyLabel"/>
       <element xmi:type="uml:Comment" href="ux1_submarine_v01.uml#_GX-McLaSEeibmbzv24Y0uw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GYETEbaSEeibmbzv24Y0uw" x="820" y="20" width="241" height="101"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GYETEbaSEeibmbzv24Y0uw" x="760" y="20" width="241" height="101"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_wKCVMLaSEeibmbzv24Y0uw" type="Class_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_wKC8QLaSEeibmbzv24Y0uw" type="Class_NameLabel"/>
@@ -756,7 +933,35 @@
       </children>
       <children xmi:type="notation:Compartment" xmi:id="_wKKRA7aSEeibmbzv24Y0uw" type="Flow Ports"/>
       <children xmi:type="notation:Compartment" xmi:id="_wKK4ELaSEeibmbzv24Y0uw" visible="false" type="constraints"/>
-      <children xmi:type="notation:Compartment" xmi:id="_wKK4EbaSEeibmbzv24Y0uw" type="Parts"/>
+      <children xmi:type="notation:Compartment" xmi:id="_wKK4EbaSEeibmbzv24Y0uw" type="Parts" showTitle="true">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VuxAoL_wEeiRmt3s1nZ51w" source="PapyrusCSSForceValue">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VuyOwL_wEeiRmt3s1nZ51w" key="visible" value="true"/>
+        </eAnnotations>
+        <children xmi:type="notation:Shape" xmi:id="_m-ip4L_xEeiRmt3s1nZ51w" type="SysML::Block::Part_label" fontName="Ubuntu">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m-jQ8L_xEeiRmt3s1nZ51w" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m-jQ8b_xEeiRmt3s1nZ51w" key="lineColor" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m-j4AL_xEeiRmt3s1nZ51w" key="fontHeight" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m-j4Ab_xEeiRmt3s1nZ51w" key="bold" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m-j4Ar_xEeiRmt3s1nZ51w" key="italic" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m-j4A7_xEeiRmt3s1nZ51w" key="fontColor" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m-j4BL_xEeiRmt3s1nZ51w" key="fillColor" value="true"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="ux1_submarine_v01.uml#_-c2j4L_wEeiRmt3s1nZ51w"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m-ip4b_xEeiRmt3s1nZ51w"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_m-j4Bb_xEeiRmt3s1nZ51w" type="SysML::Block::Part_label" fontName="Ubuntu">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m-kfEL_xEeiRmt3s1nZ51w" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m-kfEb_xEeiRmt3s1nZ51w" key="lineColor" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m-kfEr_xEeiRmt3s1nZ51w" key="fontHeight" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m-kfE7_xEeiRmt3s1nZ51w" key="bold" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m-kfFL_xEeiRmt3s1nZ51w" key="italic" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m-kfFb_xEeiRmt3s1nZ51w" key="fontColor" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m-kfFr_xEeiRmt3s1nZ51w" key="fillColor" value="true"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="ux1_submarine_v01.uml#_NJrksL_xEeiRmt3s1nZ51w"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m-j4Br_xEeiRmt3s1nZ51w"/>
+        </children>
+      </children>
       <children xmi:type="notation:Compartment" xmi:id="_wKK4EraSEeibmbzv24Y0uw" type="Proxy Ports"/>
       <children xmi:type="notation:Compartment" xmi:id="_wKK4E7aSEeibmbzv24Y0uw" type="Full Ports"/>
       <children xmi:type="notation:Compartment" xmi:id="_wKK4FLaSEeibmbzv24Y0uw" type="References"/>
@@ -770,7 +975,7 @@
           <element xmi:type="uml:Property" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block_ownedAttribute.isEncapsulated"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_ubkTAbqJEeiJqsn3UpdfJg"/>
         </children>
-        <styles xmi:type="notation:TitleStyle" xmi:id="_ubhPsbqJEeiJqsn3UpdfJg"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_ubhPsbqJEeiJqsn3UpdfJg" showTitle="true"/>
         <styles xmi:type="notation:StringValueStyle" xmi:id="_ubhPsrqJEeiJqsn3UpdfJg" name="stereotype" stringValue="tomasys::FunctionDesign"/>
         <element xmi:type="uml:Stereotype" href="tomasys.profile.uml#_f9E2MLHjEeiL9tKfQ31fIA"/>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ubhPs7qJEeiJqsn3UpdfJg"/>
@@ -832,7 +1037,47 @@
       </children>
       <children xmi:type="notation:Compartment" xmi:id="_y5zHELaSEeibmbzv24Y0uw" type="Flow Ports"/>
       <children xmi:type="notation:Compartment" xmi:id="_y5zuILaSEeibmbzv24Y0uw" visible="false" type="constraints" collapsed="true"/>
-      <children xmi:type="notation:Compartment" xmi:id="_y5zuIbaSEeibmbzv24Y0uw" type="Parts"/>
+      <children xmi:type="notation:Compartment" xmi:id="_y5zuIbaSEeibmbzv24Y0uw" type="Parts" showTitle="true">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4JYlQL_xEeiRmt3s1nZ51w" source="PapyrusCSSForceValue">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4JZMUL_xEeiRmt3s1nZ51w" key="visible" value="true"/>
+        </eAnnotations>
+        <children xmi:type="notation:Shape" xmi:id="_NKxpgL_0EeiRmt3s1nZ51w" type="SysML::Block::Part_label" fontName="Ubuntu">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NKy3oL_0EeiRmt3s1nZ51w" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NKy3ob_0EeiRmt3s1nZ51w" key="lineColor" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NKy3or_0EeiRmt3s1nZ51w" key="fontHeight" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NKy3o7_0EeiRmt3s1nZ51w" key="bold" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NKy3pL_0EeiRmt3s1nZ51w" key="italic" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NKy3pb_0EeiRmt3s1nZ51w" key="fontColor" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NKy3pr_0EeiRmt3s1nZ51w" key="fillColor" value="true"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="ux1_submarine_v01.uml#_dJrBEL_yEeiRmt3s1nZ51w"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NKxpgb_0EeiRmt3s1nZ51w"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_NKy3p7_0EeiRmt3s1nZ51w" type="SysML::Block::Part_label" fontName="Ubuntu">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NKzesL_0EeiRmt3s1nZ51w" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NKzesb_0EeiRmt3s1nZ51w" key="lineColor" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NKzesr_0EeiRmt3s1nZ51w" key="fontHeight" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NKzes7_0EeiRmt3s1nZ51w" key="bold" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NKzetL_0EeiRmt3s1nZ51w" key="italic" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NKzetb_0EeiRmt3s1nZ51w" key="fontColor" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NKzetr_0EeiRmt3s1nZ51w" key="fillColor" value="true"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="ux1_submarine_v01.uml#_hL-Y4L_yEeiRmt3s1nZ51w"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NKy3qL_0EeiRmt3s1nZ51w"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_NKzet7_0EeiRmt3s1nZ51w" type="SysML::Block::Part_label" fontName="Ubuntu">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NKzeub_0EeiRmt3s1nZ51w" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NKzeur_0EeiRmt3s1nZ51w" key="lineColor" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NK0FwL_0EeiRmt3s1nZ51w" key="fontHeight" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NK0Fwb_0EeiRmt3s1nZ51w" key="bold" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NK0Fwr_0EeiRmt3s1nZ51w" key="italic" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NK0Fw7_0EeiRmt3s1nZ51w" key="fontColor" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NK0FxL_0EeiRmt3s1nZ51w" key="fillColor" value="true"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="ux1_submarine_v01.uml#_7JDwgL_zEeiRmt3s1nZ51w"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NKzeuL_0EeiRmt3s1nZ51w"/>
+        </children>
+      </children>
       <children xmi:type="notation:Compartment" xmi:id="_y5zuIraSEeibmbzv24Y0uw" type="Proxy Ports"/>
       <children xmi:type="notation:Compartment" xmi:id="_y5zuI7aSEeibmbzv24Y0uw" type="Full Ports"/>
       <children xmi:type="notation:Compartment" xmi:id="_y5zuJLaSEeibmbzv24Y0uw" type="References"/>
@@ -846,7 +1091,7 @@
           <element xmi:type="uml:Property" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block_ownedAttribute.isEncapsulated"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_ub0xs7qJEeiJqsn3UpdfJg"/>
         </children>
-        <styles xmi:type="notation:TitleStyle" xmi:id="_ubxuYbqJEeiJqsn3UpdfJg"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_ubxuYbqJEeiJqsn3UpdfJg" showTitle="true"/>
         <styles xmi:type="notation:StringValueStyle" xmi:id="_ubxuYrqJEeiJqsn3UpdfJg" name="stereotype" stringValue="tomasys::FunctionDesign"/>
         <element xmi:type="uml:Stereotype" href="tomasys.profile.uml#_f9E2MLHjEeiL9tKfQ31fIA"/>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ubxuY7qJEeiJqsn3UpdfJg"/>
@@ -863,7 +1108,7 @@
       </children>
       <styles xmi:type="notation:IntValueStyle" xmi:id="_FLekALqLEeiJqsn3UpdfJg" name="shapeDirection" intValue="5"/>
       <element xmi:type="uml:Class" href="ux1_submarine_v01.uml#_y5j2gLaSEeibmbzv24Y0uw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y5qkMbaSEeibmbzv24Y0uw" x="800" y="160" width="292" height="181"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y5qkMbaSEeibmbzv24Y0uw" x="740" y="160" width="292" height="201"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_y508QLaSEeibmbzv24Y0uw" type="StereotypeComment">
       <styles xmi:type="notation:TitleStyle" xmi:id="_y508QbaSEeibmbzv24Y0uw"/>
@@ -885,7 +1130,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F8swR7aTEeibmbzv24Y0uw"/>
       </children>
       <element xmi:type="uml:InstanceSpecification" href="ux1_submarine_v01.uml#_F8qUALaTEeibmbzv24Y0uw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F8sJMbaTEeibmbzv24Y0uw" x="20" y="440" width="141" height="61"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F8sJMbaTEeibmbzv24Y0uw" x="20" y="380" width="321" height="61"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_InwBQLaTEeibmbzv24Y0uw" type="InstanceSpecification_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_InwBQraTEeibmbzv24Y0uw" type="InstanceSpecification_NameLabel"/>
@@ -899,7 +1144,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_InwoVLaTEeibmbzv24Y0uw"/>
       </children>
       <element xmi:type="uml:InstanceSpecification" href="ux1_submarine_v01.uml#_InuMELaTEeibmbzv24Y0uw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_InwBQbaTEeibmbzv24Y0uw" x="180" y="440" width="161" height="61"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_InwBQbaTEeibmbzv24Y0uw" x="20" y="460" width="321" height="61"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_5AaOELaUEeibmbzv24Y0uw" type="StereotypeComment">
       <styles xmi:type="notation:TitleStyle" xmi:id="_5AaOEbaUEeibmbzv24Y0uw"/>
@@ -929,7 +1174,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D0-HZ7aWEeibmbzv24Y0uw"/>
       </children>
       <element xmi:type="uml:InstanceSpecification" href="ux1_submarine_v01.uml#_D08SMLaWEeibmbzv24Y0uw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D09gUbaWEeibmbzv24Y0uw" x="360" y="440" width="121" height="61"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D09gUbaWEeibmbzv24Y0uw" x="380" y="380" width="321" height="61"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_IhgH8LaWEeibmbzv24Y0uw" type="InstanceSpecification_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_IhgvALaWEeibmbzv24Y0uw" type="InstanceSpecification_NameLabel"/>
@@ -943,7 +1188,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IhgvB7aWEeibmbzv24Y0uw"/>
       </children>
       <element xmi:type="uml:InstanceSpecification" href="ux1_submarine_v01.uml#_IhdrsLaWEeibmbzv24Y0uw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IhgH8baWEeibmbzv24Y0uw" x="540" y="440" width="121" height="61"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IhgH8baWEeibmbzv24Y0uw" x="380" y="460" width="321" height="61"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_MeeT0LaWEeibmbzv24Y0uw" type="StereotypeComment">
       <styles xmi:type="notation:TitleStyle" xmi:id="_MeeT0baWEeibmbzv24Y0uw"/>
@@ -973,7 +1218,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CGruubaYEeibmbzv24Y0uw"/>
       </children>
       <element xmi:type="uml:InstanceSpecification" href="ux1_submarine_v01.uml#_CGp5gLaYEeibmbzv24Y0uw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CGrusbaYEeibmbzv24Y0uw" x="720" y="440" width="141" height="60"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CGrusbaYEeibmbzv24Y0uw" x="740" y="380" width="301" height="60"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_GNJ00LaYEeibmbzv24Y0uw" type="InstanceSpecification_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_GNJ00raYEeibmbzv24Y0uw" type="InstanceSpecification_NameLabel"/>
@@ -987,7 +1232,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GNJ02baYEeibmbzv24Y0uw"/>
       </children>
       <element xmi:type="uml:InstanceSpecification" href="ux1_submarine_v01.uml#_GNImsLaYEeibmbzv24Y0uw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GNJ00baYEeibmbzv24Y0uw" x="1060" y="440" width="141" height="60"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GNJ00baYEeibmbzv24Y0uw" x="740" y="540" width="301" height="60"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_t08eYLaYEeibmbzv24Y0uw" type="InstanceSpecification_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_t09FcLaYEeibmbzv24Y0uw" type="InstanceSpecification_NameLabel"/>
@@ -1001,7 +1246,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t09Fd7aYEeibmbzv24Y0uw"/>
       </children>
       <element xmi:type="uml:InstanceSpecification" href="ux1_submarine_v01.uml#_t073ULaYEeibmbzv24Y0uw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t08eYbaYEeibmbzv24Y0uw" x="880" y="440" width="141" height="60"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t08eYbaYEeibmbzv24Y0uw" x="740" y="460" width="301" height="60"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_0TSa1baYEeibmbzv24Y0uw" type="StereotypeComment">
       <styles xmi:type="notation:TitleStyle" xmi:id="_0TSa1raYEeibmbzv24Y0uw"/>
@@ -1509,41 +1754,18 @@
     <owner xmi:type="uml:Model" href="ux1_submarine_v01.uml#_QnPKELHiEeiL9tKfQ31fIA"/>
     <tableConfiguration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#PapyrusGenericTable_XMI_ID"/>
     <columnAxisProvidersHistory xmi:type="nattableaxisprovider:SlaveObjectAxisProvider" xmi:id="_xSZE0b_cEeiRmt3s1nZ51w" description="This axis provider provides available columns according to the rows of the table (features of the object displayed on the other axis)" name="UML Feature axis provider">
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW0L_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class/ownedOperation"/>
+      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_3rYAIL_cEeiRmt3s1nZ51w" element="property_of_stereotype:/tomasys::FunctionDesign::confidence">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFTzQEei_1txcmoHe_A"/>
       </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW0b_cEeiRmt3s1nZ51w">
+      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW27_cEeiRmt3s1nZ51w">
+        <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_9jaBIL_1EeiRmt3s1nZ51w" name="axisWidth" intValue="245"/>
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class/nestedClassifier"/>
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/role"/>
       </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW0r_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TemplateableElement/ownedTemplateSignature"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW07_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/visibility"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW1L_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//BehavioredClassifier/ownedBehavior"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW1b_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Namespace/ownedMember"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW1r_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Namespace/elementImport"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW17_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class/isActive"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW2L_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/isAbstract"/>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXqL_0EeiRmt3s1nZ51w">
+        <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_NftFwL_2EeiRmt3s1nZ51w" name="axisWidth" intValue="233"/>
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/getAppliedStereotypes"/>
       </axis>
       <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW2b_cEeiRmt3s1nZ51w">
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
@@ -1553,75 +1775,8 @@
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
         <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/namespace"/>
       </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW27_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/role"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW3L_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TemplateableElement/templateBinding"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW3b_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/ownedUseCase"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW3r_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Namespace/packageImport"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW37_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/isFinalSpecialization"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW4L_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//ParameterableElement/templateParameter"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW4b_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/substitution"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW4r_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/powertypeExtent"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW47_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/generalization"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW5L_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Namespace/importedMember"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW5b_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/clientDependency"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW5r_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/general"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW57_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//ParameterableElement/owningTemplateParameter"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW6L_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class/extension"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW6b_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//RedefinableElement/redefinedElement"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW6r_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//EncapsulatedClassifier/ownedPort"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW67_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/nameExpression"/>
-      </axis>
       <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW7L_cEeiRmt3s1nZ51w">
+        <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_4nPpIL_1EeiRmt3s1nZ51w" name="axisWidth" intValue="258"/>
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
         <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Namespace/member"/>
       </axis>
@@ -1629,65 +1784,13 @@
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
         <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/part"/>
       </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW7r_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class/superClass"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW77_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//BehavioredClassifier/classifierBehavior"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW8L_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//RedefinableElement/isLeaf"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW8b_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//BehavioredClassifier/interfaceRealization"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW8r_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//RedefinableElement/redefinitionContext"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW87_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedComment"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW9L_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Namespace/ownedRule"/>
-      </axis>
       <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW9b_cEeiRmt3s1nZ51w">
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
         <element xmi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
       </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW9r_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/representation"/>
-      </axis>
       <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW97_cEeiRmt3s1nZ51w">
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
         <element xmi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/qualifiedName"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW-L_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/useCase"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW-b_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class/ownedReception"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW-r_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/redefinedClassifier"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW-7_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/inheritedMember"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW_L_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/collaborationUse"/>
       </axis>
       <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW_b_cEeiRmt3s1nZ51w">
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
@@ -1712,15 +1815,6 @@
       <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaXAr_cEeiRmt3s1nZ51w">
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
         <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type/package"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_3rYAIL_cEeiRmt3s1nZ51w" element="property_of_stereotype:/tomasys::FunctionDesign::confidence">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFTzQEei_1txcmoHe_A"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_3rYAIb_cEeiRmt3s1nZ51w" element="property_of_stereotype:/SysML::Blocks::Block::isEncapsulated">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFTzQEei_1txcmoHe_A"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_3rYAIr_cEeiRmt3s1nZ51w" element="property_of_stereotype:/tomasys::FunctionDesign::requires">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFTzQEei_1txcmoHe_A"/>
       </axis>
       <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_3rYAI7_cEeiRmt3s1nZ51w" element="property_of_stereotype:/tomasys::FunctionDesign::solved_function">
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFTzQEei_1txcmoHe_A"/>
@@ -2145,37 +2239,486 @@
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
         <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/getAppliedStereotypes"/>
       </axis>
-      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_3rptWb_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/createUsage"/>
+      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_8HAxGr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
       </axis>
-      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_3rptWr_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class/getExtensions"/>
+      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_8HAxG7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/namespace"/>
       </axis>
-      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_3rptW7_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/getNearestPackage"/>
+      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_8HAxHL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/role"/>
       </axis>
-      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_3rptXL_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/getOperations"/>
+      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_8HAxLb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Namespace/member"/>
       </axis>
-      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_3rptXb_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/unapplyStereotype"/>
+      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_8HAxLr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/part"/>
       </axis>
-      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_3rptXr_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/createDependency"/>
+      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_8HAxNr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
       </axis>
-      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_3rptX7_cEeiRmt3s1nZ51w">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//ParameterableElement/isCompatibleWith"/>
+      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_8HAxOL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/qualifiedName"/>
       </axis>
-      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_3rptYL_cEeiRmt3s1nZ51w">
+      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_8HAxPr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedConnector"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_8HAxP7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_8HAxQL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/feature"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_8HAxQb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/attribute"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_8HAxQr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/owner"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_8HAxQ7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type/package"/>
+      </axis>
+      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_8HFpkr_0EeiRmt3s1nZ51w" element="property_of_stereotype:/tomasys::FunctionDesign::confidence">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFTzQEei_1txcmoHe_A"/>
+      </axis>
+      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_8HFpk7_0EeiRmt3s1nZ51w" element="property_of_stereotype:/tomasys::FunctionDesign::solved_function">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFTzQEei_1txcmoHe_A"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXQL_0EeiRmt3s1nZ51w">
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
-        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//RedefinableElement/redefinition_context_valid"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Namespace/importMembers"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXQb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/allRoles"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXQr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//RedefinableElement/non_leaf_redefinition"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXQ7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/getModel"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXRL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/mustBeOwned"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXRb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/getUsedInterfaces"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXRr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/isStereotypeApplicable"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXR7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/getRelationships.1"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXSL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/getSourceDirectedRelationships"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXSb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/hasValue"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXSr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Namespace/cannot_import_ownedMembers"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXS7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//TemplateableElement/isTemplate"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXTL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/allOwningPackages"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXTb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/allAttributes"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXTr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/parents"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXT7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/maps_to_generalization_set"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXUL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/getInheritedMembers"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXUb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/getSourceDirectedRelationships.1"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXUr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//EncapsulatedClassifier/getOwnedPorts"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXU7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/has_owner"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXVL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/getAllOperations"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXVb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/hasKeyword"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXVr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/getOperation.1"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXV7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/getRequiredStereotype"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXWL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/getNamespace"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXWb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Namespace/getNamesOfMember"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXWr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/getAppliedSubstereotype"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXW7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//RedefinableElement/isRedefinitionContextValid"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXXL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/allOwnedElements"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXXb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/has_no_qualified_name"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXXr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/inheritableMembers"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXX7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/getTargetDirectedRelationships.1"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXYL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/inherit"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXYb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//BehavioredClassifier/class_behavior"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXYr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/directlyUsedInterfaces"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXY7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/separator"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXZL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Namespace/createPackageImport"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXZb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/allSlottableFeatures"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXZr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//PackageableElement/namespace_needs_visibility"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXZ7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/allFeatures"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXaL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Namespace/getOwnedMembers"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXab_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//RedefinableElement/redefinition_consistent"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXar_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/getAppliedSubstereotypes"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXa7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type/conformsTo"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXbL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/getRequiredStereotypes"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXbb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class/isMetaclass"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXbr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/maySpecializeType"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXb7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/createEAnnotation"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXcL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Namespace/getImportedElements"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXcb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Namespace/createElementImport"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXcr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/getAllUsedInterfaces"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXc7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Namespace/membersAreDistinguishable"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXdL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/allNamespaces"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXdb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/getAppliedStereotype"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXdr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/getStereotypeApplications"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXd7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/non_final_parents"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXeL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class/createOwnedOperation"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXeb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Namespace/getImportedMembers"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXer_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/getStereotypeApplication"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXe7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/getTargetDirectedRelationships"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXfL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//RedefinableElement/isConsistentWith"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXfb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/no_cycles_in_generalization"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXfr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/isStereotypeApplied"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXf7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/getLabel.1"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXgL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//BehavioredClassifier/getImplementedInterfaces"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXgb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/getValue"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXgr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/getApplicableStereotype"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXg7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/applyStereotype"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXhL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Namespace/excludeCollisions"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXhb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/visibility_needs_ownership"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXhr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/getApplicableStereotypes"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXh7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type/getAssociations"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXiL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/allRealizedInterfaces"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXib_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//BehavioredClassifier/getAllImplementedInterfaces"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXir_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/getQualifiedName"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXi7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Namespace/getImportedPackages"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXjL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class/passive_class"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXjb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/hasVisibilityOf"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXjr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/allUsedInterfaces"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXj7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Namespace/members_distinguishable"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXkL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/isDistinguishableFrom"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXkb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/getAllAttributes"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXkr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/specialize_type"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXk7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/getParts"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXlL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/addKeyword"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXlb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/getRelationships"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXlr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/getClientDependencies"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXl7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/directlyRealizedInterfaces"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXmL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/removeKeyword"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXmb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/createOwnedAttribute"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXmr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Namespace/cannot_import_self"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXm7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/isSubstitutableFor"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXnL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/has_qualified_name"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXnb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/allParents"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXnr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/getGenerals"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXn7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class/getSuperClasses"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXoL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/isStereotypeRequired"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXob_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//TemplateableElement/parameterableElements"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXor_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type/createAssociation"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXo7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/not_own_self"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXpL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/getLabel"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXpb_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/getOperation"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXpr_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/getKeywords"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EOperationAxis" xmi:id="_8HMXp7_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFjzQEei_1txcmoHe_A"/>
+        <element xmi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/5.0.0/UML#//ParameterableElement/isTemplateParameter"/>
+      </axis>
+      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_8goK8r_0EeiRmt3s1nZ51w" element="property_of_stereotype:/tomasys::FunctionDesign::confidence">
+        <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_b2Ej0L_1EeiRmt3s1nZ51w" name="axisWidth" intValue="176"/>
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFTzQEei_1txcmoHe_A"/>
+      </axis>
+      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_8goK87_0EeiRmt3s1nZ51w" element="property_of_stereotype:/tomasys::FunctionDesign::solved_function">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFTzQEei_1txcmoHe_A"/>
       </axis>
     </columnAxisProvidersHistory>
     <rowAxisProvidersHistory xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_xSZE0r_cEeiRmt3s1nZ51w" description="This axis provider contains the object dropped by the user into the table" name="DroppedElementAxisProvider">
@@ -2187,9 +2730,18 @@
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFEDzQEei_1txcmoHe_A"/>
         <element xmi:type="uml:Class" href="ux1_submarine_v01.uml#_7WK8ALHoEeiL9tKfQ31fIA"/>
       </axis>
+      <axis xmi:type="nattableaxis:EObjectAxis" xmi:id="_8HAxEL_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFEDzQEei_1txcmoHe_A"/>
+        <element xmi:type="uml:Class" href="ux1_submarine_v01.uml#_wJ5LQLaSEeibmbzv24Y0uw"/>
+      </axis>
+      <axis xmi:type="nattableaxis:EObjectAxis" xmi:id="_8gm80L_0EeiRmt3s1nZ51w">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFEDzQEei_1txcmoHe_A"/>
+        <element xmi:type="uml:Class" href="ux1_submarine_v01.uml#_y5j2gLaSEeibmbzv24Y0uw"/>
+      </axis>
     </rowAxisProvidersHistory>
     <localRowHeaderAxisConfiguration xmi:type="nattableaxisconfiguration:LocalTableHeaderAxisConfiguration" xmi:id="_5L4JkL_cEeiRmt3s1nZ51w" indexStyle="NUMERIC">
       <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_5L5-wL_cEeiRmt3s1nZ51w" name="rowIndexWidth" intValue="37"/>
+      <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_14YPIL_1EeiRmt3s1nZ51w" name="rowLabelWidth" intValue="200"/>
     </localRowHeaderAxisConfiguration>
   </nattable:Table>
   <notation:Diagram xmi:id="_E4dsgL_dEeiRmt3s1nZ51w" type="PapyrusUMLClassDiagram" name="Model Overview" measurementUnit="Pixel">
@@ -2360,6 +2912,11 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pO_SQb_gEeiRmt3s1nZ51w" x="600" y="380"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_BC7okL_hEeiRmt3s1nZ51w" type="Package_Shape">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sg6_QL_vEeiRmt3s1nZ51w" source="PapyrusHyperLink_Object" references="_AOWoYLHoEeiL9tKfQ31fIA">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sg6_Qb_vEeiRmt3s1nZ51w" key="tooltip_text"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sg6_Qr_vEeiRmt3s1nZ51w" key="pageName" value="PapyrusHyperLink_Object"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sg6_Q7_vEeiRmt3s1nZ51w" key="is_default_navigation" value="true"/>
+      </eAnnotations>
       <children xmi:type="notation:DecorationNode" xmi:id="_BC8PoL_hEeiRmt3s1nZ51w" type="Package_NameLabel"/>
       <children xmi:type="notation:BasicCompartment" xmi:id="_BC8Pob_hEeiRmt3s1nZ51w" type="Package_PackagedElementCompartment">
         <styles xmi:type="notation:TitleStyle" xmi:id="_BC8Por_hEeiRmt3s1nZ51w"/>
@@ -3049,4 +3606,258 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XudQML_fEeiRmt3s1nZ51w"/>
     </edges>
   </notation:Diagram>
+  <notation:Diagram xmi:id="_9YBp0L_wEeiRmt3s1nZ51w" type="CompositeStructure" name="propulsioSystem_up_2b" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_9YDfAL_wEeiRmt3s1nZ51w" type="Class_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_9YDfAr_wEeiRmt3s1nZ51w" type="Class_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_9YDfA7_wEeiRmt3s1nZ51w" type="Class_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_9YEGEL_wEeiRmt3s1nZ51w" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_9YEGEb_wEeiRmt3s1nZ51w" type="Class_StructureCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_KyKTsL_xEeiRmt3s1nZ51w" type="Property_Shape">
+          <children xmi:type="notation:DecorationNode" xmi:id="_KyK6wL_xEeiRmt3s1nZ51w" type="Property_NameLabel"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_KyK6wb_xEeiRmt3s1nZ51w" type="Property_FloatingNameLabel">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_KyK6wr_xEeiRmt3s1nZ51w" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_KyK6w7_xEeiRmt3s1nZ51w" type="Property_StructureCompartment">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_KyK6xL_xEeiRmt3s1nZ51w"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KyK6xb_xEeiRmt3s1nZ51w"/>
+          </children>
+          <element xmi:type="uml:Property" href="ux1_submarine_v01.uml#_-c2j4L_wEeiRmt3s1nZ51w"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KyKTsb_xEeiRmt3s1nZ51w" x="74" y="19"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_PFzTIL_xEeiRmt3s1nZ51w" type="Property_Shape">
+          <children xmi:type="notation:DecorationNode" xmi:id="_PFz6ML_xEeiRmt3s1nZ51w" type="Property_NameLabel"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_PFz6Mb_xEeiRmt3s1nZ51w" type="Property_FloatingNameLabel">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_PFz6Mr_xEeiRmt3s1nZ51w" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_PFz6M7_xEeiRmt3s1nZ51w" type="Property_StructureCompartment">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_PFz6NL_xEeiRmt3s1nZ51w"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PFz6Nb_xEeiRmt3s1nZ51w"/>
+          </children>
+          <element xmi:type="uml:Property" href="ux1_submarine_v01.uml#_NJrksL_xEeiRmt3s1nZ51w"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PFzTIb_xEeiRmt3s1nZ51w" x="74" y="99"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_hONC9L_xEeiRmt3s1nZ51w" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_hONC9b_xEeiRmt3s1nZ51w"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_hONqAL_xEeiRmt3s1nZ51w" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Property" href="ux1_submarine_v01.uml#_-c2j4L_wEeiRmt3s1nZ51w"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hONC9r_xEeiRmt3s1nZ51w" x="274" y="19"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_icurlL_xEeiRmt3s1nZ51w" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_icurlb_xEeiRmt3s1nZ51w"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_icurl7_xEeiRmt3s1nZ51w" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Property" href="ux1_submarine_v01.uml#_NJrksL_xEeiRmt3s1nZ51w"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_icurlr_xEeiRmt3s1nZ51w" x="274" y="99"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_9YEGEr_wEeiRmt3s1nZ51w"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9YEGE7_wEeiRmt3s1nZ51w"/>
+      </children>
+      <element xmi:type="uml:Class" href="ux1_submarine_v01.uml#_wJ5LQLaSEeibmbzv24Y0uw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9YDfAb_wEeiRmt3s1nZ51w" x="40" y="80" width="321" height="201"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_9byvgL_wEeiRmt3s1nZ51w" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_9bzWkL_wEeiRmt3s1nZ51w"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_9bzWkr_wEeiRmt3s1nZ51w" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="ux1_submarine_v01.uml#_wJ5LQLaSEeibmbzv24Y0uw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9bzWkb_wEeiRmt3s1nZ51w" x="240" y="40"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_9YBp0b_wEeiRmt3s1nZ51w" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_9YBp0r_wEeiRmt3s1nZ51w"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_9YBp07_wEeiRmt3s1nZ51w" diagramKindId="org.eclipse.papyrus.sysml14.diagram.internalblock">
+      <owner xmi:type="uml:Class" href="ux1_submarine_v01.uml#_wJ5LQLaSEeibmbzv24Y0uw"/>
+    </styles>
+    <element xmi:type="uml:Class" href="ux1_submarine_v01.uml#_wJ5LQLaSEeibmbzv24Y0uw"/>
+    <edges xmi:type="notation:Connector" xmi:id="_9bzWk7_wEeiRmt3s1nZ51w" type="StereotypeCommentLink" source="_9YDfAL_wEeiRmt3s1nZ51w" target="_9byvgL_wEeiRmt3s1nZ51w">
+      <styles xmi:type="notation:FontStyle" xmi:id="_9bzWlL_wEeiRmt3s1nZ51w"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_9bzWmL_wEeiRmt3s1nZ51w" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="ux1_submarine_v01.uml#_wJ5LQLaSEeibmbzv24Y0uw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9bzWlb_wEeiRmt3s1nZ51w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9bzWlr_wEeiRmt3s1nZ51w"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9bzWl7_wEeiRmt3s1nZ51w"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_hONqAb_xEeiRmt3s1nZ51w" type="StereotypeCommentLink" source="_KyKTsL_xEeiRmt3s1nZ51w" target="_hONC9L_xEeiRmt3s1nZ51w">
+      <styles xmi:type="notation:FontStyle" xmi:id="_hONqAr_xEeiRmt3s1nZ51w"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_hONqBr_xEeiRmt3s1nZ51w" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Property" href="ux1_submarine_v01.uml#_-c2j4L_wEeiRmt3s1nZ51w"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hONqA7_xEeiRmt3s1nZ51w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hONqBL_xEeiRmt3s1nZ51w"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hONqBb_xEeiRmt3s1nZ51w"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_icurmL_xEeiRmt3s1nZ51w" type="StereotypeCommentLink" source="_PFzTIL_xEeiRmt3s1nZ51w" target="_icurlL_xEeiRmt3s1nZ51w">
+      <styles xmi:type="notation:FontStyle" xmi:id="_icurmb_xEeiRmt3s1nZ51w"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_icurnb_xEeiRmt3s1nZ51w" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Property" href="ux1_submarine_v01.uml#_NJrksL_xEeiRmt3s1nZ51w"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_icurmr_xEeiRmt3s1nZ51w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_icurm7_xEeiRmt3s1nZ51w"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_icurnL_xEeiRmt3s1nZ51w"/>
+    </edges>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_cbTfML_yEeiRmt3s1nZ51w" type="CompositeStructure" name="PropulsionSystem_up_3a" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_cbUGQL_yEeiRmt3s1nZ51w" type="Class_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_cbUGQr_yEeiRmt3s1nZ51w" type="Class_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_cbUGQ7_yEeiRmt3s1nZ51w" type="Class_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_cbUGRL_yEeiRmt3s1nZ51w" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_cbUGRb_yEeiRmt3s1nZ51w" type="Class_StructureCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_fQfjoL_yEeiRmt3s1nZ51w" type="Property_Shape">
+          <children xmi:type="notation:DecorationNode" xmi:id="_fQgKsL_yEeiRmt3s1nZ51w" type="Property_NameLabel"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_fQgKsb_yEeiRmt3s1nZ51w" type="Property_FloatingNameLabel">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_fQgKsr_yEeiRmt3s1nZ51w" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_fQgKs7_yEeiRmt3s1nZ51w" type="Property_StructureCompartment">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_fQgKtL_yEeiRmt3s1nZ51w"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fQgKtb_yEeiRmt3s1nZ51w"/>
+          </children>
+          <element xmi:type="uml:Property" href="ux1_submarine_v01.uml#_dJrBEL_yEeiRmt3s1nZ51w"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fQfjob_yEeiRmt3s1nZ51w" x="74" y="59"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_4CPJgL_zEeiRmt3s1nZ51w" type="Property_Shape">
+          <children xmi:type="notation:DecorationNode" xmi:id="_4CPJgr_zEeiRmt3s1nZ51w" type="Property_NameLabel"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_4CPJg7_zEeiRmt3s1nZ51w" type="Property_FloatingNameLabel">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_4CPJhL_zEeiRmt3s1nZ51w" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_4CPJhb_zEeiRmt3s1nZ51w" type="Property_StructureCompartment">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_4CPJhr_zEeiRmt3s1nZ51w"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4CPJh7_zEeiRmt3s1nZ51w"/>
+          </children>
+          <element xmi:type="uml:Property" href="ux1_submarine_v01.uml#_hL-Y4L_yEeiRmt3s1nZ51w"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4CPJgb_zEeiRmt3s1nZ51w" x="74" y="119"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_9pXKEL_zEeiRmt3s1nZ51w" type="Property_Shape">
+          <children xmi:type="notation:DecorationNode" xmi:id="_9pXKEr_zEeiRmt3s1nZ51w" type="Property_NameLabel"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_9pXKE7_zEeiRmt3s1nZ51w" type="Property_FloatingNameLabel">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_9pXKFL_zEeiRmt3s1nZ51w" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_9pXKFb_zEeiRmt3s1nZ51w" type="Property_StructureCompartment">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_9pXKFr_zEeiRmt3s1nZ51w"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9pXKF7_zEeiRmt3s1nZ51w"/>
+          </children>
+          <element xmi:type="uml:Property" href="ux1_submarine_v01.uml#_7JDwgL_zEeiRmt3s1nZ51w"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9pXKEb_zEeiRmt3s1nZ51w" x="74" y="179"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_TMetQL_0EeiRmt3s1nZ51w" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_TMetQb_0EeiRmt3s1nZ51w"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_TMetQ7_0EeiRmt3s1nZ51w" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Property" href="ux1_submarine_v01.uml#_hL-Y4L_yEeiRmt3s1nZ51w"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TMetQr_0EeiRmt3s1nZ51w" x="274" y="119"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_UcEF0L_0EeiRmt3s1nZ51w" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_UcEF0b_0EeiRmt3s1nZ51w"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_UcEF07_0EeiRmt3s1nZ51w" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Property" href="ux1_submarine_v01.uml#_dJrBEL_yEeiRmt3s1nZ51w"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UcEF0r_0EeiRmt3s1nZ51w" x="274" y="59"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_VeM4R7_0EeiRmt3s1nZ51w" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_VeM4SL_0EeiRmt3s1nZ51w"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_VeM4Sr_0EeiRmt3s1nZ51w" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Property" href="ux1_submarine_v01.uml#_7JDwgL_zEeiRmt3s1nZ51w"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VeM4Sb_0EeiRmt3s1nZ51w" x="274" y="179"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_cbUGRr_yEeiRmt3s1nZ51w"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cbUGR7_yEeiRmt3s1nZ51w"/>
+      </children>
+      <element xmi:type="uml:Class" href="ux1_submarine_v01.uml#_y5j2gLaSEeibmbzv24Y0uw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cbUGQb_yEeiRmt3s1nZ51w" x="40" y="40" width="381" height="281"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_cfMgsL_yEeiRmt3s1nZ51w" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_cfMgsb_yEeiRmt3s1nZ51w"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_cfMgs7_yEeiRmt3s1nZ51w" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="ux1_submarine_v01.uml#_y5j2gLaSEeibmbzv24Y0uw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cfMgsr_yEeiRmt3s1nZ51w" x="240" y="40"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_cbTfMb_yEeiRmt3s1nZ51w" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_cbTfMr_yEeiRmt3s1nZ51w"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_cbTfM7_yEeiRmt3s1nZ51w" diagramKindId="org.eclipse.papyrus.sysml14.diagram.internalblock">
+      <owner xmi:type="uml:Class" href="ux1_submarine_v01.uml#_y5j2gLaSEeibmbzv24Y0uw"/>
+    </styles>
+    <element xmi:type="uml:Class" href="ux1_submarine_v01.uml#_y5j2gLaSEeibmbzv24Y0uw"/>
+    <edges xmi:type="notation:Connector" xmi:id="_cfMgtL_yEeiRmt3s1nZ51w" type="StereotypeCommentLink" source="_cbUGQL_yEeiRmt3s1nZ51w" target="_cfMgsL_yEeiRmt3s1nZ51w">
+      <styles xmi:type="notation:FontStyle" xmi:id="_cfMgtb_yEeiRmt3s1nZ51w"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_cfNHwL_yEeiRmt3s1nZ51w" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="ux1_submarine_v01.uml#_y5j2gLaSEeibmbzv24Y0uw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cfMgtr_yEeiRmt3s1nZ51w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cfMgt7_yEeiRmt3s1nZ51w"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cfMguL_yEeiRmt3s1nZ51w"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_TMetRL_0EeiRmt3s1nZ51w" type="StereotypeCommentLink" source="_4CPJgL_zEeiRmt3s1nZ51w" target="_TMetQL_0EeiRmt3s1nZ51w">
+      <styles xmi:type="notation:FontStyle" xmi:id="_TMetRb_0EeiRmt3s1nZ51w"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_TMetSb_0EeiRmt3s1nZ51w" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Property" href="ux1_submarine_v01.uml#_hL-Y4L_yEeiRmt3s1nZ51w"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_TMetRr_0EeiRmt3s1nZ51w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_TMetR7_0EeiRmt3s1nZ51w"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_TMetSL_0EeiRmt3s1nZ51w"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_UcEF1L_0EeiRmt3s1nZ51w" type="StereotypeCommentLink" source="_fQfjoL_yEeiRmt3s1nZ51w" target="_UcEF0L_0EeiRmt3s1nZ51w">
+      <styles xmi:type="notation:FontStyle" xmi:id="_UcEF1b_0EeiRmt3s1nZ51w"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_UcEF2b_0EeiRmt3s1nZ51w" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Property" href="ux1_submarine_v01.uml#_dJrBEL_yEeiRmt3s1nZ51w"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UcEF1r_0EeiRmt3s1nZ51w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UcEF17_0EeiRmt3s1nZ51w"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UcEF2L_0EeiRmt3s1nZ51w"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_VeM4S7_0EeiRmt3s1nZ51w" type="StereotypeCommentLink" source="_9pXKEL_zEeiRmt3s1nZ51w" target="_VeM4R7_0EeiRmt3s1nZ51w">
+      <styles xmi:type="notation:FontStyle" xmi:id="_VeM4TL_0EeiRmt3s1nZ51w"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_VeNfUr_0EeiRmt3s1nZ51w" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Property" href="ux1_submarine_v01.uml#_7JDwgL_zEeiRmt3s1nZ51w"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_VeM4Tb_0EeiRmt3s1nZ51w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VeNfUL_0EeiRmt3s1nZ51w"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VeNfUb_0EeiRmt3s1nZ51w"/>
+    </edges>
+  </notation:Diagram>
+  <nattable:Table xmi:id="_tw4ZAL_0EeiRmt3s1nZ51w" name="Move up configurations" currentRowAxisProvider="_tw4ZA7_0EeiRmt3s1nZ51w" currentColumnAxisProvider="_tw4ZAr_0EeiRmt3s1nZ51w" tableKindId="org.eclipse.papyrus.uml.table.matrix">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tw5AEL_0EeiRmt3s1nZ51w" source="http://www.eclipse.org/papyrus/infra/nattable/version">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tw5AEb_0EeiRmt3s1nZ51w" key="version" value="1.3.0"/>
+    </eAnnotations>
+    <styles xmi:type="nattablestyle:IntListValueStyle" xmi:id="_tw4ZAb_0EeiRmt3s1nZ51w" name="hiddenCategoriesByDepth">
+      <intListValue>1</intListValue>
+    </styles>
+    <context xmi:type="uml:Package" href="ux1_submarine_v01.uml#_EGiY8L_gEeiRmt3s1nZ51w"/>
+    <owner xmi:type="uml:Package" href="ux1_submarine_v01.uml#_EGiY8L_gEeiRmt3s1nZ51w"/>
+    <tableConfiguration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.matrix/configs/generic_matrix_of_relationships.nattableconfiguration#UMLGenericMatrixOfRelationships_XMI_ID"/>
+    <columnAxisProvidersHistory xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_tw4ZAr_0EeiRmt3s1nZ51w" description="This axis provider manages the columns, according to the wanted hierarchy" name="HierarchicalColumnsAxisManager" disconnectSlave="true"/>
+    <rowAxisProvidersHistory xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_tw4ZA7_0EeiRmt3s1nZ51w" description="This axis provider manages the rows, according to the wanted hierarchy" name="HierarchicalRowAxisManager" disconnectSlave="true"/>
+    <ownedCellEditorConfigurations xmi:type="nattablecelleditor:GenericRelationshipMatrixCellEditorConfiguration" xmi:id="_tw4ZBL_0EeiRmt3s1nZ51w" cellEditorId="GenericRelationshipMatrixEditorConfiguration"/>
+  </nattable:Table>
+  <nattable:Table xmi:id="_12enIL_0EeiRmt3s1nZ51w" name="Relationship Generic Matrix0" currentRowAxisProvider="_12enI7_0EeiRmt3s1nZ51w" currentColumnAxisProvider="_12enIr_0EeiRmt3s1nZ51w" tableKindId="org.eclipse.papyrus.uml.table.matrix">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_12fOML_0EeiRmt3s1nZ51w" source="http://www.eclipse.org/papyrus/infra/nattable/version">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_12fOMb_0EeiRmt3s1nZ51w" key="version" value="1.3.0"/>
+    </eAnnotations>
+    <styles xmi:type="nattablestyle:IntListValueStyle" xmi:id="_12enIb_0EeiRmt3s1nZ51w" name="hiddenCategoriesByDepth">
+      <intListValue>1</intListValue>
+    </styles>
+    <context xmi:type="uml:Model" href="ux1_submarine_v01.uml#_QnPKELHiEeiL9tKfQ31fIA"/>
+    <owner xmi:type="uml:Model" href="ux1_submarine_v01.uml#_QnPKELHiEeiL9tKfQ31fIA"/>
+    <tableConfiguration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.matrix/configs/generic_matrix_of_relationships.nattableconfiguration#UMLGenericMatrixOfRelationships_XMI_ID"/>
+    <columnAxisProvidersHistory xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_12enIr_0EeiRmt3s1nZ51w" description="This axis provider manages the columns, according to the wanted hierarchy" name="HierarchicalColumnsAxisManager" disconnectSlave="true"/>
+    <rowAxisProvidersHistory xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_12enI7_0EeiRmt3s1nZ51w" description="This axis provider manages the rows, according to the wanted hierarchy" name="HierarchicalRowAxisManager" disconnectSlave="true"/>
+    <ownedCellEditorConfigurations xmi:type="nattablecelleditor:GenericRelationshipMatrixCellEditorConfiguration" xmi:id="_12enJL_0EeiRmt3s1nZ51w" cellEditorId="GenericRelationshipMatrixEditorConfiguration"/>
+  </nattable:Table>
 </xmi:XMI>
