@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:tomasys="http:///schemas/tomasys/_DDT7YLtAEeiX_4bJ7riLSQ/12" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http:///schemas/tomasys/_DDT7YLtAEeiX_4bJ7riLSQ/12 tomasys.profile.uml#_DDYz4LtAEeiX_4bJ7riLSQ">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:ModelElements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/ModelElements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:tomasys="http:///schemas/tomasys/_DDT7YLtAEeiX_4bJ7riLSQ/12" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML/ModelElements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//modelelements http:///schemas/tomasys/_DDT7YLtAEeiX_4bJ7riLSQ/12 tomasys.profile.uml#_DDYz4LtAEeiX_4bJ7riLSQ">
   <uml:Model xmi:id="_QnPKELHiEeiL9tKfQ31fIA" name="ux1_control_arch">
     <ownedComment xmi:type="uml:Comment" xmi:id="_GX-McLaSEeibmbzv24Y0uw">
       <body>Function designs for the submarines movements as reflected in Gonzalo's thesis Tables 5.3 and 5.4 (PDF page 39)</body>
@@ -7,67 +7,90 @@
     <ownedComment xmi:type="uml:Comment" xmi:id="_27Y_ALqJEeiJqsn3UpdfJg">
       <body>TODO: create bindings as associations to instances. Follow motor 5 example</body>
     </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_JuYSkL_dEeiRmt3s1nZ51w">
+      <body>author: Carlos Hernandez c.h.corbato@tudelft.nl
+
+This SysML model with the tomasys profile is a test case using the UNEMIX</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_c4syYL_dEeiRmt3s1nZ51w" annotatedElement="_QnPKELHiEeiL9tKfQ31fIA">
+      <body>One of the Functions of the UNEMIX submarine is moving up</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_Q6amAL_eEeiRmt3s1nZ51w" annotatedElement="_7WK8ALHoEeiL9tKfQ31fIA">
+      <body>This FunctionDesign is one out the the multiple ones that solve the function to move up</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_8-plsL_eEeiRmt3s1nZ51w">
+      <body>grounding or implementation of the Function Design: PropulsionSystem_up_2a
+</body>
+    </ownedComment>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_Q4hHULHiEeiL9tKfQ31fIA">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_Q5RVQLHiEeiL9tKfQ31fIA">
       <importedPackage xmi:type="uml:Package" href="pathmap://SysML14_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
     </packageImport>
-    <packagedElement xmi:type="uml:Class" xmi:id="_ValVkLHoEeiL9tKfQ31fIA" name="Navigation"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_iZKr4LHoEeiL9tKfQ31fIA" name="MotionControl"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_sNZmELHoEeiL9tKfQ31fIA" name="Control1"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_vwzbYLHoEeiL9tKfQ31fIA" name="Control2"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_xLpBsLHoEeiL9tKfQ31fIA" name="Nav1"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_z_AhMLHoEeiL9tKfQ31fIA" name="Nav2"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_5AT34LHoEeiL9tKfQ31fIA" name="Move_up"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_7WK8ALHoEeiL9tKfQ31fIA" name="PropulsionSystem_up_2a">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_i0TacLajEeibmbzv24Y0uw" name="test">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_KiIqMLqMEeiJqsn3UpdfJg" name="motorA" type="_QdpRYLaREeibmbzv24Y0uw" aggregation="composite" association="_R26fYLqMEeiJqsn3UpdfJg">
-        <defaultValue xmi:type="uml:InstanceValue" xmi:id="_1p7LkLqTEeiJqsn3UpdfJg" instance="_InuMELaTEeibmbzv24Y0uw"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_7bAdkLqMEeiJqsn3UpdfJg" name="motorB" type="_T2KFULaREeibmbzv24Y0uw" aggregation="composite" association="_DSQGoLqNEeiJqsn3UpdfJg">
-        <defaultValue xmi:type="uml:InstanceValue" xmi:id="_k6Ct4LqTEeiJqsn3UpdfJg" instance="_F8qUALaTEeibmbzv24Y0uw"/>
-      </ownedAttribute>
+    <packagedElement xmi:type="uml:Package" xmi:id="_tzZHAL_fEeiRmt3s1nZ51w" name="ComponentsUNEMIX">
+      <packagedElement xmi:type="uml:Class" xmi:id="_KCa6YLaREeibmbzv24Y0uw" name="Motor1"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MBeBALaREeibmbzv24Y0uw" name="Motor2"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_O8zwwLaREeibmbzv24Y0uw" name="Motor3"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_PxA04LaREeibmbzv24Y0uw" name="Motor4"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_QdpRYLaREeibmbzv24Y0uw" name="Motor5"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ROSrMLaREeibmbzv24Y0uw" name="Motor6"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T2KFULaREeibmbzv24Y0uw" name="Motor7"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_UlBWcLaREeibmbzv24Y0uw" name="Motor8"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_KCa6YLaREeibmbzv24Y0uw" name="Motor1"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_MBeBALaREeibmbzv24Y0uw" name="Motor2"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_O8zwwLaREeibmbzv24Y0uw" name="Motor3"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_PxA04LaREeibmbzv24Y0uw" name="Motor4"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_QdpRYLaREeibmbzv24Y0uw" name="Motor5"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_ROSrMLaREeibmbzv24Y0uw" name="Motor6"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_T2KFULaREeibmbzv24Y0uw" name="Motor7"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_UlBWcLaREeibmbzv24Y0uw" name="Motor8"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_2cm78LaREeibmbzv24Y0uw" name="Move_down"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_wJ5LQLaSEeibmbzv24Y0uw" name="PropulsionSystem_up_2b"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_y5j2gLaSEeibmbzv24Y0uw" name="Propulsion_System_up_3a"/>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_F8qUALaTEeibmbzv24Y0uw" name="motorA_propulsioSystem_up_2a"/>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_InuMELaTEeibmbzv24Y0uw" name="motorB_propulsioSystem_up_2a"/>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_D08SMLaWEeibmbzv24Y0uw" name="motorA_propulsioSystem_up_2b"/>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_IhdrsLaWEeibmbzv24Y0uw" name="motorB_propulsioSystem_up_2b"/>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_CGp5gLaYEeibmbzv24Y0uw" name="motorA_propulsionSystem_up_3a"/>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_GNImsLaYEeibmbzv24Y0uw" name="motorB_propulsionSystem_up_3a"/>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_t073ULaYEeibmbzv24Y0uw" name="motorC_propulsionSystem_up_3a"/>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_NQt6ALafEeibmbzv24Y0uw" name="fg_propulsionsystem_2a" classifier="_7WK8ALHoEeiL9tKfQ31fIA">
-      <slot xmi:type="uml:Slot" xmi:id="_Lg83ULqWEeiJqsn3UpdfJg" definingFeature="_KiIqMLqMEeiJqsn3UpdfJg">
-        <value xmi:type="uml:InstanceValue" xmi:id="_SZk8ALqWEeiJqsn3UpdfJg" instance="_i2B1kLafEeibmbzv24Y0uw"/>
-      </slot>
-      <slot xmi:type="uml:Slot" xmi:id="_ccytYLqWEeiJqsn3UpdfJg" definingFeature="_7bAdkLqMEeiJqsn3UpdfJg">
-        <value xmi:type="uml:InstanceValue" xmi:id="_nFcHELqWEeiJqsn3UpdfJg" instance="_lh9QULafEeibmbzv24Y0uw"/>
-      </slot>
+    <packagedElement xmi:type="uml:Package" xmi:id="_EGiY8L_gEeiRmt3s1nZ51w" name="FunctionsUNEMIX">
+      <packagedElement xmi:type="uml:Class" xmi:id="_iZKr4LHoEeiL9tKfQ31fIA" name="MotionControl"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ValVkLHoEeiL9tKfQ31fIA" name="Navigation"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_sNZmELHoEeiL9tKfQ31fIA" name="Control1"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_vwzbYLHoEeiL9tKfQ31fIA" name="Control2"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_xLpBsLHoEeiL9tKfQ31fIA" name="Nav1"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_z_AhMLHoEeiL9tKfQ31fIA" name="Nav2"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_5AT34LHoEeiL9tKfQ31fIA" name="Move_up"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_7WK8ALHoEeiL9tKfQ31fIA" name="PropulsionSystem_up_2a">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_i0TacLajEeibmbzv24Y0uw" name="test">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_KiIqMLqMEeiJqsn3UpdfJg" name="motorA" type="_QdpRYLaREeibmbzv24Y0uw" aggregation="composite" association="_R26fYLqMEeiJqsn3UpdfJg">
+          <defaultValue xmi:type="uml:InstanceValue" xmi:id="_1p7LkLqTEeiJqsn3UpdfJg" instance="_InuMELaTEeibmbzv24Y0uw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_7bAdkLqMEeiJqsn3UpdfJg" name="motorB" type="_T2KFULaREeibmbzv24Y0uw" aggregation="composite" association="_DSQGoLqNEeiJqsn3UpdfJg">
+          <defaultValue xmi:type="uml:InstanceValue" xmi:id="_k6Ct4LqTEeiJqsn3UpdfJg" instance="_F8qUALaTEeibmbzv24Y0uw"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_2cm78LaREeibmbzv24Y0uw" name="Move_down"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_wJ5LQLaSEeibmbzv24Y0uw" name="PropulsionSystem_up_2b"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_y5j2gLaSEeibmbzv24Y0uw" name="Propulsion_System_up_3a"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_QAYUwL_gEeiRmt3s1nZ51w" name="Specifications">
+        <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_F8qUALaTEeibmbzv24Y0uw" name="motorA_propulsionSystem_up_2a"/>
+        <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_InuMELaTEeibmbzv24Y0uw" name="motorB_propulsionSystem_up_2a"/>
+        <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_D08SMLaWEeibmbzv24Y0uw" name="motorA_propulsionSystem_up_2b"/>
+        <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_IhdrsLaWEeibmbzv24Y0uw" name="motorB_propulsionSystem_up_2b"/>
+        <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_CGp5gLaYEeibmbzv24Y0uw" name="motorA_propulsionSystem_up_3a"/>
+        <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_GNImsLaYEeibmbzv24Y0uw" name="motorB_propulsionSystem_up_3a"/>
+        <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_t073ULaYEeibmbzv24Y0uw" name="motorC_propulsionSystem_up_3a"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_R26fYLqMEeiJqsn3UpdfJg" memberEnd="_KiIqMLqMEeiJqsn3UpdfJg _R2_-8LqMEeiJqsn3UpdfJg">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_R2_-8LqMEeiJqsn3UpdfJg" type="_7WK8ALHoEeiL9tKfQ31fIA" association="_R26fYLqMEeiJqsn3UpdfJg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_DSQGoLqNEeiJqsn3UpdfJg" memberEnd="_7bAdkLqMEeiJqsn3UpdfJg _DSU_ILqNEeiJqsn3UpdfJg">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_DSU_ILqNEeiJqsn3UpdfJg" type="_7WK8ALHoEeiL9tKfQ31fIA" association="_DSQGoLqNEeiJqsn3UpdfJg"/>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_Tlr4ALafEeibmbzv24Y0uw" name="move_up"/>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_i2B1kLafEeibmbzv24Y0uw" name="motor5"/>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_kjFNQLafEeibmbzv24Y0uw" name="motor6"/>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_lh9QULafEeibmbzv24Y0uw" name="motor7">
-      <slot xmi:type="uml:Slot" xmi:id="_8d8uILajEeibmbzv24Y0uw" definingFeature="_i0TacLajEeibmbzv24Y0uw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_R26fYLqMEeiJqsn3UpdfJg" memberEnd="_KiIqMLqMEeiJqsn3UpdfJg _R2_-8LqMEeiJqsn3UpdfJg">
-      <ownedEnd xmi:type="uml:Property" xmi:id="_R2_-8LqMEeiJqsn3UpdfJg" type="_7WK8ALHoEeiL9tKfQ31fIA" association="_R26fYLqMEeiJqsn3UpdfJg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_DSQGoLqNEeiJqsn3UpdfJg" memberEnd="_7bAdkLqMEeiJqsn3UpdfJg _DSU_ILqNEeiJqsn3UpdfJg">
-      <ownedEnd xmi:type="uml:Property" xmi:id="_DSU_ILqNEeiJqsn3UpdfJg" type="_7WK8ALHoEeiL9tKfQ31fIA" association="_DSQGoLqNEeiJqsn3UpdfJg"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_XyY4gL_gEeiRmt3s1nZ51w" name="RuntimeConfigurations">
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_NQt6ALafEeibmbzv24Y0uw" name="fg_propulsionsystem_2a" classifier="_7WK8ALHoEeiL9tKfQ31fIA">
+        <slot xmi:type="uml:Slot" xmi:id="_Lg83ULqWEeiJqsn3UpdfJg" definingFeature="_KiIqMLqMEeiJqsn3UpdfJg">
+          <value xmi:type="uml:InstanceValue" xmi:id="_SZk8ALqWEeiJqsn3UpdfJg" instance="_i2B1kLafEeibmbzv24Y0uw"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_ccytYLqWEeiJqsn3UpdfJg" definingFeature="_7bAdkLqMEeiJqsn3UpdfJg">
+          <value xmi:type="uml:InstanceValue" xmi:id="_nFcHELqWEeiJqsn3UpdfJg" instance="_lh9QULafEeibmbzv24Y0uw"/>
+        </slot>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_Tlr4ALafEeibmbzv24Y0uw" name="move_up"/>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_i2B1kLafEeibmbzv24Y0uw" name="motor5"/>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_kjFNQLafEeibmbzv24Y0uw" name="motor6"/>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_lh9QULafEeibmbzv24Y0uw" name="motor7">
+        <slot xmi:type="uml:Slot" xmi:id="_8d8uILajEeibmbzv24Y0uw" definingFeature="_i0TacLajEeibmbzv24Y0uw"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Q4EbYLHiEeiL9tKfQ31fIA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Q4M-QLHiEeiL9tKfQ31fIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -195,4 +218,7 @@
   <tomasys:ComponentInstance xmi:id="_sABf8LafEeibmbzv24Y0uw" base_InstanceSpecification="_lh9QULafEeibmbzv24Y0uw" type="_hlx6MLaVEeibmbzv24Y0uw"/>
   <tomasys:role xmi:id="_I0gt8LqQEeiJqsn3UpdfJg" base_Property="_KiIqMLqMEeiJqsn3UpdfJg"/>
   <tomasys:role xmi:id="_KA3zYLqQEeiJqsn3UpdfJg" base_Property="_7bAdkLqMEeiJqsn3UpdfJg"/>
+  <ModelElements:Rationale xmi:id="_c40uML_dEeiRmt3s1nZ51w" base_Comment="_c4syYL_dEeiRmt3s1nZ51w"/>
+  <ModelElements:Rationale xmi:id="_Q6gsoL_eEeiRmt3s1nZ51w" base_Comment="_Q6amAL_eEeiRmt3s1nZ51w"/>
+  <ModelElements:Rationale xmi:id="_8-ueML_eEeiRmt3s1nZ51w" base_Comment="_8-plsL_eEeiRmt3s1nZ51w"/>
 </xmi:XMI>
