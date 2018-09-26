@@ -1755,6 +1755,7 @@
     <tableConfiguration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#PapyrusGenericTable_XMI_ID"/>
     <columnAxisProvidersHistory xmi:type="nattableaxisprovider:SlaveObjectAxisProvider" xmi:id="_xSZE0b_cEeiRmt3s1nZ51w" description="This axis provider provides available columns according to the rows of the table (features of the object displayed on the other axis)" name="UML Feature axis provider">
       <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_3rYAIL_cEeiRmt3s1nZ51w" element="property_of_stereotype:/tomasys::FunctionDesign::confidence">
+        <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_pR72kL_2EeiRmt3s1nZ51w" name="axisWidth" intValue="130"/>
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFTzQEei_1txcmoHe_A"/>
       </axis>
       <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_3qaW27_cEeiRmt3s1nZ51w">

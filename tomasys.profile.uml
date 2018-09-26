@@ -912,9 +912,9 @@
       </eClassifiers>
     </contents>
   </eAnnotations>
-  <ownedComment xmi:type="uml:Comment" xmi:id="_FS_SgLqREeiJqsn3UpdfJg" annotatedElement="_tOwk0LqNEeiJqsn3UpdfJg _f9E2MLHjEeiL9tKfQ31fIA">
-    <body>alternative ways to model role
-I prefer extending a property</body>
+  <ownedComment xmi:type="uml:Comment" xmi:id="_FS_SgLqREeiJqsn3UpdfJg" annotatedElement="_tOwk0LqNEeiJqsn3UpdfJg">
+    <body>An alternative way to model tomasys::role would be to make it an attribute of a FunctionDesign.
+However, I prefer using a SysML::Part, which means extending Property</body>
   </ownedComment>
   <elementImport xmi:type="uml:ElementImport" xmi:id="_SVIuwLaiEeibmbzv24Y0uw" alias="InstanceValue">
     <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceValue"/>
