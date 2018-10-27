@@ -13,10 +13,19 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
+        <Class IRI="#Binding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Component"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ComponentClass"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ComponentSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComponentState"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Function"/>
@@ -31,7 +40,19 @@
         <Class IRI="#Objective"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#binding"/>
+        <Class IRI="#Role"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#binding_component"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#binding_role"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#bindings"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#definition"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#needs"/>
@@ -43,10 +64,13 @@
         <ObjectProperty IRI="#requires"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#role"/>
+        <ObjectProperty IRI="#roles"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#solves"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#typeC"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#typeF"/>
@@ -61,38 +85,219 @@
         <DataProperty IRI="#confidence_level_fd"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#fd_move_up_3motors"/>
+        <NamedIndividual IRI="#binding1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#move_up"/>
+        <NamedIndividual IRI="#binding2"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#o_move_up"/>
+        <NamedIndividual IRI="#fd_move_fw_2m"/>
     </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fg_move_fw_2m"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#motor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#motor1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#motor2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#motor3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#motor4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#motor_a"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#motor_b"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#move_fw"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#o_move_fw"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#role_a"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#role_b"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#ComponentSpecification"/>
+        <Class IRI="#Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComponentState"/>
+        <Class IRI="#Component"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Binding"/>
+        <Class IRI="#Component"/>
+        <Class IRI="#ComponentClass"/>
+        <Class IRI="#Function"/>
+        <Class IRI="#FunctionDesign"/>
+        <Class IRI="#FunctionGrounding"/>
+        <Class IRI="#Objective"/>
+        <Class IRI="#Role"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Binding"/>
+        <NamedIndividual IRI="#binding1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Binding"/>
+        <NamedIndividual IRI="#binding2"/>
+    </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#FunctionDesign"/>
-        <NamedIndividual IRI="#fd_move_up_3motors"/>
+        <NamedIndividual IRI="#fd_move_fw_2m"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FunctionGrounding"/>
+        <NamedIndividual IRI="#fg_move_fw_2m"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ComponentClass"/>
+        <NamedIndividual IRI="#motor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ComponentState"/>
+        <NamedIndividual IRI="#motor1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ComponentState"/>
+        <NamedIndividual IRI="#motor2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ComponentState"/>
+        <NamedIndividual IRI="#motor3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ComponentState"/>
+        <NamedIndividual IRI="#motor4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ComponentSpecification"/>
+        <NamedIndividual IRI="#motor_a"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ComponentSpecification"/>
+        <NamedIndividual IRI="#motor_b"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Function"/>
-        <NamedIndividual IRI="#move_up"/>
+        <NamedIndividual IRI="#move_fw"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Objective"/>
-        <NamedIndividual IRI="#o_move_up"/>
+        <NamedIndividual IRI="#o_move_fw"/>
     </ClassAssertion>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#role"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
+    <ClassAssertion>
+        <Class IRI="#Role"/>
+        <NamedIndividual IRI="#role_a"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Role"/>
+        <NamedIndividual IRI="#role_b"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#binding_component"/>
+        <NamedIndividual IRI="#binding1"/>
+        <NamedIndividual IRI="#motor1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#binding_role"/>
+        <NamedIndividual IRI="#binding1"/>
+        <NamedIndividual IRI="#role_a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#binding_component"/>
+        <NamedIndividual IRI="#binding2"/>
+        <NamedIndividual IRI="#motor3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#binding_role"/>
+        <NamedIndividual IRI="#binding2"/>
+        <NamedIndividual IRI="#role_b"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#roles"/>
+        <NamedIndividual IRI="#fd_move_fw_2m"/>
+        <NamedIndividual IRI="#role_a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#roles"/>
+        <NamedIndividual IRI="#fd_move_fw_2m"/>
+        <NamedIndividual IRI="#role_b"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#solves"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
+        <NamedIndividual IRI="#fd_move_fw_2m"/>
+        <NamedIndividual IRI="#move_fw"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#bindings"/>
+        <NamedIndividual IRI="#fg_move_fw_2m"/>
+        <NamedIndividual IRI="#binding1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#bindings"/>
+        <NamedIndividual IRI="#fg_move_fw_2m"/>
+        <NamedIndividual IRI="#binding2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#realises"/>
+        <NamedIndividual IRI="#fg_move_fw_2m"/>
+        <NamedIndividual IRI="#o_move_fw"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#typeFD"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
+        <NamedIndividual IRI="#fg_move_fw_2m"/>
+        <NamedIndividual IRI="#fd_move_fw_2m"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#typeF"/>
+        <NamedIndividual IRI="#o_move_fw"/>
+        <NamedIndividual IRI="#move_fw"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#definition"/>
+        <NamedIndividual IRI="#role_a"/>
+        <NamedIndividual IRI="#motor_a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#definition"/>
+        <NamedIndividual IRI="#role_b"/>
+        <NamedIndividual IRI="#motor_b"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#confidence_level_fd"/>
+        <NamedIndividual IRI="#fd_move_fw_2m"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.8</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#binding_component"/>
+        <Class IRI="#Binding"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#binding_role"/>
+        <Class IRI="#Binding"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#bindings"/>
+        <Class IRI="#FunctionGrounding"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#definition"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#needs"/>
         <Class IRI="#FunctionGrounding"/>
@@ -106,12 +311,16 @@
         <Class IRI="#FunctionDesign"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#role"/>
+        <ObjectProperty IRI="#roles"/>
         <Class IRI="#FunctionDesign"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#solves"/>
         <Class IRI="#FunctionDesign"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#typeC"/>
+        <Class IRI="#Component"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#typeF"/>
@@ -122,6 +331,22 @@
         <Class IRI="#FunctionGrounding"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#binding_component"/>
+        <Class IRI="#Component"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#binding_role"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#bindings"/>
+        <Class IRI="#Binding"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#definition"/>
+        <Class IRI="#ComponentSpecification"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#needs"/>
         <Class IRI="#Objective"/>
     </ObjectPropertyRange>
@@ -134,12 +359,16 @@
         <Class IRI="#Function"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#role"/>
-        <Class IRI="#ComponentSpecification"/>
+        <ObjectProperty IRI="#roles"/>
+        <Class IRI="#Role"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#solves"/>
         <Class IRI="#Function"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#typeC"/>
+        <Class IRI="#ComponentClass"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#typeF"/>
@@ -164,8 +393,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#binding</IRI>
-        <Literal>relates a Component with the Role it is performing</Literal>
+        <IRI>#definition</IRI>
+        <Literal>a Role consists of the definition of a component specification for a Function Design</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#fd_move_fw_2m</IRI>
+        <Literal>FD to move forward with 2 motors (we will assume the FD is same, but the performance will depend on the motors performing each role _a and _b)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -184,8 +418,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#role</IRI>
-        <Literal>relates a ComponentSpecification with the FunctionDesign it plays a role in</Literal>
+        <IRI>#roles</IRI>
+        <Literal>A Function Design consists of roles</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
