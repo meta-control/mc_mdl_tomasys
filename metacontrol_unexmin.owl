@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin">
-    <Prefix name="" IRI="http://www.semanticweb.org/chcorbato/ontologies/2018/8/untitled-ontology-4"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -25,10 +25,16 @@
         <Class IRI="#FunctionDesign"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#FunctionGrounding"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Objective"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#binding"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#needs"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#realises"/>
@@ -43,7 +49,13 @@
         <ObjectProperty IRI="#solves"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#type"/>
+        <ObjectProperty IRI="#typeF"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#typeFD"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#availability"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#confidence_level_fd"/>
@@ -77,10 +89,88 @@
         <ObjectProperty IRI="#solves"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#typeFD"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#needs"/>
+        <Class IRI="#FunctionGrounding"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#realises"/>
+        <Class IRI="#FunctionGrounding"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requires"/>
+        <Class IRI="#FunctionDesign"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#role"/>
+        <Class IRI="#FunctionDesign"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#solves"/>
+        <Class IRI="#FunctionDesign"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#typeF"/>
+        <Class IRI="#Objective"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#typeFD"/>
+        <Class IRI="#FunctionGrounding"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#needs"/>
+        <Class IRI="#Objective"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#realises"/>
+        <Class IRI="#Objective"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requires"/>
+        <Class IRI="#Function"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#role"/>
+        <Class IRI="#ComponentSpecification"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#solves"/>
+        <Class IRI="#Function"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#typeF"/>
+        <Class IRI="#Function"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#typeFD"/>
+        <Class IRI="#FunctionDesign"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#availability"/>
+        <Class IRI="#FunctionDesign"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#availability"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#availability</IRI>
+        <Literal>a FunctionDesign might be available (TRUE) or not (FALSE)</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#binding</IRI>
         <Literal>relates a Component with the Role it is performing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#needs</IRI>
+        <Literal>A FunctionGrounding may need an Objective to be solved (by someone else) as a requirement to realise its target Objective</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -90,7 +180,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#requires</IRI>
-        <Literal>A FunctionDesign (or FunctionGrounding) may require another Function (or Objective) to be solved (by someone else) as a requirement to solve its target Function (Objective)</Literal>
+        <Literal>A FunctionDesign may require another Function to be solved (by someone else) as a requirement to solve its target Function</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -104,7 +194,7 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#type</IRI>
+        <IRI>#typeF</IRI>
         <Literal>relates a FunctionGrounding/Objective with a FunctionDesign/Function</Literal>
     </AnnotationAssertion>
 </Ontology>
