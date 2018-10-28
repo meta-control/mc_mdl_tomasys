@@ -440,12 +440,12 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#confidence_level_fd"/>
         <NamedIndividual IRI="#fd_move_fw_2m"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.8</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#confidence_level_fd"/>
         <NamedIndividual IRI="#fd_move_fw_3m"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.9</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.925</Literal>
     </DataPropertyAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#binding_component"/>
@@ -564,7 +564,13 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#fd_move_fw_2m</IRI>
-        <Literal>FD to move forward with 2 motors (we will assume the FD is same, but the performance will depend on the motors performing each role _a and _b)</Literal>
+        <Literal>FD to move forward with 2 motors (we will assume the FD is same, but the performance will depend on the motors performing each role _a and _b)
+It has a confidence or penelty of 1.0 (see Table 6.1 gonzalo TFM)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#fd_move_fw_3m</IRI>
+        <Literal>FD to move forward, has a confidence or penelty of 0.925 (see Table 6.1 gonzalo TFM)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
