@@ -85,16 +85,25 @@
         <DataProperty IRI="#confidence_level_fd"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#binding1"/>
+        <NamedIndividual IRI="#binding-fg_move_fw_2m-a-role_a"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#binding2"/>
+        <NamedIndividual IRI="#binding-fg_move_fw_2m-a-role_b"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#binding-fg_move_fw_2m-b-role_a"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#binding-fg_move_fw_2m-b-role_b"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#fd_move_fw_2m"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#fg_move_fw_2m"/>
+        <NamedIndividual IRI="#fg_move_fw_2m-a"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fg_move_fw_2m-b"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#motor"/>
@@ -149,11 +158,19 @@
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#Binding"/>
-        <NamedIndividual IRI="#binding1"/>
+        <NamedIndividual IRI="#binding-fg_move_fw_2m-a-role_a"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Binding"/>
-        <NamedIndividual IRI="#binding2"/>
+        <NamedIndividual IRI="#binding-fg_move_fw_2m-a-role_b"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Binding"/>
+        <NamedIndividual IRI="#binding-fg_move_fw_2m-b-role_a"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Binding"/>
+        <NamedIndividual IRI="#binding-fg_move_fw_2m-b-role_b"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#FunctionDesign"/>
@@ -161,7 +178,11 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#FunctionGrounding"/>
-        <NamedIndividual IRI="#fg_move_fw_2m"/>
+        <NamedIndividual IRI="#fg_move_fw_2m-a"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FunctionGrounding"/>
+        <NamedIndividual IRI="#fg_move_fw_2m-b"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ComponentClass"/>
@@ -209,22 +230,42 @@
     </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#binding_component"/>
-        <NamedIndividual IRI="#binding1"/>
+        <NamedIndividual IRI="#binding-fg_move_fw_2m-a-role_a"/>
         <NamedIndividual IRI="#motor1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#binding_role"/>
-        <NamedIndividual IRI="#binding1"/>
+        <NamedIndividual IRI="#binding-fg_move_fw_2m-a-role_a"/>
         <NamedIndividual IRI="#role_a"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#binding_component"/>
-        <NamedIndividual IRI="#binding2"/>
+        <NamedIndividual IRI="#binding-fg_move_fw_2m-a-role_b"/>
         <NamedIndividual IRI="#motor3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#binding_role"/>
-        <NamedIndividual IRI="#binding2"/>
+        <NamedIndividual IRI="#binding-fg_move_fw_2m-a-role_b"/>
+        <NamedIndividual IRI="#role_b"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#binding_component"/>
+        <NamedIndividual IRI="#binding-fg_move_fw_2m-b-role_a"/>
+        <NamedIndividual IRI="#motor2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#binding_role"/>
+        <NamedIndividual IRI="#binding-fg_move_fw_2m-b-role_a"/>
+        <NamedIndividual IRI="#role_a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#binding_component"/>
+        <NamedIndividual IRI="#binding-fg_move_fw_2m-b-role_b"/>
+        <NamedIndividual IRI="#motor4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#binding_role"/>
+        <NamedIndividual IRI="#binding-fg_move_fw_2m-b-role_b"/>
         <NamedIndividual IRI="#role_b"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -244,22 +285,42 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#bindings"/>
-        <NamedIndividual IRI="#fg_move_fw_2m"/>
-        <NamedIndividual IRI="#binding1"/>
+        <NamedIndividual IRI="#fg_move_fw_2m-a"/>
+        <NamedIndividual IRI="#binding-fg_move_fw_2m-a-role_a"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#bindings"/>
-        <NamedIndividual IRI="#fg_move_fw_2m"/>
-        <NamedIndividual IRI="#binding2"/>
+        <NamedIndividual IRI="#fg_move_fw_2m-a"/>
+        <NamedIndividual IRI="#binding-fg_move_fw_2m-a-role_b"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#realises"/>
-        <NamedIndividual IRI="#fg_move_fw_2m"/>
+        <NamedIndividual IRI="#fg_move_fw_2m-a"/>
         <NamedIndividual IRI="#o_move_fw"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#typeFD"/>
-        <NamedIndividual IRI="#fg_move_fw_2m"/>
+        <NamedIndividual IRI="#fg_move_fw_2m-a"/>
+        <NamedIndividual IRI="#fd_move_fw_2m"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#bindings"/>
+        <NamedIndividual IRI="#fg_move_fw_2m-b"/>
+        <NamedIndividual IRI="#binding-fg_move_fw_2m-b-role_a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#bindings"/>
+        <NamedIndividual IRI="#fg_move_fw_2m-b"/>
+        <NamedIndividual IRI="#binding-fg_move_fw_2m-b-role_b"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#realises"/>
+        <NamedIndividual IRI="#fg_move_fw_2m-b"/>
+        <NamedIndividual IRI="#move_fw"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#typeFD"/>
+        <NamedIndividual IRI="#fg_move_fw_2m-b"/>
         <NamedIndividual IRI="#fd_move_fw_2m"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -400,6 +461,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#fd_move_fw_2m</IRI>
         <Literal>FD to move forward with 2 motors (we will assume the FD is same, but the performance will depend on the motors performing each role _a and _b)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#fg_move_fw_2m-b</IRI>
+        <Literal>FG alternative that should be produced by the reasoner because motors 2 and 4 are a better configuration for the FD to move fw with 2 motors</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
