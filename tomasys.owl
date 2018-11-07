@@ -1,0 +1,267 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/chcorbato/ontologies/tomasys#"
+     xml:base="http://www.semanticweb.org/chcorbato/ontologies/tomasys"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/chcorbato/ontologies/tomasys"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding_component -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding_component">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding_role -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding_role">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#definition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#definition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+        <rdfs:comment>a Role consists of the definition of a component specification for a Function Design</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#hasBindings -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#hasBindings">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionGrounding"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#needs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#needs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionGrounding"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective"/>
+        <rdfs:comment>A FunctionGrounding may need an Objective to be solved (by someone else) as a requirement to realise its target Objective</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#realises -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#realises">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionGrounding"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective"/>
+        <rdfs:comment>A FunctionGrounding is realising an Objective</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#requires -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#requires">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Function"/>
+        <rdfs:comment>A FunctionDesign may require another Function to be solved (by someone else) as a requirement to solve its target Function</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#roles -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#roles">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+        <rdfs:comment>A Function Design consists of roles</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#solves -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#solves">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Function"/>
+        <rdfs:comment>a FunctionDesign solves a Function</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#typeC -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#typeC">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#typeF -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#typeF">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Function"/>
+        <rdfs:comment>relates a FunctionGrounding/Objective with a FunctionDesign/Function</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#typeFD -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#typeFD">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionGrounding"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#availability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#availability">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>a FunctionDesign might be available (TRUE) or not (FALSE)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#confidence_level_fd -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#confidence_level_fd"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Function"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionGrounding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionGrounding"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Function"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionGrounding"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+

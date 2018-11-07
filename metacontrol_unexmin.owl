@@ -49,10 +49,10 @@
         <ObjectProperty IRI="#binding_role"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#bindings"/>
+        <ObjectProperty IRI="#definition"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#definition"/>
+        <ObjectProperty IRI="#hasBindings"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#needs"/>
@@ -368,12 +368,12 @@
         <NamedIndividual IRI="#move_fw"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#bindings"/>
+        <ObjectProperty IRI="#hasBindings"/>
         <NamedIndividual IRI="#fg_move_fw_2m-a"/>
         <NamedIndividual IRI="#binding-fg_move_fw_2m-a-role_a"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#bindings"/>
+        <ObjectProperty IRI="#hasBindings"/>
         <NamedIndividual IRI="#fg_move_fw_2m-a"/>
         <NamedIndividual IRI="#binding-fg_move_fw_2m-a-role_b"/>
     </ObjectPropertyAssertion>
@@ -388,12 +388,12 @@
         <NamedIndividual IRI="#fd_move_fw_2m"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#bindings"/>
+        <ObjectProperty IRI="#hasBindings"/>
         <NamedIndividual IRI="#fg_move_fw_2m-b"/>
         <NamedIndividual IRI="#binding-fg_move_fw_2m-b-role_a"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#bindings"/>
+        <ObjectProperty IRI="#hasBindings"/>
         <NamedIndividual IRI="#fg_move_fw_2m-b"/>
         <NamedIndividual IRI="#binding-fg_move_fw_2m-b-role_b"/>
     </ObjectPropertyAssertion>
@@ -456,12 +456,12 @@
         <Class IRI="#Binding"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#bindings"/>
-        <Class IRI="#FunctionGrounding"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#definition"/>
         <Class IRI="#Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBindings"/>
+        <Class IRI="#FunctionGrounding"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#needs"/>
@@ -504,12 +504,12 @@
         <Class IRI="#Role"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#bindings"/>
-        <Class IRI="#Binding"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#definition"/>
         <Class IRI="#ComponentSpecification"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBindings"/>
+        <Class IRI="#Binding"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#needs"/>

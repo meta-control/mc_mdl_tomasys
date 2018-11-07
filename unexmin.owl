@@ -1,0 +1,418 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/chcorbato/ontologies/2018/10/untitled-ontology-13#"
+     xml:base="http://www.semanticweb.org/chcorbato/ontologies/2018/10/untitled-ontology-13"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:metacontrol_unexmin="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/10/untitled-ontology-13"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding_component -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding_component"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding_role -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding_role"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#definition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#definition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#hasBindings -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#hasBindings"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#realises -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#realises"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#roles -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#roles"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#solves -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#solves"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#typeC -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#typeC"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#typeF -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#typeF"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#typeFD -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#typeFD"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#confidence_level_fd -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#confidence_level_fd"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Function"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionGrounding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionGrounding"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-fg_move_fw_2m-a-role_a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-fg_move_fw_2m-a-role_a">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
+        <metacontrol_unexmin:binding_component rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor1"/>
+        <metacontrol_unexmin:binding_role rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role_a-fd_fw_2m"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-fg_move_fw_2m-a-role_b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-fg_move_fw_2m-a-role_b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
+        <metacontrol_unexmin:binding_component rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor3"/>
+        <metacontrol_unexmin:binding_role rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role_b-fd_fw_2m"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-fg_move_fw_2m-b-role_a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-fg_move_fw_2m-b-role_a">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
+        <metacontrol_unexmin:binding_component rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor2"/>
+        <metacontrol_unexmin:binding_role rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role_a-fd_fw_2m"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-fg_move_fw_2m-b-role_b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-fg_move_fw_2m-b-role_b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
+        <metacontrol_unexmin:binding_component rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor4"/>
+        <metacontrol_unexmin:binding_role rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role_b-fd_fw_2m"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-motor_a-fd_fw_2m -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-motor_a-fd_fw_2m">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-motor_a-fd_fw_3m -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-motor_a-fd_fw_3m">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-motor_b-fd_fw_2m -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-motor_b-fd_fw_2m">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-motor_b-fd_fw_3m -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-motor_b-fd_fw_3m">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-motor_c-fd_fw_3m -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-motor_c-fd_fw_3m">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd_move_fw_2m -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd_move_fw_2m">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
+        <metacontrol_unexmin:roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role_a-fd_fw_2m"/>
+        <metacontrol_unexmin:roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role_b-fd_fw_2m"/>
+        <metacontrol_unexmin:solves rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#move_fw"/>
+        <metacontrol_unexmin:confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</metacontrol_unexmin:confidence_level_fd>
+        <rdfs:comment>FD to move forward with 2 motors (we will assume the FD is same, but the performance will depend on the motors performing each role _a and _b)
+It has a confidence or penelty of 1.0 (see Table 6.1 gonzalo TFM)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd_move_fw_3m -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd_move_fw_3m">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
+        <metacontrol_unexmin:roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role_a-fd_fw_3m"/>
+        <metacontrol_unexmin:roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role_b-fd_fw_3m"/>
+        <metacontrol_unexmin:roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role_c-fd_fw_3m"/>
+        <metacontrol_unexmin:solves rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#move_fw"/>
+        <metacontrol_unexmin:confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.925</metacontrol_unexmin:confidence_level_fd>
+        <rdfs:comment>FD to move forward, has a confidence or penelty of 0.925 (see Table 6.1 gonzalo TFM)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg_move_fw_2m-a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg_move_fw_2m-a">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionGrounding"/>
+        <metacontrol_unexmin:hasBindings rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-fg_move_fw_2m-a-role_a"/>
+        <metacontrol_unexmin:hasBindings rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-fg_move_fw_2m-a-role_b"/>
+        <metacontrol_unexmin:realises rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o_move_fw"/>
+        <metacontrol_unexmin:typeFD rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd_move_fw_2m"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg_move_fw_2m-b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg_move_fw_2m-b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionGrounding"/>
+        <metacontrol_unexmin:hasBindings rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-fg_move_fw_2m-b-role_a"/>
+        <metacontrol_unexmin:hasBindings rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-fg_move_fw_2m-b-role_b"/>
+        <metacontrol_unexmin:realises rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o_move_fw"/>
+        <metacontrol_unexmin:typeFD rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd_move_fw_2m"/>
+        <rdfs:comment>FG alternative that should be produced by the reasoner because motors 2 and 4 are a better configuration for the FD to move fw with 2 motors</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#move_fw -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#move_fw">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Function"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o_move_fw -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o_move_fw">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective"/>
+        <metacontrol_unexmin:typeF rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#move_fw"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role_a-fd_fw_2m -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role_a-fd_fw_2m">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+        <metacontrol_unexmin:definition rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-motor_a-fd_fw_2m"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role_a-fd_fw_3m -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role_a-fd_fw_3m">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+        <metacontrol_unexmin:definition rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-motor_a-fd_fw_3m"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role_b-fd_fw_2m -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role_b-fd_fw_2m">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+        <metacontrol_unexmin:definition rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-motor_b-fd_fw_2m"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role_b-fd_fw_3m -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role_b-fd_fw_3m">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+        <metacontrol_unexmin:definition rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-motor_b-fd_fw_3m"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role_c-fd_fw_3m -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role_c-fd_fw_3m">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+        <metacontrol_unexmin:definition rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-motor_c-fd_fw_3m"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
