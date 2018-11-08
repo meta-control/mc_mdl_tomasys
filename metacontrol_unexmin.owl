@@ -1,720 +1,615 @@
 <?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+<rdf:RDF xmlns="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin"
      xml:base="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin"
+     xmlns:metacontrol_unexmin="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin">
-    <Prefix name="" IRI="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Declaration>
-        <Class IRI="#Binding"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Component"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ComponentClass"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ComponentSpecification"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ComponentState"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Function"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FunctionDesign"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FunctionGrounding"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Objective"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Role"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#binding_component"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#binding_role"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#definition"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasBindings"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#needs"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#realises"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#requires"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#roles"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#solves"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#typeC"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#typeF"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#typeFD"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#availability"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#c_status"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#cc_availability"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#confidence_level_fd"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#binding-role1-fd_move_fw_2m13"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#binding-role3-fd_move_fw_2m13"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#cmotor1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#cmotor2"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#cmotor3"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#cmotor4"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#cs-motor1-fd_move_fw_2m13"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#cs-motor3-fd_move_fw_2m13"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#cs-motor2-fd_move_fw_2m24"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#cs-motor4-fd_move_fw_2m24"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#cs-motor1-fd_move_fw_3m123"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#cs-motor2-fd_move_fw_3m123"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#cs-motor3-fd_move_fw_3m123"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#fd_move_fw_2m13"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#fd_move_fw_2m24"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#fd_move_fw_3m123"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#fg-fd_move_fw_2m13"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#motor1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#motor2"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#motor3"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#motor4"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#move_fw"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#o_move_fw"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#role1-fd_move_fw_2m13"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#role3-fd_move_fw_2m13"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#role2-fd_move_fw_2m24"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#role4-fd_move_fw_2m24"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#role1-fd_move_fw_3m123"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#role2-fd_move_fw_3m123"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#role3-fd_move_fw_3m123"/>
-    </Declaration>
-    <SubClassOf>
-        <Class IRI="#ComponentSpecification"/>
-        <Class IRI="#Component"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ComponentState"/>
-        <Class IRI="#Component"/>
-    </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#Binding"/>
-        <Class IRI="#Component"/>
-        <Class IRI="#ComponentClass"/>
-        <Class IRI="#Function"/>
-        <Class IRI="#FunctionDesign"/>
-        <Class IRI="#FunctionGrounding"/>
-        <Class IRI="#Objective"/>
-        <Class IRI="#Role"/>
-    </DisjointClasses>
-    <ClassAssertion>
-        <Class IRI="#Binding"/>
-        <NamedIndividual IRI="#binding-role1-fd_move_fw_2m13"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Binding"/>
-        <NamedIndividual IRI="#binding-role3-fd_move_fw_2m13"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ComponentClass"/>
-        <NamedIndividual IRI="#cmotor1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ComponentClass"/>
-        <NamedIndividual IRI="#cmotor2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ComponentClass"/>
-        <NamedIndividual IRI="#cmotor3"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ComponentClass"/>
-        <NamedIndividual IRI="#cmotor4"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ComponentSpecification"/>
-        <NamedIndividual IRI="#cs-role1-fd_move_fw_2m13"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ComponentSpecification"/>
-        <NamedIndividual IRI="#cs-role3-fd_move_fw_2m13"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ComponentSpecification"/>
-        <NamedIndividual IRI="#cs-role2-fd_move_fw_2m24"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ComponentSpecification"/>
-        <NamedIndividual IRI="#cs-role4-fd_move_fw_2m24"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ComponentSpecification"/>
-        <NamedIndividual IRI="#cs-role1-fd_move_fw_3m123"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ComponentSpecification"/>
-        <NamedIndividual IRI="#cs-role2-fd_move_fw_3m123"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ComponentSpecification"/>
-        <NamedIndividual IRI="#cs-role3-fd_move_fw_3m123"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#FunctionDesign"/>
-        <NamedIndividual IRI="#fd_move_fw_2m13"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#FunctionDesign"/>
-        <NamedIndividual IRI="#fd_move_fw_2m24"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#FunctionDesign"/>
-        <NamedIndividual IRI="#fd_move_fw_3m123"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#FunctionGrounding"/>
-        <NamedIndividual IRI="#fg-fd_move_fw_2m13-a"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ComponentState"/>
-        <NamedIndividual IRI="#motor1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ComponentState"/>
-        <NamedIndividual IRI="#motor2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ComponentState"/>
-        <NamedIndividual IRI="#motor3"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ComponentState"/>
-        <NamedIndividual IRI="#motor4"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Function"/>
-        <NamedIndividual IRI="#move_fw"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Objective"/>
-        <NamedIndividual IRI="#o_move_fw"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Role"/>
-        <NamedIndividual IRI="#role1-fd_move_fw_2m13"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Role"/>
-        <NamedIndividual IRI="#role3-fd_move_fw_2m13"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Role"/>
-        <NamedIndividual IRI="#role2-fd_move_fw_2m24"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Role"/>
-        <NamedIndividual IRI="#role4-fd_move_fw_2m24"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Role"/>
-        <NamedIndividual IRI="#role1-fd_move_fw_3m123"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Role"/>
-        <NamedIndividual IRI="#role2-fd_move_fw_3m123"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Role"/>
-        <NamedIndividual IRI="#role3-fd_move_fw_3m123"/>
-    </ClassAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#binding_component"/>
-        <NamedIndividual IRI="#binding-role1-fd_move_fw_2m13"/>
-        <NamedIndividual IRI="#motor1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#binding_role"/>
-        <NamedIndividual IRI="#binding-role1-fd_move_fw_2m13"/>
-        <NamedIndividual IRI="#role1-fd_move_fw_2m13"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#binding_component"/>
-        <NamedIndividual IRI="#binding-role3-fd_move_fw_2m13"/>
-        <NamedIndividual IRI="#motor3"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#binding_role"/>
-        <NamedIndividual IRI="#binding-role3-fd_move_fw_2m13"/>
-        <NamedIndividual IRI="#role3-fd_move_fw_2m13"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#typeC"/>
-        <NamedIndividual IRI="#cs-motor1-fd_move_fw_2m13"/>
-        <NamedIndividual IRI="#cmotor1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#typeC"/>
-        <NamedIndividual IRI="#cs-motor3-fd_move_fw_2m13"/>
-        <NamedIndividual IRI="#cmotor3"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#typeC"/>
-        <NamedIndividual IRI="#cs-motor2-fd_move_fw_2m24"/>
-        <NamedIndividual IRI="#cmotor2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#typeC"/>
-        <NamedIndividual IRI="#cs-motor4-fd_move_fw_2m24"/>
-        <NamedIndividual IRI="#cmotor4"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#typeC"/>
-        <NamedIndividual IRI="#cs-motor1-fd_move_fw_3m123"/>
-        <NamedIndividual IRI="#cmotor1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#typeC"/>
-        <NamedIndividual IRI="#cs-motor2-fd_move_fw_3m123"/>
-        <NamedIndividual IRI="#cmotor2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#typeC"/>
-        <NamedIndividual IRI="#cs-motor3-fd_move_fw_3m123"/>
-        <NamedIndividual IRI="#cmotor3"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#roles"/>
-        <NamedIndividual IRI="#fd_move_fw_2m13"/>
-        <NamedIndividual IRI="#role1-fd_move_fw_2m13"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#roles"/>
-        <NamedIndividual IRI="#fd_move_fw_2m13"/>
-        <NamedIndividual IRI="#role3-fd_move_fw_2m13"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#solves"/>
-        <NamedIndividual IRI="#fd_move_fw_2m13"/>
-        <NamedIndividual IRI="#move_fw"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#solves"/>
-        <NamedIndividual IRI="#fd_move_fw_2m24"/>
-        <NamedIndividual IRI="#move_fw"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#solves"/>
-        <NamedIndividual IRI="#fd_move_fw_3m123"/>
-        <NamedIndividual IRI="#move_fw"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasBindings"/>
-        <NamedIndividual IRI="#fg-fd_move_fw_2m13"/>
-        <NamedIndividual IRI="#binding-role1-fd_move_fw_2m13"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasBindings"/>
-        <NamedIndividual IRI="#fg-fd_move_fw_2m13"/>
-        <NamedIndividual IRI="#binding-role3-fd_move_fw_2m13"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#realises"/>
-        <NamedIndividual IRI="#fg_move_fw_2m-b"/>
-        <NamedIndividual IRI="#o_move_fw"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#typeFD"/>
-        <NamedIndividual IRI="#fg-fd_move_fw_2m13"/>
-        <NamedIndividual IRI="#fd_move_fw_2m13"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#typeC"/>
-        <NamedIndividual IRI="#motor1"/>
-        <NamedIndividual IRI="#cmotor1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#typeC"/>
-        <NamedIndividual IRI="#motor2"/>
-        <NamedIndividual IRI="#cmotor2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#typeC"/>
-        <NamedIndividual IRI="#motor3"/>
-        <NamedIndividual IRI="#cmotor3"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#typeC"/>
-        <NamedIndividual IRI="#motor4"/>
-        <NamedIndividual IRI="#cmotor4"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#typeF"/>
-        <NamedIndividual IRI="#o_move_fw"/>
-        <NamedIndividual IRI="#move_fw"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#realises"/>
-        <NamedIndividual IRI="#fg-fd_move_fw_2m13"/>
-        <NamedIndividual IRI="#o_move_fw"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#definition"/>
-        <NamedIndividual IRI="#role1-fd_move_fw_2m13"/>
-        <NamedIndividual IRI="#cs-role1-fd_move_fw_2m13"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#definition"/>
-        <NamedIndividual IRI="#role3-fd_move_fw_2m13"/>
-        <NamedIndividual IRI="#cs-role3-fd_move_fw_2m13"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#definition"/>
-        <NamedIndividual IRI="#role2-fd_move_fw_2m24"/>
-        <NamedIndividual IRI="#cs-role2-fd_move_fw_2m24"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#definition"/>
-        <NamedIndividual IRI="#role4-fd_move_fw_2m24"/>
-        <NamedIndividual IRI="#cs-role4-fd_move_fw_2m24"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#definition"/>
-        <NamedIndividual IRI="#role1-fd_move_fw_3m123"/>
-        <NamedIndividual IRI="#cs-role1-fd_move_fw_3m123"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#definition"/>
-        <NamedIndividual IRI="#role2-fd_move_fw_3m123"/>
-        <NamedIndividual IRI="#cs-role2-fd_move_fw_3m123"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#definition"/>
-        <NamedIndividual IRI="#role3-fd_move_fw_3m123"/>
-        <NamedIndividual IRI="#cs-role3-fd_move_fw_3m123"/>
-    </ObjectPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#confidence_level_fd"/>
-        <NamedIndividual IRI="#fd_move_fw_2m13"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.9</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#confidence_level_fd"/>
-        <NamedIndividual IRI="#fd_move_fw_2m24"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#confidence_level_fd"/>
-        <NamedIndividual IRI="#fd_move_fw_3m123"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.925</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#c_status"/>
-        <NamedIndividual IRI="#motor1"/>
-        <Literal>OK</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#c_status"/>
-        <NamedIndividual IRI="#motor2"/>
-        <Literal>OK</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#c_status"/>
-        <NamedIndividual IRI="#motor3"/>
-        <Literal>OK</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#c_status"/>
-        <NamedIndividual IRI="#motor4"/>
-        <Literal>OK</Literal>
-    </DataPropertyAssertion>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#binding_component"/>
-        <Class IRI="#Binding"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#binding_role"/>
-        <Class IRI="#Binding"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#definition"/>
-        <Class IRI="#Role"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasBindings"/>
-        <Class IRI="#FunctionGrounding"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#needs"/>
-        <Class IRI="#FunctionGrounding"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#realises"/>
-        <Class IRI="#FunctionGrounding"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#requires"/>
-        <Class IRI="#FunctionDesign"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#roles"/>
-        <Class IRI="#FunctionDesign"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#solves"/>
-        <Class IRI="#FunctionDesign"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#typeC"/>
-        <Class IRI="#Component"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#typeF"/>
-        <Class IRI="#Objective"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#typeFD"/>
-        <Class IRI="#FunctionGrounding"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#binding_component"/>
-        <Class IRI="#Component"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#binding_role"/>
-        <Class IRI="#Role"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#definition"/>
-        <Class IRI="#ComponentSpecification"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasBindings"/>
-        <Class IRI="#Binding"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#needs"/>
-        <Class IRI="#Objective"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#realises"/>
-        <Class IRI="#Objective"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#requires"/>
-        <Class IRI="#Function"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#roles"/>
-        <Class IRI="#Role"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#solves"/>
-        <Class IRI="#Function"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#typeC"/>
-        <Class IRI="#ComponentClass"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#typeF"/>
-        <Class IRI="#Function"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#typeFD"/>
-        <Class IRI="#FunctionDesign"/>
-    </ObjectPropertyRange>
-    <DataPropertyDomain>
-        <DataProperty IRI="#availability"/>
-        <Class IRI="#ComponentClass"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#availability"/>
-        <Class IRI="#FunctionDesign"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#c_status"/>
-        <Class IRI="#ComponentState"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#cc_availability"/>
-        <Class IRI="#ComponentClass"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#confidence_level_fd"/>
-        <Class IRI="#FunctionDesign"/>
-    </DataPropertyDomain>
-    <DataPropertyRange>
-        <DataProperty IRI="#availability"/>
-        <Datatype abbreviatedIRI="xsd:boolean"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#c_status"/>
-        <DataOneOf>
-            <Literal>ERROR</Literal>
-            <Literal>OK</Literal>
-        </DataOneOf>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#cc_availability"/>
-        <Datatype abbreviatedIRI="xsd:boolean"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#confidence_level_fd"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
-    </DataPropertyRange>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#availability</IRI>
-        <Literal>a FunctionDesign might be available (TRUE) or not (FALSE)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#cc_availability</IRI>
-        <Literal>there is engineering information about a Component Class that may dy-
-namically vary during system operation, and that is the availability [0, 1] of that type of component. For example, a sensor can be restarted/re-deployed to fix a wrong initial configuration of one of its parameters. However, no matter what reconfiguration we may carry, if there is only one physical sensor in the system, and it is broken, the component instance will not work: it is unavailable.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#definition</IRI>
-        <Literal>a Role consists of the definition of a component specification for a Function Design</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#fd_move_fw_2m13</IRI>
-        <Literal>FD to move forward with 2 motors 1 and 3 since it is not the pref configuration (see Table 4.3 gonzalo TFM) we give confidence 0.8</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#fd_move_fw_3m123</IRI>
-        <Literal>FD to move forward, has a confidence or penelty of 0.925 (see Table 5.1 gonzalo TFM)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#fg_move_fw_2m-b</IRI>
-        <Literal>FG alternative that should be produced by the reasoner because motors 2 and 4 are a better configuration for the FD to move fw with 2 motors</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#needs</IRI>
-        <Literal>A FunctionGrounding may need an Objective to be solved (by someone else) as a requirement to realise its target Objective</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#realises</IRI>
-        <Literal>A FunctionGrounding is realising an Objective</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#requires</IRI>
-        <Literal>A FunctionDesign may require another Function to be solved (by someone else) as a requirement to solve its target Function</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#roles</IRI>
-        <Literal>A Function Design consists of roles</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#solves</IRI>
-        <Literal>a FunctionDesign solves a Function</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#typeF</IRI>
-        <Literal>relates a FunctionGrounding/Objective with a FunctionDesign/Function</Literal>
-    </AnnotationAssertion>
-</Ontology>
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin"/>
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding_component -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding_component">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding_role -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding_role">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#definition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#definition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+        <rdfs:comment>a Role consists of the definition of a component specification for a Function Design</rdfs:comment>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#hasBindings -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#hasBindings">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionGrounding"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#needs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#needs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionGrounding"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective"/>
+        <rdfs:comment>A FunctionGrounding may need an Objective to be solved (by someone else) as a requirement to realise its target Objective</rdfs:comment>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#realises -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#realises">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionGrounding"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective"/>
+        <rdfs:comment>A FunctionGrounding is realising an Objective</rdfs:comment>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#requires -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#requires">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Function"/>
+        <rdfs:comment>A FunctionDesign may require another Function to be solved (by someone else) as a requirement to solve its target Function</rdfs:comment>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#roles -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#roles">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+        <rdfs:comment>A Function Design consists of roles</rdfs:comment>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#solves -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#solves">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Function"/>
+        <rdfs:comment>a FunctionDesign solves a Function</rdfs:comment>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#typeC -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#typeC">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#typeF -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#typeF">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Function"/>
+        <rdfs:comment>relates a FunctionGrounding/Objective with a FunctionDesign/Function</rdfs:comment>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#typeFD -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#typeFD">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionGrounding"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
+    </owl:ObjectProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#availability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#availability">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>a FunctionDesign might be available (TRUE) or not (FALSE)</rdfs:comment>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#c_status -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#c_status">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>ERROR</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>OK</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cc_availability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cc_availability">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>there is engineering information about a Component Class that may dy-
+namically vary during system operation, and that is the availability [0, 1] of that type of component. For example, a sensor can be restarted/re-deployed to fix a wrong initial configuration of one of its parameters. However, no matter what reconfiguration we may carry, if there is only one physical sensor in the system, and it is broken, the component instance will not work: it is unavailable.</rdfs:comment>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#confidence_level_fd -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#confidence_level_fd">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Function"/>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionGrounding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionGrounding"/>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective"/>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-role2-fd_move_fw_2m24 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-role2-fd_move_fw_2m24">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
+        <metacontrol_unexmin:binding_component rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor2"/>
+        <metacontrol_unexmin:binding_role rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role2-fd_move_fw_2m24"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-role4-fd_move_fw_2m24 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-role4-fd_move_fw_2m24">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
+        <metacontrol_unexmin:binding_component rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor4"/>
+        <metacontrol_unexmin:binding_role rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role4-fd_move_fw_2m24"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role1-fd_move_fw_2m13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role1-fd_move_fw_2m13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role1-fd_move_fw_3m123 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role1-fd_move_fw_3m123">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role2-fd_move_fw_2m24 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role2-fd_move_fw_2m24">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role2-fd_move_fw_3m123 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role2-fd_move_fw_3m123">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role3-fd_move_fw_2m13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role3-fd_move_fw_2m13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role3-fd_move_fw_3m123 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role3-fd_move_fw_3m123">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role4-fd_move_fw_2m24 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role4-fd_move_fw_2m24">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd_move_fw_2m13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd_move_fw_2m13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
+        <metacontrol_unexmin:roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role1-fd_move_fw_2m13"/>
+        <metacontrol_unexmin:roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role3-fd_move_fw_2m13"/>
+        <metacontrol_unexmin:solves rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#move_fw"/>
+        <metacontrol_unexmin:confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9</metacontrol_unexmin:confidence_level_fd>
+        <rdfs:comment>FD to move forward with 2 motors 1 and 3 since it is not the pref configuration (see Table 4.3 gonzalo TFM) we give confidence 0.8</rdfs:comment>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd_move_fw_2m24 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd_move_fw_2m24">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
+        <metacontrol_unexmin:roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role2-fd_move_fw_2m24"/>
+        <metacontrol_unexmin:roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role4-fd_move_fw_2m24"/>
+        <metacontrol_unexmin:solves rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#move_fw"/>
+        <metacontrol_unexmin:confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</metacontrol_unexmin:confidence_level_fd>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd_move_fw_3m123 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd_move_fw_3m123">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
+        <metacontrol_unexmin:roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role1-fd_move_fw_3m123"/>
+        <metacontrol_unexmin:roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role2-fd_move_fw_3m123"/>
+        <metacontrol_unexmin:roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role3-fd_move_fw_3m123"/>
+        <metacontrol_unexmin:solves rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#move_fw"/>
+        <metacontrol_unexmin:confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.925</metacontrol_unexmin:confidence_level_fd>
+        <rdfs:comment>FD to move forward, has a confidence or penelty of 0.925 (see Table 5.1 gonzalo TFM)</rdfs:comment>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg-fd_move_fw_2m24 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg-fd_move_fw_2m24">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionGrounding"/>
+        <metacontrol_unexmin:hasBindings rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-role2-fd_move_fw_2m24"/>
+        <metacontrol_unexmin:hasBindings rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-role4-fd_move_fw_2m24"/>
+        <metacontrol_unexmin:realises rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o_move_fw"/>
+        <metacontrol_unexmin:typeFD rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd_move_fw_2m24"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
+        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor1"/>
+        <metacontrol_unexmin:c_status>OK</metacontrol_unexmin:c_status>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
+        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor2"/>
+        <metacontrol_unexmin:c_status>OK</metacontrol_unexmin:c_status>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
+        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor3"/>
+        <metacontrol_unexmin:c_status>OK</metacontrol_unexmin:c_status>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
+        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor4"/>
+        <metacontrol_unexmin:c_status>OK</metacontrol_unexmin:c_status>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#move_fw -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#move_fw">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Function"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o_move_fw -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o_move_fw">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective"/>
+        <metacontrol_unexmin:typeF rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#move_fw"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role1-fd_move_fw_2m13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role1-fd_move_fw_2m13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+        <metacontrol_unexmin:definition rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role1-fd_move_fw_2m13"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role1-fd_move_fw_3m123 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role1-fd_move_fw_3m123">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+        <metacontrol_unexmin:definition rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role1-fd_move_fw_3m123"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role2-fd_move_fw_2m24 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role2-fd_move_fw_2m24">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+        <metacontrol_unexmin:definition rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role2-fd_move_fw_2m24"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role2-fd_move_fw_3m123 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role2-fd_move_fw_3m123">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+        <metacontrol_unexmin:definition rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role2-fd_move_fw_3m123"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role3-fd_move_fw_2m13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role3-fd_move_fw_2m13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+        <metacontrol_unexmin:definition rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role3-fd_move_fw_2m13"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role3-fd_move_fw_3m123 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role3-fd_move_fw_3m123">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+        <metacontrol_unexmin:definition rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role3-fd_move_fw_3m123"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role4-fd_move_fw_2m24 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role4-fd_move_fw_2m24">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+        <metacontrol_unexmin:definition rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role4-fd_move_fw_2m24"/>
+    </owl:NamedIndividual>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Function"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionGrounding"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
 
 
 
