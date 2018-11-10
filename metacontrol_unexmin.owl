@@ -180,6 +180,31 @@
     
 
 
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#b_status -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#b_status">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>ERROR</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>OK</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#c_status -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#c_status">
@@ -368,6 +393,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
         <metacontrol_unexmin:binding_component rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor2"/>
         <metacontrol_unexmin:binding_role rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role2-fd_move_fw_2m24"/>
+        <metacontrol_unexmin:b_status>OK</metacontrol_unexmin:b_status>
     </owl:NamedIndividual>
     
 
@@ -378,6 +404,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
         <metacontrol_unexmin:binding_component rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor4"/>
         <metacontrol_unexmin:binding_role rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role4-fd_move_fw_2m24"/>
+        <metacontrol_unexmin:b_status>OK</metacontrol_unexmin:b_status>
     </owl:NamedIndividual>
     
 
@@ -567,7 +594,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
         <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor4"/>
-        <metacontrol_unexmin:c_status>OK</metacontrol_unexmin:c_status>
+        <metacontrol_unexmin:c_status>ERROR</metacontrol_unexmin:c_status>
     </owl:NamedIndividual>
     
 
@@ -684,11 +711,135 @@ namically vary during system operation, and that is the availability [0, 1] of t
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="#o">
+    <rdf:Description rdf:about="#b">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="#c">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="#fg">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="#o">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Component in a binding in ERROR -&gt; binding in ERROR</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding_component"/>
+                        <swrl:argument1 rdf:resource="#b"/>
+                        <swrl:argument2 rdf:resource="#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#c_status"/>
+                                <swrl:argument1 rdf:resource="#c"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ERROR</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
+                                        <swrl:argument1 rdf:resource="#b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#b_status"/>
+                        <swrl:argument1 rdf:resource="#b"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ERROR</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">binding in ERROR in an fg -&gt; fg in ERROR</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#hasBindings"/>
+                        <swrl:argument1 rdf:resource="#fg"/>
+                        <swrl:argument2 rdf:resource="#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#b_status"/>
+                                <swrl:argument1 rdf:resource="#b"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ERROR</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
+                                        <swrl:argument1 rdf:resource="#b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg_status"/>
+                        <swrl:argument1 rdf:resource="#fg"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ERROR</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
