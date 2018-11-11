@@ -172,6 +172,7 @@
     <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#availability -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#availability">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
@@ -184,23 +185,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#b_status">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
-        <rdfs:range>
-            <rdfs:Datatype>
-                <owl:oneOf>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                        <rdf:first>ERROR</rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first>OK</rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </owl:oneOf>
-            </rdfs:Datatype>
-        </rdfs:range>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
@@ -210,23 +195,7 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#c_status">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
-        <rdfs:range>
-            <rdfs:Datatype>
-                <owl:oneOf>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                        <rdf:first>ERROR</rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first>OK</rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </owl:oneOf>
-            </rdfs:Datatype>
-        </rdfs:range>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
@@ -234,6 +203,7 @@
     <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cc_availability -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cc_availability">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment>there is engineering information about a Component Class that may dy-
@@ -245,6 +215,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#confidence_level_fd -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#confidence_level_fd">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
@@ -254,24 +225,9 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg_status -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg_status">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionGrounding"/>
-        <rdfs:range>
-            <rdfs:Datatype>
-                <owl:oneOf>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                        <rdf:first>ERROR</rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first>OK</rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </owl:oneOf>
-            </rdfs:Datatype>
-        </rdfs:range>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
@@ -279,24 +235,9 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o_status -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o_status">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective"/>
-        <rdfs:range>
-            <rdfs:Datatype>
-                <owl:oneOf>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                        <rdf:first>ERROR</rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first>OK</rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </owl:oneOf>
-            </rdfs:Datatype>
-        </rdfs:range>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
@@ -393,7 +334,6 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
         <metacontrol_unexmin:binding_component rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor2"/>
         <metacontrol_unexmin:binding_role rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role2-fd_move_fw_2m24"/>
-        <metacontrol_unexmin:b_status>OK</metacontrol_unexmin:b_status>
     </owl:NamedIndividual>
     
 
@@ -404,7 +344,6 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
         <metacontrol_unexmin:binding_component rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor4"/>
         <metacontrol_unexmin:binding_role rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role4-fd_move_fw_2m24"/>
-        <metacontrol_unexmin:b_status>OK</metacontrol_unexmin:b_status>
     </owl:NamedIndividual>
     
 
@@ -561,7 +500,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
         <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor1"/>
-        <metacontrol_unexmin:c_status>OK</metacontrol_unexmin:c_status>
+        <metacontrol_unexmin:c_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</metacontrol_unexmin:c_status>
     </owl:NamedIndividual>
     
 
@@ -572,7 +511,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
         <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor2"/>
-        <metacontrol_unexmin:c_status>OK</metacontrol_unexmin:c_status>
+        <metacontrol_unexmin:c_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</metacontrol_unexmin:c_status>
     </owl:NamedIndividual>
     
 
@@ -583,7 +522,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
         <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor3"/>
-        <metacontrol_unexmin:c_status>OK</metacontrol_unexmin:c_status>
+        <metacontrol_unexmin:c_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</metacontrol_unexmin:c_status>
     </owl:NamedIndividual>
     
 
@@ -594,7 +533,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
         <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor4"/>
-        <metacontrol_unexmin:c_status>ERROR</metacontrol_unexmin:c_status>
+        <metacontrol_unexmin:c_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</metacontrol_unexmin:c_status>
     </owl:NamedIndividual>
     
 
@@ -725,7 +664,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Component in a binding in ERROR -&gt; binding in ERROR</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Component in a binding in ERROR/false -&gt; binding in ERROR/false</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
@@ -747,7 +686,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#c_status"/>
                                 <swrl:argument1 rdf:resource="#c"/>
-                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ERROR</swrl:argument2>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -775,7 +714,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#b_status"/>
                         <swrl:argument1 rdf:resource="#b"/>
-                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ERROR</swrl:argument2>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -784,7 +723,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">binding in ERROR in an fg -&gt; fg in ERROR</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">binding in ERROR/false in an fg -&gt; fg in ERROR/false</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S3</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
@@ -806,7 +745,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#b_status"/>
                                 <swrl:argument1 rdf:resource="#b"/>
-                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ERROR</swrl:argument2>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -834,7 +773,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg_status"/>
                         <swrl:argument1 rdf:resource="#fg"/>
-                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ERROR</swrl:argument2>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -843,7 +782,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fg in error -&gt; objective in error</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fg in error/false -&gt; objective in error/false</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
@@ -851,9 +790,10 @@ namically vary during system operation, and that is the availability [0, 1] of t
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective"/>
-                        <swrl:argument1 rdf:resource="#o"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg_status"/>
+                        <swrl:argument1 rdf:resource="#fg"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -861,10 +801,9 @@ namically vary during system operation, and that is the availability [0, 1] of t
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg_status"/>
-                                <swrl:argument1 rdf:resource="#fg"/>
-                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ERROR</swrl:argument2>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective"/>
+                                <swrl:argument1 rdf:resource="#o"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -892,7 +831,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o_status"/>
                         <swrl:argument1 rdf:resource="#o"/>
-                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ERROR</swrl:argument2>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
