@@ -60,17 +60,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#definition -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#definition">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
-        <rdfs:comment>a Role consists of the definition of a component specification for a Function Design</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#hasBindings -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#hasBindings">
@@ -106,6 +95,17 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Function"/>
         <rdfs:comment>A FunctionDesign may require another Function to be solved (by someone else) as a requirement to solve its target Function</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#roleDef -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#roleDef">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+        <rdfs:comment>a Role consists of the definition of a component specification for a Function Design</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -169,18 +169,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#availability -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#availability">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:comment>a FunctionDesign might be available (TRUE) or not (FALSE)</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#b_status -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#b_status">
@@ -203,7 +191,6 @@
     <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cc_availability -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cc_availability">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment>there is engineering information about a Component Class that may dy-
@@ -215,7 +202,6 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#confidence_level_fd -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#confidence_level_fd">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
@@ -225,7 +211,6 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg_status -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg_status">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionGrounding"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
@@ -235,9 +220,27 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o_status -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o_status">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#realisability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#realisability">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#unique_comp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#unique_comp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>if a Component Class is unique, then only a single instance may exist, and if in error, then the Class becomes unavailable</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -344,6 +347,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
         <metacontrol_unexmin:binding_component rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor4"/>
         <metacontrol_unexmin:binding_role rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role4-fd_move_fw_2m24"/>
+        <metacontrol_unexmin:b_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</metacontrol_unexmin:b_status>
     </owl:NamedIndividual>
     
 
@@ -352,6 +356,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor1">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
+        <metacontrol_unexmin:unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</metacontrol_unexmin:unique_comp>
     </owl:NamedIndividual>
     
 
@@ -360,6 +365,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor2">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
+        <metacontrol_unexmin:unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</metacontrol_unexmin:unique_comp>
     </owl:NamedIndividual>
     
 
@@ -368,6 +374,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor3">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
+        <metacontrol_unexmin:unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</metacontrol_unexmin:unique_comp>
     </owl:NamedIndividual>
     
 
@@ -376,6 +383,8 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor4">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
+        <metacontrol_unexmin:cc_availability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</metacontrol_unexmin:cc_availability>
+        <metacontrol_unexmin:unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</metacontrol_unexmin:unique_comp>
     </owl:NamedIndividual>
     
 
@@ -385,6 +394,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role1-fd_move_fw_2m13">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor1"/>
     </owl:NamedIndividual>
     
 
@@ -394,6 +404,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role1-fd_move_fw_3m123">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor1"/>
     </owl:NamedIndividual>
     
 
@@ -403,6 +414,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role2-fd_move_fw_2m24">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor2"/>
     </owl:NamedIndividual>
     
 
@@ -412,6 +424,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role2-fd_move_fw_3m123">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor2"/>
     </owl:NamedIndividual>
     
 
@@ -421,6 +434,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role3-fd_move_fw_2m13">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor3"/>
     </owl:NamedIndividual>
     
 
@@ -430,6 +444,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role3-fd_move_fw_3m123">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor3"/>
     </owl:NamedIndividual>
     
 
@@ -439,6 +454,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role4-fd_move_fw_2m24">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor4"/>
     </owl:NamedIndividual>
     
 
@@ -464,6 +480,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <metacontrol_unexmin:roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role4-fd_move_fw_2m24"/>
         <metacontrol_unexmin:solves rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#move_fw"/>
         <metacontrol_unexmin:confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</metacontrol_unexmin:confidence_level_fd>
+        <metacontrol_unexmin:realisability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</metacontrol_unexmin:realisability>
     </owl:NamedIndividual>
     
 
@@ -490,6 +507,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <metacontrol_unexmin:hasBindings rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-role4-fd_move_fw_2m24"/>
         <metacontrol_unexmin:realises rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o_move_fw"/>
         <metacontrol_unexmin:typeFD rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd_move_fw_2m24"/>
+        <metacontrol_unexmin:fg_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</metacontrol_unexmin:fg_status>
     </owl:NamedIndividual>
     
 
@@ -551,6 +569,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o_move_fw">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective"/>
         <metacontrol_unexmin:typeF rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#move_fw"/>
+        <metacontrol_unexmin:o_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</metacontrol_unexmin:o_status>
     </owl:NamedIndividual>
     
 
@@ -559,7 +578,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role1-fd_move_fw_2m13">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
-        <metacontrol_unexmin:definition rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role1-fd_move_fw_2m13"/>
+        <metacontrol_unexmin:roleDef rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role1-fd_move_fw_2m13"/>
     </owl:NamedIndividual>
     
 
@@ -568,7 +587,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role1-fd_move_fw_3m123">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
-        <metacontrol_unexmin:definition rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role1-fd_move_fw_3m123"/>
+        <metacontrol_unexmin:roleDef rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role1-fd_move_fw_3m123"/>
     </owl:NamedIndividual>
     
 
@@ -577,7 +596,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role2-fd_move_fw_2m24">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
-        <metacontrol_unexmin:definition rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role2-fd_move_fw_2m24"/>
+        <metacontrol_unexmin:roleDef rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role2-fd_move_fw_2m24"/>
     </owl:NamedIndividual>
     
 
@@ -586,7 +605,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role2-fd_move_fw_3m123">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
-        <metacontrol_unexmin:definition rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role2-fd_move_fw_3m123"/>
+        <metacontrol_unexmin:roleDef rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role2-fd_move_fw_3m123"/>
     </owl:NamedIndividual>
     
 
@@ -595,7 +614,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role3-fd_move_fw_2m13">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
-        <metacontrol_unexmin:definition rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role3-fd_move_fw_2m13"/>
+        <metacontrol_unexmin:roleDef rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role3-fd_move_fw_2m13"/>
     </owl:NamedIndividual>
     
 
@@ -604,7 +623,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role3-fd_move_fw_3m123">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
-        <metacontrol_unexmin:definition rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role3-fd_move_fw_3m123"/>
+        <metacontrol_unexmin:roleDef rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role3-fd_move_fw_3m123"/>
     </owl:NamedIndividual>
     
 
@@ -613,7 +632,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role4-fd_move_fw_2m24">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
-        <metacontrol_unexmin:definition rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role4-fd_move_fw_2m24"/>
+        <metacontrol_unexmin:roleDef rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role4-fd_move_fw_2m24"/>
     </owl:NamedIndividual>
     
 
@@ -657,6 +676,18 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="#fg">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="#cc">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="#cs">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="#fd">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="#o">
@@ -773,6 +804,199 @@ namically vary during system operation, and that is the availability [0, 1] of t
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg_status"/>
                         <swrl:argument1 rdf:resource="#fg"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">if a component of a unique ComponentClass is in ERROR, the class is unavailable</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
+                        <swrl:argument1 rdf:resource="#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#unique_comp"/>
+                                <swrl:argument1 rdf:resource="#cc"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#typeC"/>
+                                        <swrl:argument1 rdf:resource="#c"/>
+                                        <swrl:argument2 rdf:resource="#cc"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#c_status"/>
+                                                <swrl:argument1 rdf:resource="#c"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cc_availability"/>
+                        <swrl:argument1 rdf:resource="#cc"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">if class for a role unavailable -&gt; fd unavailable</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#roleDef"/>
+                        <swrl:argument1 rdf:resource="#r"/>
+                        <swrl:argument2 rdf:resource="#cs"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
+                                <swrl:argument1 rdf:resource="#cc"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#typeC"/>
+                                        <swrl:argument1 rdf:resource="#cs"/>
+                                        <swrl:argument2 rdf:resource="#cc"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cc_availability"/>
+                                                <swrl:argument1 rdf:resource="#cc"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#roles"/>
+                                                        <swrl:argument1 rdf:resource="#fd"/>
+                                                        <swrl:argument2 rdf:resource="#r"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
+                                                                <swrl:argument1 rdf:resource="#fd"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+                                                                        <swrl:argument1 rdf:resource="#r"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+                                                                                <swrl:argument1 rdf:resource="#cs"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#realisability"/>
+                        <swrl:argument1 rdf:resource="#fd"/>
                         <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
                     </rdf:Description>
                 </rdf:first>
