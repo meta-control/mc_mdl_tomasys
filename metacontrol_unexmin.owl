@@ -347,7 +347,6 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
         <metacontrol_unexmin:binding_component rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor4"/>
         <metacontrol_unexmin:binding_role rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role4-fd_move_fw_2m24"/>
-        <metacontrol_unexmin:b_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</metacontrol_unexmin:b_status>
     </owl:NamedIndividual>
     
 
@@ -383,7 +382,6 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor4">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
-        <metacontrol_unexmin:cc_availability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</metacontrol_unexmin:cc_availability>
         <metacontrol_unexmin:unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</metacontrol_unexmin:unique_comp>
     </owl:NamedIndividual>
     
@@ -480,7 +478,6 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <metacontrol_unexmin:roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role4-fd_move_fw_2m24"/>
         <metacontrol_unexmin:solves rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#move_fw"/>
         <metacontrol_unexmin:confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</metacontrol_unexmin:confidence_level_fd>
-        <metacontrol_unexmin:realisability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</metacontrol_unexmin:realisability>
     </owl:NamedIndividual>
     
 
@@ -507,7 +504,6 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <metacontrol_unexmin:hasBindings rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-role4-fd_move_fw_2m24"/>
         <metacontrol_unexmin:realises rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o_move_fw"/>
         <metacontrol_unexmin:typeFD rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd_move_fw_2m24"/>
-        <metacontrol_unexmin:fg_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</metacontrol_unexmin:fg_status>
     </owl:NamedIndividual>
     
 
@@ -569,7 +565,6 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o_move_fw">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective"/>
         <metacontrol_unexmin:typeF rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#move_fw"/>
-        <metacontrol_unexmin:o_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</metacontrol_unexmin:o_status>
     </owl:NamedIndividual>
     
 
@@ -669,28 +664,28 @@ namically vary during system operation, and that is the availability [0, 1] of t
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="#b">
+    <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#b">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="#c">
+    <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#c">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="#fg">
+    <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="#cc">
+    <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cc">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="#r">
+    <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#r">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="#cs">
+    <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="#fd">
+    <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="#o">
+    <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description>
@@ -703,10 +698,9 @@ namically vary during system operation, and that is the availability [0, 1] of t
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding_component"/>
-                        <swrl:argument1 rdf:resource="#b"/>
-                        <swrl:argument2 rdf:resource="#c"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#b"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -716,7 +710,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#c_status"/>
-                                <swrl:argument1 rdf:resource="#c"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#c"/>
                                 <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
                             </rdf:Description>
                         </rdf:first>
@@ -725,9 +719,10 @@ namically vary during system operation, and that is the availability [0, 1] of t
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
-                                        <swrl:argument1 rdf:resource="#b"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding_component"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#b"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#c"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -744,7 +739,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#b_status"/>
-                        <swrl:argument1 rdf:resource="#b"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#b"/>
                         <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
                     </rdf:Description>
                 </rdf:first>
@@ -762,10 +757,9 @@ namically vary during system operation, and that is the availability [0, 1] of t
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#hasBindings"/>
-                        <swrl:argument1 rdf:resource="#fg"/>
-                        <swrl:argument2 rdf:resource="#b"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#b"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -773,10 +767,10 @@ namically vary during system operation, and that is the availability [0, 1] of t
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#b_status"/>
-                                <swrl:argument1 rdf:resource="#b"/>
-                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#hasBindings"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#b"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -784,9 +778,10 @@ namically vary during system operation, and that is the availability [0, 1] of t
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
-                                        <swrl:argument1 rdf:resource="#b"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#b_status"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#b"/>
+                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -803,7 +798,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg_status"/>
-                        <swrl:argument1 rdf:resource="#fg"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg"/>
                         <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
                     </rdf:Description>
                 </rdf:first>
@@ -821,9 +816,10 @@ namically vary during system operation, and that is the availability [0, 1] of t
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
-                        <swrl:argument1 rdf:resource="#c"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#unique_comp"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cc"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -831,10 +827,10 @@ namically vary during system operation, and that is the availability [0, 1] of t
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#unique_comp"/>
-                                <swrl:argument1 rdf:resource="#cc"/>
-                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#typeC"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#c"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cc"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -842,10 +838,9 @@ namically vary during system operation, and that is the availability [0, 1] of t
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#typeC"/>
-                                        <swrl:argument1 rdf:resource="#c"/>
-                                        <swrl:argument2 rdf:resource="#cc"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#c"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -855,7 +850,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#c_status"/>
-                                                <swrl:argument1 rdf:resource="#c"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#c"/>
                                                 <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
                                             </rdf:Description>
                                         </rdf:first>
@@ -875,7 +870,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cc_availability"/>
-                        <swrl:argument1 rdf:resource="#cc"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cc"/>
                         <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
                     </rdf:Description>
                 </rdf:first>
@@ -893,10 +888,9 @@ namically vary during system operation, and that is the availability [0, 1] of t
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#roleDef"/>
-                        <swrl:argument1 rdf:resource="#r"/>
-                        <swrl:argument2 rdf:resource="#cs"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -905,8 +899,8 @@ namically vary during system operation, and that is the availability [0, 1] of t
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
-                                <swrl:argument1 rdf:resource="#cc"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -914,10 +908,10 @@ namically vary during system operation, and that is the availability [0, 1] of t
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#typeC"/>
-                                        <swrl:argument1 rdf:resource="#cs"/>
-                                        <swrl:argument2 rdf:resource="#cc"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cc_availability"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cc"/>
+                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -925,10 +919,9 @@ namically vary during system operation, and that is the availability [0, 1] of t
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cc_availability"/>
-                                                <swrl:argument1 rdf:resource="#cc"/>
-                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#r"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -937,9 +930,9 @@ namically vary during system operation, and that is the availability [0, 1] of t
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#roles"/>
-                                                        <swrl:argument1 rdf:resource="#fd"/>
-                                                        <swrl:argument2 rdf:resource="#r"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#roleDef"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#r"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -947,9 +940,10 @@ namically vary during system operation, and that is the availability [0, 1] of t
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                                         <rdf:first>
                                                             <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
-                                                                <swrl:argument1 rdf:resource="#fd"/>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#typeC"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cc"/>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest>
@@ -957,9 +951,10 @@ namically vary during system operation, and that is the availability [0, 1] of t
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                                                 <rdf:first>
                                                                     <rdf:Description>
-                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
-                                                                        <swrl:argument1 rdf:resource="#r"/>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#roles"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#r"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
                                                                 <rdf:rest>
@@ -968,8 +963,8 @@ namically vary during system operation, and that is the availability [0, 1] of t
                                                                         <rdf:first>
                                                                             <rdf:Description>
                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
-                                                                                <swrl:argument1 rdf:resource="#cs"/>
+                                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cc"/>
                                                                             </rdf:Description>
                                                                         </rdf:first>
                                                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -996,7 +991,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#realisability"/>
-                        <swrl:argument1 rdf:resource="#fd"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd"/>
                         <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
                     </rdf:Description>
                 </rdf:first>
@@ -1014,10 +1009,9 @@ namically vary during system operation, and that is the availability [0, 1] of t
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg_status"/>
-                        <swrl:argument1 rdf:resource="#fg"/>
-                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1025,9 +1019,10 @@ namically vary during system operation, and that is the availability [0, 1] of t
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective"/>
-                                <swrl:argument1 rdf:resource="#o"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg_status"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1037,7 +1032,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                         <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionGrounding"/>
-                                        <swrl:argument1 rdf:resource="#fg"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1054,7 +1049,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o_status"/>
-                        <swrl:argument1 rdf:resource="#o"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o"/>
                         <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
                     </rdf:Description>
                 </rdf:first>
