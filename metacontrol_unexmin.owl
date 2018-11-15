@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin"
-     xml:base="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin"
+<rdf:RDF xmlns="file:/home/chcorbato/mros_ws/tomasys/metacontrol_unexmin.owl#"
+     xml:base="file:/home/chcorbato/mros_ws/tomasys/metacontrol_unexmin.owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -514,7 +514,6 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
         <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor1"/>
-        <metacontrol_unexmin:c_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</metacontrol_unexmin:c_status>
     </owl:NamedIndividual>
     
 
@@ -525,7 +524,6 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
         <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor2"/>
-        <metacontrol_unexmin:c_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</metacontrol_unexmin:c_status>
     </owl:NamedIndividual>
     
 
@@ -536,7 +534,6 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
         <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor3"/>
-        <metacontrol_unexmin:c_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</metacontrol_unexmin:c_status>
     </owl:NamedIndividual>
     
 
@@ -547,7 +544,6 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
         <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor4"/>
-        <metacontrol_unexmin:c_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</metacontrol_unexmin:c_status>
     </owl:NamedIndividual>
     
 
@@ -676,13 +672,13 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cc">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#r">
+    <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd">
+    <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#r">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o">
