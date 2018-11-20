@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="file:/home/chcorbato/mros_ws/tomasys/metacontrol_unexmin.owl#"
-     xml:base="file:/home/chcorbato/mros_ws/tomasys/metacontrol_unexmin.owl"
+<rdf:RDF xmlns="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#"
+     xml:base="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -229,6 +229,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#realisability -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#realisability">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
@@ -335,8 +336,8 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-role2-fd_move_fw_2m24">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
-        <metacontrol_unexmin:binding_component rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor2"/>
-        <metacontrol_unexmin:binding_role rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role2-fd_move_fw_2m24"/>
+        <binding_component rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor2"/>
+        <binding_role rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role2-fd_move_fw_2m24"/>
     </owl:NamedIndividual>
     
 
@@ -345,8 +346,8 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-role4-fd_move_fw_2m24">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
-        <metacontrol_unexmin:binding_component rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor4"/>
-        <metacontrol_unexmin:binding_role rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role4-fd_move_fw_2m24"/>
+        <binding_component rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor4"/>
+        <binding_role rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role4-fd_move_fw_2m24"/>
     </owl:NamedIndividual>
     
 
@@ -355,7 +356,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor1">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
-        <metacontrol_unexmin:unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</metacontrol_unexmin:unique_comp>
+        <unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</unique_comp>
     </owl:NamedIndividual>
     
 
@@ -364,7 +365,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor2">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
-        <metacontrol_unexmin:unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</metacontrol_unexmin:unique_comp>
+        <unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</unique_comp>
     </owl:NamedIndividual>
     
 
@@ -373,7 +374,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor3">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
-        <metacontrol_unexmin:unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</metacontrol_unexmin:unique_comp>
+        <unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</unique_comp>
     </owl:NamedIndividual>
     
 
@@ -382,7 +383,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor4">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
-        <metacontrol_unexmin:unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</metacontrol_unexmin:unique_comp>
+        <unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</unique_comp>
     </owl:NamedIndividual>
     
 
@@ -392,7 +393,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role1-fd_move_fw_2m13">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
-        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor1"/>
+        <typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor1"/>
     </owl:NamedIndividual>
     
 
@@ -402,7 +403,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role1-fd_move_fw_3m123">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
-        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor1"/>
+        <typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor1"/>
     </owl:NamedIndividual>
     
 
@@ -412,7 +413,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role2-fd_move_fw_2m24">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
-        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor2"/>
+        <typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor2"/>
     </owl:NamedIndividual>
     
 
@@ -422,7 +423,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role2-fd_move_fw_3m123">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
-        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor2"/>
+        <typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor2"/>
     </owl:NamedIndividual>
     
 
@@ -432,7 +433,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role3-fd_move_fw_2m13">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
-        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor3"/>
+        <typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor3"/>
     </owl:NamedIndividual>
     
 
@@ -442,7 +443,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role3-fd_move_fw_3m123">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
-        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor3"/>
+        <typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor3"/>
     </owl:NamedIndividual>
     
 
@@ -452,7 +453,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role4-fd_move_fw_2m24">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentSpecification"/>
-        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor4"/>
+        <typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor4"/>
     </owl:NamedIndividual>
     
 
@@ -461,10 +462,10 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd_move_fw_2m13">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
-        <metacontrol_unexmin:roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role1-fd_move_fw_2m13"/>
-        <metacontrol_unexmin:roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role3-fd_move_fw_2m13"/>
-        <metacontrol_unexmin:solves rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#move_fw"/>
-        <metacontrol_unexmin:confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9</metacontrol_unexmin:confidence_level_fd>
+        <roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role1-fd_move_fw_2m13"/>
+        <roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role3-fd_move_fw_2m13"/>
+        <solves rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#move_fw"/>
+        <confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9</confidence_level_fd>
         <rdfs:comment>FD to move forward with 2 motors 1 and 3 since it is not the pref configuration (see Table 4.3 gonzalo TFM) we give confidence 0.8</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -474,10 +475,10 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd_move_fw_2m24">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
-        <metacontrol_unexmin:roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role2-fd_move_fw_2m24"/>
-        <metacontrol_unexmin:roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role4-fd_move_fw_2m24"/>
-        <metacontrol_unexmin:solves rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#move_fw"/>
-        <metacontrol_unexmin:confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</metacontrol_unexmin:confidence_level_fd>
+        <roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role2-fd_move_fw_2m24"/>
+        <roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role4-fd_move_fw_2m24"/>
+        <solves rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#move_fw"/>
+        <confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</confidence_level_fd>
     </owl:NamedIndividual>
     
 
@@ -486,11 +487,11 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd_move_fw_3m123">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
-        <metacontrol_unexmin:roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role1-fd_move_fw_3m123"/>
-        <metacontrol_unexmin:roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role2-fd_move_fw_3m123"/>
-        <metacontrol_unexmin:roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role3-fd_move_fw_3m123"/>
-        <metacontrol_unexmin:solves rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#move_fw"/>
-        <metacontrol_unexmin:confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.925</metacontrol_unexmin:confidence_level_fd>
+        <roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role1-fd_move_fw_3m123"/>
+        <roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role2-fd_move_fw_3m123"/>
+        <roles rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role3-fd_move_fw_3m123"/>
+        <solves rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#move_fw"/>
+        <confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.925</confidence_level_fd>
         <rdfs:comment>FD to move forward, has a confidence or penelty of 0.925 (see Table 5.1 gonzalo TFM)</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -500,10 +501,10 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg-fd_move_fw_2m24">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionGrounding"/>
-        <metacontrol_unexmin:hasBindings rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-role2-fd_move_fw_2m24"/>
-        <metacontrol_unexmin:hasBindings rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-role4-fd_move_fw_2m24"/>
-        <metacontrol_unexmin:realises rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o_move_fw"/>
-        <metacontrol_unexmin:typeFD rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd_move_fw_2m24"/>
+        <hasBindings rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-role2-fd_move_fw_2m24"/>
+        <hasBindings rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#binding-role4-fd_move_fw_2m24"/>
+        <realises rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o_move_fw"/>
+        <typeFD rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd_move_fw_2m24"/>
     </owl:NamedIndividual>
     
 
@@ -513,7 +514,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor1">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
-        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor1"/>
+        <typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor1"/>
     </owl:NamedIndividual>
     
 
@@ -523,7 +524,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor2">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
-        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor2"/>
+        <typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor2"/>
     </owl:NamedIndividual>
     
 
@@ -533,7 +534,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor3">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
-        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor3"/>
+        <typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor3"/>
     </owl:NamedIndividual>
     
 
@@ -543,7 +544,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#motor4">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
-        <metacontrol_unexmin:typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor4"/>
+        <typeC rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cmotor4"/>
     </owl:NamedIndividual>
     
 
@@ -560,7 +561,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o_move_fw">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective"/>
-        <metacontrol_unexmin:typeF rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#move_fw"/>
+        <typeF rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#move_fw"/>
     </owl:NamedIndividual>
     
 
@@ -569,7 +570,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role1-fd_move_fw_2m13">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
-        <metacontrol_unexmin:roleDef rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role1-fd_move_fw_2m13"/>
+        <roleDef rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role1-fd_move_fw_2m13"/>
     </owl:NamedIndividual>
     
 
@@ -578,7 +579,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role1-fd_move_fw_3m123">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
-        <metacontrol_unexmin:roleDef rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role1-fd_move_fw_3m123"/>
+        <roleDef rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role1-fd_move_fw_3m123"/>
     </owl:NamedIndividual>
     
 
@@ -587,7 +588,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role2-fd_move_fw_2m24">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
-        <metacontrol_unexmin:roleDef rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role2-fd_move_fw_2m24"/>
+        <roleDef rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role2-fd_move_fw_2m24"/>
     </owl:NamedIndividual>
     
 
@@ -596,7 +597,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role2-fd_move_fw_3m123">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
-        <metacontrol_unexmin:roleDef rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role2-fd_move_fw_3m123"/>
+        <roleDef rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role2-fd_move_fw_3m123"/>
     </owl:NamedIndividual>
     
 
@@ -605,7 +606,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role3-fd_move_fw_2m13">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
-        <metacontrol_unexmin:roleDef rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role3-fd_move_fw_2m13"/>
+        <roleDef rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role3-fd_move_fw_2m13"/>
     </owl:NamedIndividual>
     
 
@@ -614,7 +615,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role3-fd_move_fw_3m123">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
-        <metacontrol_unexmin:roleDef rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role3-fd_move_fw_3m123"/>
+        <roleDef rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role3-fd_move_fw_3m123"/>
     </owl:NamedIndividual>
     
 
@@ -623,7 +624,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#role4-fd_move_fw_2m24">
         <rdf:type rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Role"/>
-        <metacontrol_unexmin:roleDef rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role4-fd_move_fw_2m24"/>
+        <roleDef rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cs-role4-fd_move_fw_2m24"/>
     </owl:NamedIndividual>
     
 
