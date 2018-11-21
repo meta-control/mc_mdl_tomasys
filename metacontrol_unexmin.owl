@@ -172,6 +172,7 @@
     <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#b_status -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#b_status">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Binding"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
@@ -181,6 +182,7 @@
     <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#c_status -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#c_status">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Component"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentState"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
@@ -191,6 +193,7 @@
     <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cc_availability -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cc_availability">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment>there is engineering information about a Component Class that may dy-
@@ -202,6 +205,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#confidence_level_fd -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#confidence_level_fd">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionDesign"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
@@ -211,6 +215,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg_status -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fg_status">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#FunctionGrounding"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
@@ -220,6 +225,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o_status -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#o_status">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#Objective"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
@@ -239,6 +245,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <!-- http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#unique_comp -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#unique_comp">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#ComponentClass"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment>if a Component Class is unique, then only a single instance may exist, and if in error, then the Class becomes unavailable</rdfs:comment>
