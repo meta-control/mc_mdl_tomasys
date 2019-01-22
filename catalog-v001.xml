@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1542794563039" name="http://www.semanticweb.org/chcorbato/ontologies/2018/10/untitled-ontology-13" uri="unexmin.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1542794563039" name="duplicate:http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin" uri="metacontrol_unexmin.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1542794563039" name="duplicate:http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin" uri="tmp_metacontrol_unexmin.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1542794563039" name="http://www.semanticweb.org/chcorbato/ontologies/tomasys" uri="tomasys.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1548176208618" name="duplicate:http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin" uri="metacontrol_unexmin.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1548176208618" name="duplicate:http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin" uri="tmp_metacontrol_unexmin.owl"/>
     </group>
 </catalog>
