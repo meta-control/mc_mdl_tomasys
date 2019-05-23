@@ -1,0 +1,501 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="urn:absolute:unexmin_robot19#"
+     xml:base="urn:absolute:unexmin_robot19"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="urn:absolute:unexmin_robot19">
+        <owl:versionIRI rdf:resource="urn:absolute:unexmin_robot19"/>
+    </owl:Ontology>
+
+
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- urn:absolute:tomasys#binding_component -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:tomasys#binding_component"/>
+
+
+
+    <!-- urn:absolute:tomasys#binding_role -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:tomasys#binding_role"/>
+
+
+
+    <!-- urn:absolute:tomasys#hasBindings -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:tomasys#hasBindings"/>
+
+
+
+    <!-- urn:absolute:tomasys#realises -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:tomasys#realises"/>
+
+
+
+    <!-- urn:absolute:tomasys#roleDef -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:tomasys#roleDef"/>
+
+
+
+    <!-- urn:absolute:tomasys#roles -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:tomasys#roles"/>
+
+
+
+    <!-- urn:absolute:tomasys#solves -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:tomasys#solves"/>
+
+
+
+    <!-- urn:absolute:tomasys#typeC -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:tomasys#typeC"/>
+
+
+
+    <!-- urn:absolute:tomasys#typeF -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:tomasys#typeF"/>
+
+
+
+    <!-- urn:absolute:tomasys#typeFD -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:tomasys#typeFD"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- urn:absolute:tomasys#c_status -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:tomasys#c_status"/>
+
+
+
+    <!-- urn:absolute:tomasys#confidence_level_fd -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:tomasys#confidence_level_fd"/>
+
+
+
+    <!-- urn:absolute:tomasys#unique_comp -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:tomasys#unique_comp"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- urn:absolute:tomasys#Binding -->
+
+    <owl:Class rdf:about="urn:absolute:tomasys#Binding"/>
+
+
+
+    <!-- urn:absolute:tomasys#Component -->
+
+    <owl:Class rdf:about="urn:absolute:tomasys#Component"/>
+
+
+
+    <!-- urn:absolute:tomasys#ComponentClass -->
+
+    <owl:Class rdf:about="urn:absolute:tomasys#ComponentClass"/>
+
+
+
+    <!-- urn:absolute:tomasys#ComponentSpecification -->
+
+    <owl:Class rdf:about="urn:absolute:tomasys#ComponentSpecification"/>
+
+
+
+    <!-- urn:absolute:tomasys#ComponentState -->
+
+    <owl:Class rdf:about="urn:absolute:tomasys#ComponentState"/>
+
+
+
+    <!-- urn:absolute:tomasys#Function -->
+
+    <owl:Class rdf:about="urn:absolute:tomasys#Function"/>
+
+
+
+    <!-- urn:absolute:tomasys#FunctionDesign -->
+
+    <owl:Class rdf:about="urn:absolute:tomasys#FunctionDesign"/>
+
+
+
+    <!-- urn:absolute:tomasys#FunctionGrounding -->
+
+    <owl:Class rdf:about="urn:absolute:tomasys#FunctionGrounding"/>
+
+
+
+    <!-- urn:absolute:tomasys#Objective -->
+
+    <owl:Class rdf:about="urn:absolute:tomasys#Objective"/>
+
+
+
+    <!-- urn:absolute:tomasys#Role -->
+
+    <owl:Class rdf:about="urn:absolute:tomasys#Role"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- urn:absolute:tomasys#binding-role2-fd_move_fw_2m24 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#binding-role2-fd_move_fw_2m24">
+        <rdf:type rdf:resource="urn:absolute:tomasys#Binding"/>
+        <binding_component rdf:resource="urn:absolute:tomasys#motor2"/>
+        <binding_role rdf:resource="urn:absolute:tomasys#role2-fd_move_fw_2m24"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#binding-role4-fd_move_fw_2m24 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#binding-role4-fd_move_fw_2m24">
+        <rdf:type rdf:resource="urn:absolute:tomasys#Binding"/>
+        <binding_component rdf:resource="urn:absolute:tomasys#motor4"/>
+        <binding_role rdf:resource="urn:absolute:tomasys#role4-fd_move_fw_2m24"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#cmotor1 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#cmotor1">
+        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentClass"/>
+        <unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</unique_comp>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#cmotor2 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#cmotor2">
+        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentClass"/>
+        <unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</unique_comp>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#cmotor3 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#cmotor3">
+        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentClass"/>
+        <unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</unique_comp>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#cmotor4 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#cmotor4">
+        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentClass"/>
+        <unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</unique_comp>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#cs-role1-fd_move_fw_2m13 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#cs-role1-fd_move_fw_2m13">
+        <rdf:type rdf:resource="urn:absolute:tomasys#Component"/>
+        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentSpecification"/>
+        <typeC rdf:resource="urn:absolute:tomasys#cmotor1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#cs-role1-fd_move_fw_3m123 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#cs-role1-fd_move_fw_3m123">
+        <rdf:type rdf:resource="urn:absolute:tomasys#Component"/>
+        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentSpecification"/>
+        <typeC rdf:resource="urn:absolute:tomasys#cmotor1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#cs-role2-fd_move_fw_2m24 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#cs-role2-fd_move_fw_2m24">
+        <rdf:type rdf:resource="urn:absolute:tomasys#Component"/>
+        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentSpecification"/>
+        <typeC rdf:resource="urn:absolute:tomasys#cmotor2"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#cs-role2-fd_move_fw_3m123 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#cs-role2-fd_move_fw_3m123">
+        <rdf:type rdf:resource="urn:absolute:tomasys#Component"/>
+        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentSpecification"/>
+        <typeC rdf:resource="urn:absolute:tomasys#cmotor2"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#cs-role3-fd_move_fw_2m13 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#cs-role3-fd_move_fw_2m13">
+        <rdf:type rdf:resource="urn:absolute:tomasys#Component"/>
+        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentSpecification"/>
+        <typeC rdf:resource="urn:absolute:tomasys#cmotor3"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#cs-role3-fd_move_fw_3m123 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#cs-role3-fd_move_fw_3m123">
+        <rdf:type rdf:resource="urn:absolute:tomasys#Component"/>
+        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentSpecification"/>
+        <typeC rdf:resource="urn:absolute:tomasys#cmotor3"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#cs-role4-fd_move_fw_2m24 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#cs-role4-fd_move_fw_2m24">
+        <rdf:type rdf:resource="urn:absolute:tomasys#Component"/>
+        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentSpecification"/>
+        <typeC rdf:resource="urn:absolute:tomasys#cmotor4"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#fd_move_fw_2m13 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#fd_move_fw_2m13">
+        <rdf:type rdf:resource="urn:absolute:tomasys#FunctionDesign"/>
+        <roles rdf:resource="urn:absolute:tomasys#role1-fd_move_fw_2m13"/>
+        <roles rdf:resource="urn:absolute:tomasys#role3-fd_move_fw_2m13"/>
+        <solves rdf:resource="urn:absolute:tomasys#move_fw"/>
+        <confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9</confidence_level_fd>
+        <rdfs:comment>FD to move forward with 2 motors 1 and 3 since it is not the pref configuration (see Table 4.3 gonzalo TFM) we give confidence 0.8</rdfs:comment>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#fd_move_fw_2m24 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#fd_move_fw_2m24">
+        <rdf:type rdf:resource="urn:absolute:tomasys#FunctionDesign"/>
+        <roles rdf:resource="urn:absolute:tomasys#role2-fd_move_fw_2m24"/>
+        <roles rdf:resource="urn:absolute:tomasys#role4-fd_move_fw_2m24"/>
+        <solves rdf:resource="urn:absolute:tomasys#move_fw"/>
+        <confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</confidence_level_fd>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#fd_move_fw_3m123 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#fd_move_fw_3m123">
+        <rdf:type rdf:resource="urn:absolute:tomasys#FunctionDesign"/>
+        <roles rdf:resource="urn:absolute:tomasys#role1-fd_move_fw_3m123"/>
+        <roles rdf:resource="urn:absolute:tomasys#role2-fd_move_fw_3m123"/>
+        <roles rdf:resource="urn:absolute:tomasys#role3-fd_move_fw_3m123"/>
+        <solves rdf:resource="urn:absolute:tomasys#move_fw"/>
+        <confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.925</confidence_level_fd>
+        <rdfs:comment>FD to move forward, has a confidence or penelty of 0.925 (see Table 5.1 gonzalo TFM)</rdfs:comment>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#fg-fd_move_fw_2m24 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#fg-fd_move_fw_2m24">
+        <rdf:type rdf:resource="urn:absolute:tomasys#FunctionGrounding"/>
+        <hasBindings rdf:resource="urn:absolute:tomasys#binding-role2-fd_move_fw_2m24"/>
+        <hasBindings rdf:resource="urn:absolute:tomasys#binding-role4-fd_move_fw_2m24"/>
+        <realises rdf:resource="urn:absolute:tomasys#o_move_fw"/>
+        <typeFD rdf:resource="urn:absolute:tomasys#fd_move_fw_2m24"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#motor1 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#motor1">
+        <rdf:type rdf:resource="urn:absolute:tomasys#Component"/>
+        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentState"/>
+        <typeC rdf:resource="urn:absolute:tomasys#cmotor1"/>
+        <c_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</c_status>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#motor2 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#motor2">
+        <rdf:type rdf:resource="urn:absolute:tomasys#Component"/>
+        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentState"/>
+        <typeC rdf:resource="urn:absolute:tomasys#cmotor2"/>
+        <c_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</c_status>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#motor3 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#motor3">
+        <rdf:type rdf:resource="urn:absolute:tomasys#Component"/>
+        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentState"/>
+        <typeC rdf:resource="urn:absolute:tomasys#cmotor3"/>
+        <c_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</c_status>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#motor4 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#motor4">
+        <rdf:type rdf:resource="urn:absolute:tomasys#Component"/>
+        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentState"/>
+        <typeC rdf:resource="urn:absolute:tomasys#cmotor4"/>
+        <c_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</c_status>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#move_fw -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#move_fw">
+        <rdf:type rdf:resource="urn:absolute:tomasys#Function"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#o_move_fw -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#o_move_fw">
+        <rdf:type rdf:resource="urn:absolute:tomasys#Objective"/>
+        <typeF rdf:resource="urn:absolute:tomasys#move_fw"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#role1-fd_move_fw_2m13 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#role1-fd_move_fw_2m13">
+        <rdf:type rdf:resource="urn:absolute:tomasys#Role"/>
+        <roleDef rdf:resource="urn:absolute:tomasys#cs-role1-fd_move_fw_2m13"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#role1-fd_move_fw_3m123 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#role1-fd_move_fw_3m123">
+        <rdf:type rdf:resource="urn:absolute:tomasys#Role"/>
+        <roleDef rdf:resource="urn:absolute:tomasys#cs-role1-fd_move_fw_3m123"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#role2-fd_move_fw_2m24 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#role2-fd_move_fw_2m24">
+        <rdf:type rdf:resource="urn:absolute:tomasys#Role"/>
+        <roleDef rdf:resource="urn:absolute:tomasys#cs-role2-fd_move_fw_2m24"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#role2-fd_move_fw_3m123 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#role2-fd_move_fw_3m123">
+        <rdf:type rdf:resource="urn:absolute:tomasys#Role"/>
+        <roleDef rdf:resource="urn:absolute:tomasys#cs-role2-fd_move_fw_3m123"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#role3-fd_move_fw_2m13 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#role3-fd_move_fw_2m13">
+        <rdf:type rdf:resource="urn:absolute:tomasys#Role"/>
+        <roleDef rdf:resource="urn:absolute:tomasys#cs-role3-fd_move_fw_2m13"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#role3-fd_move_fw_3m123 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#role3-fd_move_fw_3m123">
+        <rdf:type rdf:resource="urn:absolute:tomasys#Role"/>
+        <roleDef rdf:resource="urn:absolute:tomasys#cs-role3-fd_move_fw_3m123"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- urn:absolute:tomasys#role4-fd_move_fw_2m24 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#role4-fd_move_fw_2m24">
+        <rdf:type rdf:resource="urn:absolute:tomasys#Role"/>
+        <roleDef rdf:resource="urn:absolute:tomasys#cs-role4-fd_move_fw_2m24"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
