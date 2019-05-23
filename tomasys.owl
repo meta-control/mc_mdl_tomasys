@@ -5,7 +5,11 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:urn="urn:absolute:tomasys#">
     <owl:Ontology rdf:about="urn:absolute:tomasys">
         <owl:versionIRI rdf:resource="urn:absolute:tomasys"/>
     </owl:Ontology>
@@ -36,7 +40,6 @@
 
     <owl:ObjectProperty rdf:about="urn:absolute:tomasys#binding_role">
         <rdfs:domain rdf:resource="urn:absolute:tomasys#Binding"/>
-        <rdfs:range rdf:resource="urn:absolute:tomasys#Role"/>
     </owl:ObjectProperty>
 
 
@@ -80,22 +83,10 @@
 
 
 
-    <!-- urn:absolute:tomasys#roleDef -->
-
-    <owl:ObjectProperty rdf:about="urn:absolute:tomasys#roleDef">
-        <rdfs:domain rdf:resource="urn:absolute:tomasys#Role"/>
-        <rdfs:range rdf:resource="urn:absolute:tomasys#Component"/>
-        <rdfs:range rdf:resource="urn:absolute:tomasys#ComponentSpecification"/>
-        <rdfs:comment>a Role consists of the definition of a component specification for a Function Design</rdfs:comment>
-    </owl:ObjectProperty>
-
-
-
     <!-- urn:absolute:tomasys#roles -->
 
     <owl:ObjectProperty rdf:about="urn:absolute:tomasys#roles">
         <rdfs:domain rdf:resource="urn:absolute:tomasys#FunctionDesign"/>
-        <rdfs:range rdf:resource="urn:absolute:tomasys#Role"/>
         <rdfs:comment>A Function Design consists of roles</rdfs:comment>
     </owl:ObjectProperty>
 
@@ -302,36 +293,502 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <owl:Class rdf:about="urn:absolute:tomasys#Objective"/>
 
 
+<!--
+///////////////////////////////////////////////////////////////////////////////////////
+//
+// General axioms
+//
+///////////////////////////////////////////////////////////////////////////////////////
+ -->
 
-    <!-- urn:absolute:tomasys#Role -->
+<rdf:Description>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+    <owl:members rdf:parseType="Collection">
+        <rdf:Description rdf:about="urn:absolute:tomasys#Binding"/>
+        <rdf:Description rdf:about="urn:absolute:tomasys#Component"/>
+        <rdf:Description rdf:about="urn:absolute:tomasys#ComponentClass"/>
+        <rdf:Description rdf:about="urn:absolute:tomasys#Function"/>
+        <rdf:Description rdf:about="urn:absolute:tomasys#FunctionDesign"/>
+        <rdf:Description rdf:about="urn:absolute:tomasys#FunctionGrounding"/>
+        <rdf:Description rdf:about="urn:absolute:tomasys#Objective"/>
+        <rdf:Description rdf:about="urn:absolute:tomasys#Role"/>
+    </owl:members>
+</rdf:Description>
 
-    <owl:Class rdf:about="urn:absolute:tomasys#Role"/>
 
 
+<!--
+///////////////////////////////////////////////////////////////////////////////////////
+//
+// Rules
+//
+///////////////////////////////////////////////////////////////////////////////////////
+ -->
 
-    <!--
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="urn:absolute:tomasys#Binding"/>
-            <rdf:Description rdf:about="urn:absolute:tomasys#Component"/>
-            <rdf:Description rdf:about="urn:absolute:tomasys#ComponentClass"/>
-            <rdf:Description rdf:about="urn:absolute:tomasys#Function"/>
-            <rdf:Description rdf:about="urn:absolute:tomasys#FunctionDesign"/>
-            <rdf:Description rdf:about="urn:absolute:tomasys#FunctionGrounding"/>
-            <rdf:Description rdf:about="urn:absolute:tomasys#Objective"/>
-            <rdf:Description rdf:about="urn:absolute:tomasys#Role"/>
-        </owl:members>
-    </rdf:Description>
+<rdf:Description rdf:about="urn:absolute:tomasys#b">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+</rdf:Description>
+<rdf:Description rdf:about="urn:absolute:tomasys#c">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+</rdf:Description>
+<rdf:Description rdf:about="urn:absolute:tomasys#fg">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+</rdf:Description>
+<rdf:Description rdf:about="urn:absolute:tomasys#cc">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+</rdf:Description>
+<rdf:Description rdf:about="urn:absolute:tomasys#fd">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+</rdf:Description>
+<rdf:Description rdf:about="urn:absolute:tomasys#cs">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+</rdf:Description>
+<rdf:Description rdf:about="urn:absolute:tomasys#r">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+</rdf:Description>
+<rdf:Description rdf:about="urn:absolute:tomasys#o">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+</rdf:Description>
+<rdf:Description>
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Component in a binding in ERROR/false -&gt; binding in ERROR/false</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <swrl:body>
+        <rdf:Description>
+            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+            <rdf:first>
+                <rdf:Description>
+                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                    <swrl:classPredicate rdf:resource="urn:absolute:tomasys#Binding"/>
+                    <swrl:argument1 rdf:resource="urn:absolute:tomasys#b"/>
+                </rdf:Description>
+            </rdf:first>
+            <rdf:rest>
+                <rdf:Description>
+                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                    <rdf:first>
+                        <rdf:Description>
+                            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                            <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#c_status"/>
+                            <swrl:argument1 rdf:resource="urn:absolute:tomasys#c"/>
+                            <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                        </rdf:Description>
+                    </rdf:first>
+                    <rdf:rest>
+                        <rdf:Description>
+                            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                            <rdf:first>
+                                <rdf:Description>
+                                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                    <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#binding_component"/>
+                                    <swrl:argument1 rdf:resource="urn:absolute:tomasys#b"/>
+                                    <swrl:argument2 rdf:resource="urn:absolute:tomasys#c"/>
+                                </rdf:Description>
+                            </rdf:first>
+                            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        </rdf:Description>
+                    </rdf:rest>
+                </rdf:Description>
+            </rdf:rest>
+        </rdf:Description>
+    </swrl:body>
+    <swrl:head>
+        <rdf:Description>
+            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+            <rdf:first>
+                <rdf:Description>
+                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                    <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#b_status"/>
+                    <swrl:argument1 rdf:resource="urn:absolute:tomasys#b"/>
+                    <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                </rdf:Description>
+            </rdf:first>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        </rdf:Description>
+    </swrl:head>
+</rdf:Description>
+<rdf:Description>
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">binding in ERROR/false in an fg -&gt; fg in ERROR/false</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S3</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <swrl:body>
+        <rdf:Description>
+            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+            <rdf:first>
+                <rdf:Description>
+                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                    <swrl:classPredicate rdf:resource="urn:absolute:tomasys#Binding"/>
+                    <swrl:argument1 rdf:resource="urn:absolute:tomasys#b"/>
+                </rdf:Description>
+            </rdf:first>
+            <rdf:rest>
+                <rdf:Description>
+                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                    <rdf:first>
+                        <rdf:Description>
+                            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                            <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#hasBindings"/>
+                            <swrl:argument1 rdf:resource="urn:absolute:tomasys#fg"/>
+                            <swrl:argument2 rdf:resource="urn:absolute:tomasys#b"/>
+                        </rdf:Description>
+                    </rdf:first>
+                    <rdf:rest>
+                        <rdf:Description>
+                            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                            <rdf:first>
+                                <rdf:Description>
+                                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                    <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#b_status"/>
+                                    <swrl:argument1 rdf:resource="urn:absolute:tomasys#b"/>
+                                    <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                                </rdf:Description>
+                            </rdf:first>
+                            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        </rdf:Description>
+                    </rdf:rest>
+                </rdf:Description>
+            </rdf:rest>
+        </rdf:Description>
+    </swrl:body>
+    <swrl:head>
+        <rdf:Description>
+            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+            <rdf:first>
+                <rdf:Description>
+                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                    <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#fg_status"/>
+                    <swrl:argument1 rdf:resource="urn:absolute:tomasys#fg"/>
+                    <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                </rdf:Description>
+            </rdf:first>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        </rdf:Description>
+    </swrl:head>
+</rdf:Description>
+<rdf:Description>
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">if a component of a unique ComponentClass is in ERROR, the class is unavailable</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S4</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <swrl:body>
+        <rdf:Description>
+            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+            <rdf:first>
+                <rdf:Description>
+                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                    <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#unique_comp"/>
+                    <swrl:argument1 rdf:resource="urn:absolute:tomasys#cc"/>
+                    <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                </rdf:Description>
+            </rdf:first>
+            <rdf:rest>
+                <rdf:Description>
+                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                    <rdf:first>
+                        <rdf:Description>
+                            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                            <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#typeC"/>
+                            <swrl:argument1 rdf:resource="urn:absolute:tomasys#c"/>
+                            <swrl:argument2 rdf:resource="urn:absolute:tomasys#cc"/>
+                        </rdf:Description>
+                    </rdf:first>
+                    <rdf:rest>
+                        <rdf:Description>
+                            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                            <rdf:first>
+                                <rdf:Description>
+                                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                    <swrl:classPredicate rdf:resource="urn:absolute:tomasys#Component"/>
+                                    <swrl:argument1 rdf:resource="urn:absolute:tomasys#c"/>
+                                </rdf:Description>
+                            </rdf:first>
+                            <rdf:rest>
+                                <rdf:Description>
+                                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                    <rdf:first>
+                                        <rdf:Description>
+                                            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                            <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#c_status"/>
+                                            <swrl:argument1 rdf:resource="urn:absolute:tomasys#c"/>
+                                            <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                                        </rdf:Description>
+                                    </rdf:first>
+                                    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                </rdf:Description>
+                            </rdf:rest>
+                        </rdf:Description>
+                    </rdf:rest>
+                </rdf:Description>
+            </rdf:rest>
+        </rdf:Description>
+    </swrl:body>
+    <swrl:head>
+        <rdf:Description>
+            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+            <rdf:first>
+                <rdf:Description>
+                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                    <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#cc_availability"/>
+                    <swrl:argument1 rdf:resource="urn:absolute:tomasys#cc"/>
+                    <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                </rdf:Description>
+            </rdf:first>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        </rdf:Description>
+    </swrl:head>
+</rdf:Description>
+<rdf:Description>
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">if class for a role unavailable -&gt; fd unavailable</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S5</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <swrl:body>
+        <rdf:Description>
+            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+            <rdf:first>
+                <rdf:Description>
+                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                    <swrl:classPredicate rdf:resource="urn:absolute:tomasys#FunctionDesign"/>
+                    <swrl:argument1 rdf:resource="urn:absolute:tomasys#fd"/>
+                </rdf:Description>
+            </rdf:first>
+            <rdf:rest>
+                <rdf:Description>
+                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                    <rdf:first>
+                        <rdf:Description>
+                            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                            <swrl:classPredicate rdf:resource="urn:absolute:tomasys#ComponentSpecification"/>
+                            <swrl:argument1 rdf:resource="urn:absolute:tomasys#cs"/>
+                        </rdf:Description>
+                    </rdf:first>
+                    <rdf:rest>
+                        <rdf:Description>
+                            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                            <rdf:first>
+                                <rdf:Description>
+                                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                    <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#cc_availability"/>
+                                    <swrl:argument1 rdf:resource="urn:absolute:tomasys#cc"/>
+                                    <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                                </rdf:Description>
+                            </rdf:first>
+                            <rdf:rest>
+                                <rdf:Description>
+                                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                    <rdf:first>
+                                        <rdf:Description>
+                                            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                            <swrl:classPredicate rdf:resource="urn:absolute:tomasys#Role"/>
+                                            <swrl:argument1 rdf:resource="urn:absolute:tomasys#r"/>
+                                        </rdf:Description>
+                                    </rdf:first>
+                                    <rdf:rest>
+                                        <rdf:Description>
+                                            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                            <rdf:first>
+                                                <rdf:Description>
+                                                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                    <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#roleDef"/>
+                                                    <swrl:argument1 rdf:resource="urn:absolute:tomasys#r"/>
+                                                    <swrl:argument2 rdf:resource="urn:absolute:tomasys#cs"/>
+                                                </rdf:Description>
+                                            </rdf:first>
+                                            <rdf:rest>
+                                                <rdf:Description>
+                                                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                    <rdf:first>
+                                                        <rdf:Description>
+                                                            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                            <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#typeC"/>
+                                                            <swrl:argument1 rdf:resource="urn:absolute:tomasys#cs"/>
+                                                            <swrl:argument2 rdf:resource="urn:absolute:tomasys#cc"/>
+                                                        </rdf:Description>
+                                                    </rdf:first>
+                                                    <rdf:rest>
+                                                        <rdf:Description>
+                                                            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                            <rdf:first>
+                                                                <rdf:Description>
+                                                                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                    <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#roles"/>
+                                                                    <swrl:argument1 rdf:resource="urn:absolute:tomasys#fd"/>
+                                                                    <swrl:argument2 rdf:resource="urn:absolute:tomasys#r"/>
+                                                                </rdf:Description>
+                                                            </rdf:first>
+                                                            <rdf:rest>
+                                                                <rdf:Description>
+                                                                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                    <rdf:first>
+                                                                        <rdf:Description>
+                                                                            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                            <swrl:classPredicate rdf:resource="urn:absolute:tomasys#ComponentClass"/>
+                                                                            <swrl:argument1 rdf:resource="urn:absolute:tomasys#cc"/>
+                                                                        </rdf:Description>
+                                                                    </rdf:first>
+                                                                    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                </rdf:Description>
+                                                            </rdf:rest>
+                                                        </rdf:Description>
+                                                    </rdf:rest>
+                                                </rdf:Description>
+                                            </rdf:rest>
+                                        </rdf:Description>
+                                    </rdf:rest>
+                                </rdf:Description>
+                            </rdf:rest>
+                        </rdf:Description>
+                    </rdf:rest>
+                </rdf:Description>
+            </rdf:rest>
+        </rdf:Description>
+    </swrl:body>
+    <swrl:head>
+        <rdf:Description>
+            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+            <rdf:first>
+                <rdf:Description>
+                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                    <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#realisability"/>
+                    <swrl:argument1 rdf:resource="urn:absolute:tomasys#fd"/>
+                    <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                </rdf:Description>
+            </rdf:first>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        </rdf:Description>
+    </swrl:head>
+</rdf:Description>
+<rdf:Description>
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If a required objective by a FG is in ERROR -&gt; fg in error</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S6</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <swrl:body>
+        <rdf:Description>
+            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+            <rdf:first>
+                <rdf:Description>
+                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                    <swrl:classPredicate rdf:resource="urn:absolute:tomasys#Objective"/>
+                    <swrl:argument1 rdf:resource="urn:absolute:tomasys#o"/>
+                </rdf:Description>
+            </rdf:first>
+            <rdf:rest>
+                <rdf:Description>
+                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                    <rdf:first>
+                        <rdf:Description>
+                            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                            <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#needs"/>
+                            <swrl:argument1 rdf:resource="urn:absolute:tomasys#fg"/>
+                            <swrl:argument2 rdf:resource="urn:absolute:tomasys#o"/>
+                        </rdf:Description>
+                    </rdf:first>
+                    <rdf:rest>
+                        <rdf:Description>
+                            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                            <rdf:first>
+                                <rdf:Description>
+                                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                    <swrl:classPredicate rdf:resource="urn:absolute:tomasys#FunctionGrounding"/>
+                                    <swrl:argument1 rdf:resource="urn:absolute:tomasys#fg"/>
+                                </rdf:Description>
+                            </rdf:first>
+                            <rdf:rest>
+                                <rdf:Description>
+                                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                    <rdf:first>
+                                        <rdf:Description>
+                                            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                            <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#o_status"/>
+                                            <swrl:argument1 rdf:resource="urn:absolute:tomasys#o"/>
+                                            <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                                        </rdf:Description>
+                                    </rdf:first>
+                                    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                </rdf:Description>
+                            </rdf:rest>
+                        </rdf:Description>
+                    </rdf:rest>
+                </rdf:Description>
+            </rdf:rest>
+        </rdf:Description>
+    </swrl:body>
+    <swrl:head>
+        <rdf:Description>
+            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+            <rdf:first>
+                <rdf:Description>
+                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                    <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#fg_status"/>
+                    <swrl:argument1 rdf:resource="urn:absolute:tomasys#fg"/>
+                    <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                </rdf:Description>
+            </rdf:first>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        </rdf:Description>
+    </swrl:head>
+</rdf:Description>
+<rdf:Description>
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fg in error/false -&gt; objective in error/false</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <swrl:body>
+        <rdf:Description>
+            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+            <rdf:first>
+                <rdf:Description>
+                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                    <swrl:classPredicate rdf:resource="urn:absolute:tomasys#Objective"/>
+                    <swrl:argument1 rdf:resource="urn:absolute:tomasys#o"/>
+                </rdf:Description>
+            </rdf:first>
+            <rdf:rest>
+                <rdf:Description>
+                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                    <rdf:first>
+                        <rdf:Description>
+                            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                            <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#fg_status"/>
+                            <swrl:argument1 rdf:resource="urn:absolute:tomasys#fg"/>
+                            <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                        </rdf:Description>
+                    </rdf:first>
+                    <rdf:rest>
+                        <rdf:Description>
+                            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                            <rdf:first>
+                                <rdf:Description>
+                                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                    <swrl:classPredicate rdf:resource="urn:absolute:tomasys#FunctionGrounding"/>
+                                    <swrl:argument1 rdf:resource="urn:absolute:tomasys#fg"/>
+                                </rdf:Description>
+                            </rdf:first>
+                            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        </rdf:Description>
+                    </rdf:rest>
+                </rdf:Description>
+            </rdf:rest>
+        </rdf:Description>
+    </swrl:body>
+    <swrl:head>
+        <rdf:Description>
+            <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+            <rdf:first>
+                <rdf:Description>
+                    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                    <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#o_status"/>
+                    <swrl:argument1 rdf:resource="urn:absolute:tomasys#o"/>
+                    <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                </rdf:Description>
+            </rdf:first>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        </rdf:Description>
+    </swrl:head>
+</rdf:Description>
 </rdf:RDF>
-
-
 
 <!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
