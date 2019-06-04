@@ -12,6 +12,7 @@
      xmlns:urn="urn:absolute:unexmin_robot19#">
     <owl:Ontology rdf:about="urn:absolute:unexmin_robot19">
         <owl:versionIRI rdf:resource="urn:absolute:unexmin_robot19"/>
+        <owl:imports rdf:resource="urn:absolute:tomasys"/>
     </owl:Ontology>
 
 
