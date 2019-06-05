@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="urn:absolute:tomasys#"
      xml:base="urn:absolute:tomasys"
+     xmlns:urn="urn:absolute:tomasys#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:urn="urn:absolute:tomasys#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -13,10 +13,10 @@
     <owl:Ontology rdf:about="urn:absolute:tomasys">
         <owl:versionIRI rdf:resource="urn:absolute:tomasys"/>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -24,16 +24,16 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
 
     <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -41,7 +41,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- urn:absolute:tomasys#binding_component -->
@@ -50,7 +50,7 @@
         <rdfs:domain rdf:resource="urn:absolute:tomasys#Binding"/>
         <rdfs:range rdf:resource="urn:absolute:tomasys#Component"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- urn:absolute:tomasys#binding_role -->
@@ -58,7 +58,7 @@
     <owl:ObjectProperty rdf:about="urn:absolute:tomasys#binding_role">
         <rdfs:domain rdf:resource="urn:absolute:tomasys#Binding"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- urn:absolute:tomasys#hasBindings -->
@@ -67,7 +67,7 @@
         <rdfs:domain rdf:resource="urn:absolute:tomasys#FunctionGrounding"/>
         <rdfs:range rdf:resource="urn:absolute:tomasys#Binding"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- urn:absolute:tomasys#needs -->
@@ -77,7 +77,7 @@
         <rdfs:range rdf:resource="urn:absolute:tomasys#Objective"/>
         <rdfs:comment>A FunctionGrounding may need an Objective to be solved (by someone else) as a requirement to realise its target Objective</rdfs:comment>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- urn:absolute:tomasys#realises -->
@@ -87,7 +87,7 @@
         <rdfs:range rdf:resource="urn:absolute:tomasys#Objective"/>
         <rdfs:comment>A FunctionGrounding is realising an Objective</rdfs:comment>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- urn:absolute:tomasys#requires -->
@@ -97,7 +97,7 @@
         <rdfs:range rdf:resource="urn:absolute:tomasys#Function"/>
         <rdfs:comment>A FunctionDesign may require another Function to be solved (by someone else) as a requirement to solve its target Function</rdfs:comment>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- urn:absolute:tomasys#roles -->
@@ -106,7 +106,7 @@
         <rdfs:domain rdf:resource="urn:absolute:tomasys#FunctionDesign"/>
         <rdfs:comment>A Function Design consists of roles</rdfs:comment>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- urn:absolute:tomasys#solves -->
@@ -116,7 +116,7 @@
         <rdfs:range rdf:resource="urn:absolute:tomasys#Function"/>
         <rdfs:comment>a FunctionDesign solves a Function</rdfs:comment>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- urn:absolute:tomasys#typeC -->
@@ -125,7 +125,7 @@
         <rdfs:domain rdf:resource="urn:absolute:tomasys#Component"/>
         <rdfs:range rdf:resource="urn:absolute:tomasys#ComponentClass"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- urn:absolute:tomasys#typeF -->
@@ -135,7 +135,7 @@
         <rdfs:range rdf:resource="urn:absolute:tomasys#Function"/>
         <rdfs:comment>relates a FunctionGrounding/Objective with a FunctionDesign/Function</rdfs:comment>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- urn:absolute:tomasys#typeFD -->
@@ -144,10 +144,10 @@
         <rdfs:domain rdf:resource="urn:absolute:tomasys#FunctionGrounding"/>
         <rdfs:range rdf:resource="urn:absolute:tomasys#FunctionDesign"/>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -155,7 +155,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- urn:absolute:tomasys#b_status -->
@@ -165,7 +165,7 @@
         <rdfs:domain rdf:resource="urn:absolute:tomasys#Binding"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- urn:absolute:tomasys#c_status -->
@@ -176,7 +176,7 @@
         <rdfs:domain rdf:resource="urn:absolute:tomasys#ComponentState"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- urn:absolute:tomasys#cc_availability -->
@@ -188,7 +188,7 @@
         <rdfs:comment>there is engineering information about a Component Class that may dy-
 namically vary during system operation, and that is the availability [0, 1] of that type of component. For example, a sensor can be restarted/re-deployed to fix a wrong initial configuration of one of its parameters. However, no matter what reconfiguration we may carry, if there is only one physical sensor in the system, and it is broken, the component instance will not work: it is unavailable.</rdfs:comment>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- urn:absolute:tomasys#confidence_level_fd -->
@@ -198,7 +198,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <rdfs:domain rdf:resource="urn:absolute:tomasys#FunctionDesign"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- urn:absolute:tomasys#fg_status -->
@@ -208,7 +208,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <rdfs:domain rdf:resource="urn:absolute:tomasys#FunctionGrounding"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- urn:absolute:tomasys#o_status -->
@@ -218,7 +218,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <rdfs:domain rdf:resource="urn:absolute:tomasys#Objective"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- urn:absolute:tomasys#realisability -->
@@ -228,7 +228,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <rdfs:domain rdf:resource="urn:absolute:tomasys#FunctionDesign"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- urn:absolute:tomasys#unique_comp -->
@@ -239,10 +239,10 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment>if a Component Class is unique, then only a single instance may exist, and if in error, then the Class becomes unavailable</rdfs:comment>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -250,25 +250,25 @@ namically vary during system operation, and that is the availability [0, 1] of t
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- urn:absolute:tomasys#Binding -->
 
     <owl:Class rdf:about="urn:absolute:tomasys#Binding"/>
-    
+
 
 
     <!-- urn:absolute:tomasys#Component -->
 
     <owl:Class rdf:about="urn:absolute:tomasys#Component"/>
-    
+
 
 
     <!-- urn:absolute:tomasys#ComponentClass -->
 
     <owl:Class rdf:about="urn:absolute:tomasys#ComponentClass"/>
-    
+
 
 
     <!-- urn:absolute:tomasys#ComponentSpecification -->
@@ -276,7 +276,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <owl:Class rdf:about="urn:absolute:tomasys#ComponentSpecification">
         <rdfs:subClassOf rdf:resource="urn:absolute:tomasys#Component"/>
     </owl:Class>
-    
+
 
 
     <!-- urn:absolute:tomasys#ComponentState -->
@@ -284,25 +284,25 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <owl:Class rdf:about="urn:absolute:tomasys#ComponentState">
         <rdfs:subClassOf rdf:resource="urn:absolute:tomasys#Component"/>
     </owl:Class>
-    
+
 
 
     <!-- urn:absolute:tomasys#Function -->
 
     <owl:Class rdf:about="urn:absolute:tomasys#Function"/>
-    
+
 
 
     <!-- urn:absolute:tomasys#FunctionDesign -->
 
     <owl:Class rdf:about="urn:absolute:tomasys#FunctionDesign"/>
-    
+
 
 
     <!-- urn:absolute:tomasys#FunctionGrounding -->
 
     <owl:Class rdf:about="urn:absolute:tomasys#FunctionGrounding"/>
-    
+
 
 
     <!-- urn:absolute:tomasys#Objective -->
@@ -326,10 +326,10 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
     </rdf:Description>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Rules
@@ -671,4 +671,3 @@ namically vary during system operation, and that is the availability [0, 1] of t
 
 
 <!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
-
