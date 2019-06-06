@@ -1,112 +1,23 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://metacontrol.org/unexmin_robot19#"
-     xml:base="http://metacontrol.org/unexmin_robot19"
-     xmlns:unexmin_robot19="http://metacontrol.org/unexmin_robot19#"
+<rdf:RDF xmlns="http://metacontrol.org/applications/unexmin_robot19#"
+     xml:base="http://metacontrol.org/applications/unexmin_robot19"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
-    <owl:Ontology rdf:about="http://metacontrol.org/unexmin_robot19">
-        <owl:versionIRI rdf:resource="http://metacontrol.org/unexmin_robot19"/>
-        <owl:imports rdf:resource="urn:absolute:tomasys"/>
+     xmlns:tomasys="http://metacontrol.org/tomasys#"
+     xmlns:unexmin_robot19="http://metacontrol.org/applications/unexmin_robot19#"
+     xmlns:untitled-ontology-50="http://www.semanticweb.org/chcorbato/ontologies/2019/5/untitled-ontology-50#">
+    <owl:Ontology rdf:about="http://metacontrol.org/applications/unexmin_robot19">
+        <owl:versionIRI rdf:resource="http://metacontrol.org/applications/unexmin_robot19"/>
+        <owl:imports rdf:resource="http://metacontrol_unexmin"/>
     </owl:Ontology>
+    
 
 
-
-    <!--
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-
-
-    <!-- http://metacontrol.org/unexmin_robot19#binding_component -->
-
-    <owl:AnnotationProperty rdf:about="http://metacontrol.org/tomasys#binding_component"/>
-
-
-
-    <!-- http://metacontrol.org/unexmin_robot19#binding_role -->
-
-    <owl:AnnotationProperty rdf:about="http://metacontrol.org/tomasys#binding_role"/>
-
-
-
-    <!-- http://metacontrol.org/unexmin_robot19#c_status -->
-
-    <owl:AnnotationProperty rdf:about="http://metacontrol.org/tomasys#c_status"/>
-
-
-
-    <!-- http://metacontrol.org/unexmin_robot19#confidence_level_fd -->
-
-    <owl:AnnotationProperty rdf:about="http://metacontrol.org/tomasys#confidence_level_fd"/>
-
-
-
-    <!-- http://metacontrol.org/unexmin_robot19#hasBindings -->
-
-    <owl:AnnotationProperty rdf:about="http://metacontrol.org/tomasys#hasBindings"/>
-
-
-
-    <!-- http://metacontrol.org/unexmin_robot19#realises -->
-
-    <owl:AnnotationProperty rdf:about="http://metacontrol.org/tomasys#realises"/>
-
-
-
-    <!-- http://metacontrol.org/unexmin_robot19#roleDef -->
-
-    <owl:AnnotationProperty rdf:about="http://metacontrol.org/tomasys#roleDef"/>
-
-
-
-    <!-- http://metacontrol.org/unexmin_robot19#roles -->
-
-    <owl:AnnotationProperty rdf:about="http://metacontrol.org/tomasys#roles"/>
-
-
-
-    <!-- http://metacontrol.org/unexmin_robot19#solves -->
-
-    <owl:AnnotationProperty rdf:about="http://metacontrol.org/tomasys#solves"/>
-
-
-
-    <!-- http://metacontrol.org/unexmin_robot19#typeC -->
-
-    <owl:AnnotationProperty rdf:about="http://metacontrol.org/tomasys#typeC"/>
-
-
-
-    <!-- http://metacontrol.org/unexmin_robot19#typeF -->
-
-    <owl:AnnotationProperty rdf:about="http://metacontrol.org/tomasys#typeF"/>
-
-
-
-    <!-- http://metacontrol.org/unexmin_robot19#typeFD -->
-
-    <owl:AnnotationProperty rdf:about="http://metacontrol.org/tomasys#typeFD"/>
-
-
-
-    <!-- http://metacontrol.org/unexmin_robot19#unique_comp -->
-
-    <owl:AnnotationProperty rdf:about="http://metacontrol.org/tomasys#unique_comp"/>
-
-
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -114,67 +25,70 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
 
 
+    <!-- http://metacontrol.org/tomasys#binding_component -->
 
-    <!-- urn:absolute:tomasys#binding_component -->
-
-    <owl:ObjectProperty rdf:about="urn:absolute:tomasys#binding_component"/>
-
-
-
-    <!-- urn:absolute:tomasys#binding_role -->
-
-    <owl:ObjectProperty rdf:about="urn:absolute:tomasys#binding_role"/>
+    <owl:ObjectProperty rdf:about="http://metacontrol.org/tomasys#binding_component"/>
+    
 
 
+    <!-- http://metacontrol.org/tomasys#binding_role -->
 
-    <!-- urn:absolute:tomasys#hasBindings -->
-
-    <owl:ObjectProperty rdf:about="urn:absolute:tomasys#hasBindings"/>
-
-
-
-    <!-- urn:absolute:tomasys#realises -->
-
-    <owl:ObjectProperty rdf:about="urn:absolute:tomasys#realises"/>
+    <owl:ObjectProperty rdf:about="http://metacontrol.org/tomasys#binding_role"/>
+    
 
 
+    <!-- http://metacontrol.org/tomasys#hasBindings -->
 
-    <!-- urn:absolute:tomasys#roles -->
-
-    <owl:ObjectProperty rdf:about="urn:absolute:tomasys#roles">
-        <rdfs:range rdf:resource="urn:absolute:tomasys#Component"/>
-        <rdfs:range rdf:resource="urn:absolute:tomasys#ComponentSpecification"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://metacontrol.org/tomasys#hasBindings"/>
+    
 
 
+    <!-- http://metacontrol.org/tomasys#realises -->
 
-    <!-- urn:absolute:tomasys#solves -->
-
-    <owl:ObjectProperty rdf:about="urn:absolute:tomasys#solves"/>
-
-
-
-    <!-- urn:absolute:tomasys#typeC -->
-
-    <owl:ObjectProperty rdf:about="urn:absolute:tomasys#typeC"/>
+    <owl:ObjectProperty rdf:about="http://metacontrol.org/tomasys#realises"/>
+    
 
 
+    <!-- http://metacontrol.org/tomasys#roleDef -->
 
-    <!-- urn:absolute:tomasys#typeF -->
-
-    <owl:ObjectProperty rdf:about="urn:absolute:tomasys#typeF"/>
-
-
-
-    <!-- urn:absolute:tomasys#typeFD -->
-
-    <owl:ObjectProperty rdf:about="urn:absolute:tomasys#typeFD"/>
+    <owl:ObjectProperty rdf:about="http://metacontrol.org/tomasys#roleDef"/>
+    
 
 
+    <!-- http://metacontrol.org/tomasys#roles -->
 
-    <!--
+    <owl:ObjectProperty rdf:about="http://metacontrol.org/tomasys#roles"/>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#solves -->
+
+    <owl:ObjectProperty rdf:about="http://metacontrol.org/tomasys#solves"/>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#typeC -->
+
+    <owl:ObjectProperty rdf:about="http://metacontrol.org/tomasys#typeC"/>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#typeF -->
+
+    <owl:ObjectProperty rdf:about="http://metacontrol.org/tomasys#typeF"/>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#typeFD -->
+
+    <owl:ObjectProperty rdf:about="http://metacontrol.org/tomasys#typeFD"/>
+    
+
+
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -182,28 +96,58 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
 
 
+    <!-- http://metacontrol.org/tomasys#b_status -->
 
-    <!-- urn:absolute:tomasys#c_status -->
-
-    <owl:DatatypeProperty rdf:about="urn:absolute:tomasys#c_status"/>
-
-
-
-    <!-- urn:absolute:tomasys#confidence_level_fd -->
-
-    <owl:DatatypeProperty rdf:about="urn:absolute:tomasys#confidence_level_fd"/>
+    <owl:DatatypeProperty rdf:about="http://metacontrol.org/tomasys#b_status"/>
+    
 
 
+    <!-- http://metacontrol.org/tomasys#c_status -->
 
-    <!-- urn:absolute:tomasys#unique_comp -->
-
-    <owl:DatatypeProperty rdf:about="urn:absolute:tomasys#unique_comp"/>
-
+    <owl:DatatypeProperty rdf:about="http://metacontrol.org/tomasys#c_status"/>
+    
 
 
-    <!--
+    <!-- http://metacontrol.org/tomasys#cc_availability -->
+
+    <owl:DatatypeProperty rdf:about="http://metacontrol.org/tomasys#cc_availability"/>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#confidence_level_fd -->
+
+    <owl:DatatypeProperty rdf:about="http://metacontrol.org/tomasys#confidence_level_fd"/>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#fg_status -->
+
+    <owl:DatatypeProperty rdf:about="http://metacontrol.org/tomasys#fg_status"/>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#o_status -->
+
+    <owl:DatatypeProperty rdf:about="http://metacontrol.org/tomasys#o_status"/>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#realisability -->
+
+    <owl:DatatypeProperty rdf:about="http://metacontrol.org/tomasys#realisability"/>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#unique_comp -->
+
+    <owl:DatatypeProperty rdf:about="http://metacontrol.org/tomasys#unique_comp"/>
+    
+
+
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -211,64 +155,70 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
 
 
+    <!-- http://metacontrol.org/tomasys#Binding -->
 
-    <!-- urn:absolute:tomasys#Binding -->
-
-    <owl:Class rdf:about="urn:absolute:tomasys#Binding"/>
-
-
-
-    <!-- urn:absolute:tomasys#Component -->
-
-    <owl:Class rdf:about="urn:absolute:tomasys#Component"/>
+    <owl:Class rdf:about="http://metacontrol.org/tomasys#Binding"/>
+    
 
 
+    <!-- http://metacontrol.org/tomasys#Component -->
 
-    <!-- urn:absolute:tomasys#ComponentClass -->
-
-    <owl:Class rdf:about="urn:absolute:tomasys#ComponentClass"/>
-
-
-
-    <!-- urn:absolute:tomasys#ComponentSpecification -->
-
-    <owl:Class rdf:about="urn:absolute:tomasys#ComponentSpecification"/>
+    <owl:Class rdf:about="http://metacontrol.org/tomasys#Component"/>
+    
 
 
+    <!-- http://metacontrol.org/tomasys#ComponentClass -->
 
-    <!-- urn:absolute:tomasys#ComponentState -->
-
-    <owl:Class rdf:about="urn:absolute:tomasys#ComponentState"/>
-
-
-
-    <!-- urn:absolute:tomasys#Function -->
-
-    <owl:Class rdf:about="urn:absolute:tomasys#Function"/>
+    <owl:Class rdf:about="http://metacontrol.org/tomasys#ComponentClass"/>
+    
 
 
+    <!-- http://metacontrol.org/tomasys#ComponentSpecification -->
 
-    <!-- urn:absolute:tomasys#FunctionDesign -->
-
-    <owl:Class rdf:about="urn:absolute:tomasys#FunctionDesign"/>
-
-
-
-    <!-- urn:absolute:tomasys#FunctionGrounding -->
-
-    <owl:Class rdf:about="urn:absolute:tomasys#FunctionGrounding"/>
+    <owl:Class rdf:about="http://metacontrol.org/tomasys#ComponentSpecification"/>
+    
 
 
+    <!-- http://metacontrol.org/tomasys#ComponentState -->
 
-    <!-- urn:absolute:tomasys#Objective -->
-
-    <owl:Class rdf:about="urn:absolute:tomasys#Objective"/>
-
+    <owl:Class rdf:about="http://metacontrol.org/tomasys#ComponentState"/>
+    
 
 
-    <!--
+    <!-- http://metacontrol.org/tomasys#Function -->
+
+    <owl:Class rdf:about="http://metacontrol.org/tomasys#Function"/>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#FunctionDesign -->
+
+    <owl:Class rdf:about="http://metacontrol.org/tomasys#FunctionDesign"/>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#FunctionGrounding -->
+
+    <owl:Class rdf:about="http://metacontrol.org/tomasys#FunctionGrounding"/>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#Objective -->
+
+    <owl:Class rdf:about="http://metacontrol.org/tomasys#Objective"/>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#Role -->
+
+    <owl:Class rdf:about="http://metacontrol.org/tomasys#Role"/>
+    
+
+
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -276,438 +226,311 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
 
 
+    <!-- http://metacontrol.org/applications/unexmin_robot19#binding-role2-fd_move_fw_2m24 -->
 
-    <!-- urn:absolute:tomasys#binding-role2-fd_move_fw_2m24 -->
-
-    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#binding-role2-fd_move_fw_2m24">
-        <rdf:type rdf:resource="urn:absolute:tomasys#Binding"/>
-        <binding_component rdf:resource="urn:absolute:tomasys#motor2"/>
-        <binding_role rdf:resource="urn:absolute:tomasys#role2-fd_move_fw_2m24"/>
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#binding-role2-fd_move_fw_2m24">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Binding"/>
+        <tomasys:binding_component rdf:resource="http://metacontrol.org/applications/unexmin_robot19#motor2"/>
+        <tomasys:binding_role rdf:resource="http://metacontrol.org/applications/unexmin_robot19#role2-fd_move_fw_2m24"/>
     </owl:NamedIndividual>
+    
 
 
+    <!-- http://metacontrol.org/applications/unexmin_robot19#binding-role4-fd_move_fw_2m24 -->
 
-    <!-- urn:absolute:tomasys#binding-role4-fd_move_fw_2m24 -->
-
-    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#binding-role4-fd_move_fw_2m24">
-        <rdf:type rdf:resource="urn:absolute:tomasys#Binding"/>
-        <binding_component rdf:resource="urn:absolute:tomasys#motor4"/>
-        <binding_role rdf:resource="urn:absolute:tomasys#role4-fd_move_fw_2m24"/>
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#binding-role4-fd_move_fw_2m24">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Binding"/>
+        <tomasys:binding_component rdf:resource="http://metacontrol.org/applications/unexmin_robot19#motor4"/>
+        <tomasys:binding_role rdf:resource="http://metacontrol.org/applications/unexmin_robot19#role4-fd_move_fw_2m24"/>
     </owl:NamedIndividual>
+    
 
 
+    <!-- http://metacontrol.org/applications/unexmin_robot19#cmotor1 -->
 
-    <!-- urn:absolute:tomasys#cmotor1 -->
-
-    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#cmotor1">
-        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentClass"/>
-        <unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</unique_comp>
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#cmotor1">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentClass"/>
+        <tomasys:unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tomasys:unique_comp>
     </owl:NamedIndividual>
+    
 
 
+    <!-- http://metacontrol.org/applications/unexmin_robot19#cmotor2 -->
 
-    <!-- urn:absolute:tomasys#cmotor2 -->
-
-    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#cmotor2">
-        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentClass"/>
-        <unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</unique_comp>
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#cmotor2">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentClass"/>
+        <tomasys:unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tomasys:unique_comp>
     </owl:NamedIndividual>
+    
 
 
+    <!-- http://metacontrol.org/applications/unexmin_robot19#cmotor3 -->
 
-    <!-- urn:absolute:tomasys#cmotor3 -->
-
-    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#cmotor3">
-        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentClass"/>
-        <unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</unique_comp>
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#cmotor3">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentClass"/>
+        <tomasys:unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tomasys:unique_comp>
     </owl:NamedIndividual>
+    
 
 
+    <!-- http://metacontrol.org/applications/unexmin_robot19#cmotor4 -->
 
-    <!-- urn:absolute:tomasys#cmotor4 -->
-
-    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#cmotor4">
-        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentClass"/>
-        <unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</unique_comp>
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#cmotor4">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentClass"/>
+        <tomasys:unique_comp rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tomasys:unique_comp>
     </owl:NamedIndividual>
+    
 
 
+    <!-- http://metacontrol.org/applications/unexmin_robot19#cs-role1-fd_move_fw_2m13 -->
 
-    <!-- urn:absolute:tomasys#fd_move_fw_2m13 -->
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#cs-role1-fd_move_fw_2m13">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
+        <tomasys:typeC rdf:resource="http://metacontrol.org/applications/unexmin_robot19#cmotor1"/>
+    </owl:NamedIndividual>
+    
 
-    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#fd_move_fw_2m13">
-        <rdf:type rdf:resource="urn:absolute:tomasys#FunctionDesign"/>
+
+    <!-- http://metacontrol.org/applications/unexmin_robot19#cs-role1-fd_move_fw_3m123 -->
+
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#cs-role1-fd_move_fw_3m123">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
+        <tomasys:typeC rdf:resource="http://metacontrol.org/applications/unexmin_robot19#cmotor1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://metacontrol.org/applications/unexmin_robot19#cs-role2-fd_move_fw_2m24 -->
+
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#cs-role2-fd_move_fw_2m24">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
+        <tomasys:typeC rdf:resource="http://metacontrol.org/applications/unexmin_robot19#cmotor2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://metacontrol.org/applications/unexmin_robot19#cs-role2-fd_move_fw_3m123 -->
+
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#cs-role2-fd_move_fw_3m123">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
+        <tomasys:typeC rdf:resource="http://metacontrol.org/applications/unexmin_robot19#cmotor2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://metacontrol.org/applications/unexmin_robot19#cs-role3-fd_move_fw_2m13 -->
+
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#cs-role3-fd_move_fw_2m13">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
+        <tomasys:typeC rdf:resource="http://metacontrol.org/applications/unexmin_robot19#cmotor3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://metacontrol.org/applications/unexmin_robot19#cs-role3-fd_move_fw_3m123 -->
+
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#cs-role3-fd_move_fw_3m123">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
+        <tomasys:typeC rdf:resource="http://metacontrol.org/applications/unexmin_robot19#cmotor3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://metacontrol.org/applications/unexmin_robot19#cs-role4-fd_move_fw_2m24 -->
+
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#cs-role4-fd_move_fw_2m24">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
+        <tomasys:typeC rdf:resource="http://metacontrol.org/applications/unexmin_robot19#cmotor4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://metacontrol.org/applications/unexmin_robot19#fd_move_fw_2m13 -->
+
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#fd_move_fw_2m13">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+        <tomasys:roles rdf:resource="http://metacontrol.org/applications/unexmin_robot19#role1-fd_move_fw_2m13"/>
+        <tomasys:roles rdf:resource="http://metacontrol.org/applications/unexmin_robot19#role3-fd_move_fw_2m13"/>
+        <tomasys:solves rdf:resource="http://metacontrol.org/applications/unexmin_robot19#move_fw"/>
+        <tomasys:confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9</tomasys:confidence_level_fd>
         <rdfs:comment>FD to move forward with 2 motors 1 and 3 since it is not the pref configuration (see Table 4.3 gonzalo TFM) we give confidence 0.8</rdfs:comment>
-        <confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9</confidence_level_fd>
-        <roles rdf:resource="urn:absolute:tomasys#role1-fd_move_fw_2m13"/>
-        <roles rdf:resource="urn:absolute:tomasys#role3-fd_move_fw_2m13"/>
-        <solves rdf:resource="urn:absolute:tomasys#move_fw"/>
     </owl:NamedIndividual>
+    
 
 
+    <!-- http://metacontrol.org/applications/unexmin_robot19#fd_move_fw_2m24 -->
 
-    <!-- urn:absolute:tomasys#fd_move_fw_2m24 -->
-
-    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#fd_move_fw_2m24">
-        <rdf:type rdf:resource="urn:absolute:tomasys#FunctionDesign"/>
-        <confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</confidence_level_fd>
-        <roles rdf:resource="urn:absolute:tomasys#role2-fd_move_fw_2m24"/>
-        <roles rdf:resource="urn:absolute:tomasys#role4-fd_move_fw_2m24"/>
-        <solves rdf:resource="urn:absolute:tomasys#move_fw"/>
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#fd_move_fw_2m24">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+        <tomasys:roles rdf:resource="http://metacontrol.org/applications/unexmin_robot19#role2-fd_move_fw_2m24"/>
+        <tomasys:roles rdf:resource="http://metacontrol.org/applications/unexmin_robot19#role4-fd_move_fw_2m24"/>
+        <tomasys:solves rdf:resource="http://metacontrol.org/applications/unexmin_robot19#move_fw"/>
+        <tomasys:confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</tomasys:confidence_level_fd>
+        <tomasys:realisability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tomasys:realisability>
     </owl:NamedIndividual>
+    
 
 
+    <!-- http://metacontrol.org/applications/unexmin_robot19#fd_move_fw_3m123 -->
 
-    <!-- urn:absolute:tomasys#fd_move_fw_3m123 -->
-
-    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#fd_move_fw_3m123">
-        <rdf:type rdf:resource="urn:absolute:tomasys#FunctionDesign"/>
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#fd_move_fw_3m123">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+        <tomasys:roles rdf:resource="http://metacontrol.org/applications/unexmin_robot19#role1-fd_move_fw_3m123"/>
+        <tomasys:roles rdf:resource="http://metacontrol.org/applications/unexmin_robot19#role2-fd_move_fw_3m123"/>
+        <tomasys:roles rdf:resource="http://metacontrol.org/applications/unexmin_robot19#role3-fd_move_fw_3m123"/>
+        <tomasys:solves rdf:resource="http://metacontrol.org/applications/unexmin_robot19#move_fw"/>
+        <tomasys:confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.925</tomasys:confidence_level_fd>
         <rdfs:comment>FD to move forward, has a confidence or penelty of 0.925 (see Table 5.1 gonzalo TFM)</rdfs:comment>
-        <confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.925</confidence_level_fd>
-        <roles rdf:resource="urn:absolute:tomasys#role1-fd_move_fw_3m123"/>
-        <roles rdf:resource="urn:absolute:tomasys#role2-fd_move_fw_3m123"/>
-        <roles rdf:resource="urn:absolute:tomasys#role3-fd_move_fw_3m123"/>
-        <solves rdf:resource="urn:absolute:tomasys#move_fw"/>
     </owl:NamedIndividual>
+    
 
 
+    <!-- http://metacontrol.org/applications/unexmin_robot19#fg-fd_move_fw_2m24 -->
 
-    <!-- urn:absolute:tomasys#fg-fd_move_fw_2m24 -->
-
-    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#fg-fd_move_fw_2m24">
-        <rdf:type rdf:resource="urn:absolute:tomasys#FunctionGrounding"/>
-        <hasBindings rdf:resource="urn:absolute:tomasys#binding-role2-fd_move_fw_2m24"/>
-        <hasBindings rdf:resource="urn:absolute:tomasys#binding-role4-fd_move_fw_2m24"/>
-        <realises rdf:resource="urn:absolute:tomasys#o_move_fw"/>
-        <typeFD rdf:resource="urn:absolute:tomasys#fd_move_fw_2m24"/>
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#fg-fd_move_fw_2m24">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionGrounding"/>
+        <tomasys:hasBindings rdf:resource="http://metacontrol.org/applications/unexmin_robot19#binding-role2-fd_move_fw_2m24"/>
+        <tomasys:hasBindings rdf:resource="http://metacontrol.org/applications/unexmin_robot19#binding-role4-fd_move_fw_2m24"/>
+        <tomasys:realises rdf:resource="http://metacontrol.org/applications/unexmin_robot19#o_move_fw"/>
+        <tomasys:typeFD rdf:resource="http://metacontrol.org/applications/unexmin_robot19#fd_move_fw_2m24"/>
     </owl:NamedIndividual>
+    
 
 
+    <!-- http://metacontrol.org/applications/unexmin_robot19#motor1 -->
 
-    <!-- urn:absolute:tomasys#motor1 -->
-
-    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#motor1">
-        <rdf:type rdf:resource="urn:absolute:tomasys#Component"/>
-        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentState"/>
-        <c_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</c_status>
-        <typeC rdf:resource="urn:absolute:tomasys#cmotor1"/>
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#motor1">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentState"/>
+        <tomasys:typeC rdf:resource="http://metacontrol.org/applications/unexmin_robot19#cmotor1"/>
+        <tomasys:c_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tomasys:c_status>
     </owl:NamedIndividual>
+    
 
 
+    <!-- http://metacontrol.org/applications/unexmin_robot19#motor2 -->
 
-    <!-- urn:absolute:tomasys#motor2 -->
-
-    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#motor2">
-        <rdf:type rdf:resource="urn:absolute:tomasys#Component"/>
-        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentState"/>
-        <c_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</c_status>
-        <typeC rdf:resource="urn:absolute:tomasys#cmotor2"/>
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#motor2">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentState"/>
+        <tomasys:typeC rdf:resource="http://metacontrol.org/applications/unexmin_robot19#cmotor2"/>
+        <tomasys:c_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tomasys:c_status>
     </owl:NamedIndividual>
+    
 
 
+    <!-- http://metacontrol.org/applications/unexmin_robot19#motor3 -->
 
-    <!-- urn:absolute:tomasys#motor3 -->
-
-    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#motor3">
-        <rdf:type rdf:resource="urn:absolute:tomasys#Component"/>
-        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentState"/>
-        <c_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</c_status>
-        <typeC rdf:resource="urn:absolute:tomasys#cmotor3"/>
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#motor3">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentState"/>
+        <tomasys:typeC rdf:resource="http://metacontrol.org/applications/unexmin_robot19#cmotor3"/>
+        <tomasys:c_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tomasys:c_status>
     </owl:NamedIndividual>
+    
 
 
+    <!-- http://metacontrol.org/applications/unexmin_robot19#motor4 -->
 
-    <!-- urn:absolute:tomasys#motor4 -->
-
-    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#motor4">
-        <rdf:type rdf:resource="urn:absolute:tomasys#Component"/>
-        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentState"/>
-        <c_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</c_status>
-        <typeC rdf:resource="urn:absolute:tomasys#cmotor4"/>
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#motor4">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentState"/>
+        <tomasys:typeC rdf:resource="http://metacontrol.org/applications/unexmin_robot19#cmotor4"/>
+        <tomasys:c_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tomasys:c_status>
     </owl:NamedIndividual>
+    
 
 
+    <!-- http://metacontrol.org/applications/unexmin_robot19#move_fw -->
 
-    <!-- urn:absolute:tomasys#move_fw -->
-
-    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#move_fw">
-        <rdf:type rdf:resource="urn:absolute:tomasys#Function"/>
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#move_fw">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Function"/>
     </owl:NamedIndividual>
+    
 
 
+    <!-- http://metacontrol.org/applications/unexmin_robot19#o_move_fw -->
 
-    <!-- urn:absolute:tomasys#o_move_fw -->
-
-    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#o_move_fw">
-        <rdf:type rdf:resource="urn:absolute:tomasys#Objective"/>
-        <typeF rdf:resource="urn:absolute:tomasys#move_fw"/>
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#o_move_fw">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Objective"/>
+        <tomasys:typeF rdf:resource="http://metacontrol.org/applications/unexmin_robot19#move_fw"/>
     </owl:NamedIndividual>
+    
 
 
+    <!-- http://metacontrol.org/applications/unexmin_robot19#role1-fd_move_fw_2m13 -->
 
-    <!-- urn:absolute:tomasys#role1-fd_move_fw_2m13 -->
-
-    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#role1-fd_move_fw_2m13">
-        <rdf:type rdf:resource="urn:absolute:tomasys#Component"/>
-        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentSpecification"/>
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#role1-fd_move_fw_2m13">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
+        <tomasys:roleDef rdf:resource="http://metacontrol.org/applications/unexmin_robot19#cs-role1-fd_move_fw_2m13"/>
     </owl:NamedIndividual>
+    
 
 
+    <!-- http://metacontrol.org/applications/unexmin_robot19#role1-fd_move_fw_3m123 -->
 
-    <!-- urn:absolute:tomasys#role1-fd_move_fw_3m123 -->
-
-    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#role1-fd_move_fw_3m123">
-        <rdf:type rdf:resource="urn:absolute:tomasys#Component"/>
-        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentSpecification"/>
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#role1-fd_move_fw_3m123">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
+        <tomasys:roleDef rdf:resource="http://metacontrol.org/applications/unexmin_robot19#cs-role1-fd_move_fw_3m123"/>
     </owl:NamedIndividual>
+    
 
 
+    <!-- http://metacontrol.org/applications/unexmin_robot19#role2-fd_move_fw_2m24 -->
 
-    <!-- urn:absolute:tomasys#role2-fd_move_fw_2m24 -->
-
-    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#role2-fd_move_fw_2m24">
-        <rdf:type rdf:resource="urn:absolute:tomasys#Component"/>
-        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentSpecification"/>
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#role2-fd_move_fw_2m24">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
+        <tomasys:roleDef rdf:resource="http://metacontrol.org/applications/unexmin_robot19#cs-role2-fd_move_fw_2m24"/>
     </owl:NamedIndividual>
+    
 
 
+    <!-- http://metacontrol.org/applications/unexmin_robot19#role2-fd_move_fw_3m123 -->
 
-    <!-- urn:absolute:tomasys#role2-fd_move_fw_3m123 -->
-
-    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#role2-fd_move_fw_3m123">
-        <rdf:type rdf:resource="urn:absolute:tomasys#Component"/>
-        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentSpecification"/>
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#role2-fd_move_fw_3m123">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
+        <tomasys:roleDef rdf:resource="http://metacontrol.org/applications/unexmin_robot19#cs-role2-fd_move_fw_3m123"/>
     </owl:NamedIndividual>
+    
 
 
+    <!-- http://metacontrol.org/applications/unexmin_robot19#role3-fd_move_fw_2m13 -->
 
-    <!-- urn:absolute:tomasys#role3-fd_move_fw_2m13 -->
-
-    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#role3-fd_move_fw_2m13">
-        <rdf:type rdf:resource="urn:absolute:tomasys#Component"/>
-        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentSpecification"/>
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#role3-fd_move_fw_2m13">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
+        <tomasys:roleDef rdf:resource="http://metacontrol.org/applications/unexmin_robot19#cs-role3-fd_move_fw_2m13"/>
     </owl:NamedIndividual>
+    
 
 
+    <!-- http://metacontrol.org/applications/unexmin_robot19#role3-fd_move_fw_3m123 -->
 
-    <!-- urn:absolute:tomasys#role3-fd_move_fw_3m123 -->
-
-    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#role3-fd_move_fw_3m123">
-        <rdf:type rdf:resource="urn:absolute:tomasys#Component"/>
-        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentSpecification"/>
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#role3-fd_move_fw_3m123">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
+        <tomasys:roleDef rdf:resource="http://metacontrol.org/applications/unexmin_robot19#cs-role3-fd_move_fw_3m123"/>
     </owl:NamedIndividual>
+    
 
 
+    <!-- http://metacontrol.org/applications/unexmin_robot19#role4-fd_move_fw_2m24 -->
 
-    <!-- urn:absolute:tomasys#role4-fd_move_fw_2m24 -->
-
-    <owl:NamedIndividual rdf:about="urn:absolute:tomasys#role4-fd_move_fw_2m24">
-        <rdf:type rdf:resource="urn:absolute:tomasys#Component"/>
-        <rdf:type rdf:resource="urn:absolute:tomasys#ComponentSpecification"/>
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#role4-fd_move_fw_2m24">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
+        <tomasys:roleDef rdf:resource="http://metacontrol.org/applications/unexmin_robot19#cs-role4-fd_move_fw_2m24"/>
     </owl:NamedIndividual>
-
-
-
-    <!--
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Rules
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://metacontrol.org/unexmin_robot19#b">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://metacontrol.org/unexmin_robot19#c">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://metacontrol.org/unexmin_robot19#fg">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://metacontrol.org/unexmin_robot19#o">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Component in a binding in ERROR/false -&gt; binding in ERROR/false</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="urn:absolute:tomasys#Binding"/>
-                        <swrl:argument1 rdf:resource="http://metacontrol.org/unexmin_robot19#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#binding_component"/>
-                                <swrl:argument1 rdf:resource="http://metacontrol.org/unexmin_robot19#b"/>
-                                <swrl:argument2 rdf:resource="http://metacontrol.org/unexmin_robot19#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#c_status"/>
-                                        <swrl:argument1 rdf:resource="http://metacontrol.org/unexmin_robot19#c"/>
-                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#b_status"/>
-                        <swrl:argument1 rdf:resource="http://metacontrol.org/unexmin_robot19#b"/>
-                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">binding in ERROR/false in an fg -&gt; fg in ERROR/false</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S3</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#b_status"/>
-                        <swrl:argument1 rdf:resource="http://metacontrol.org/unexmin_robot19#b"/>
-                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="urn:absolute:tomasys#Binding"/>
-                                <swrl:argument1 rdf:resource="http://metacontrol.org/unexmin_robot19#b"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#hasBindings"/>
-                                        <swrl:argument1 rdf:resource="http://metacontrol.org/unexmin_robot19#fg"/>
-                                        <swrl:argument2 rdf:resource="http://metacontrol.org/unexmin_robot19#b"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#fg_status"/>
-                        <swrl:argument1 rdf:resource="http://metacontrol.org/unexmin_robot19#fg"/>
-                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fg in error/false -&gt; objective in error/false</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="urn:absolute:tomasys#FunctionGrounding"/>
-                        <swrl:argument1 rdf:resource="http://metacontrol.org/unexmin_robot19#fg"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#fg_status"/>
-                                <swrl:argument1 rdf:resource="http://metacontrol.org/unexmin_robot19#fg"/>
-                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="urn:absolute:tomasys#Objective"/>
-                                        <swrl:argument1 rdf:resource="http://metacontrol.org/unexmin_robot19#o"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="urn:absolute:tomasys#o_status"/>
-                        <swrl:argument1 rdf:resource="http://metacontrol.org/unexmin_robot19#o"/>
-                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
 </rdf:RDF>
 
 
 
 <!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
