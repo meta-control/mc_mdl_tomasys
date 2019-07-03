@@ -2,7 +2,9 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="http://metacontrol_unexmin" uri="tomasys.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1559805785682" name="http://metacontrol.org/applications/unexmin_robot19" uri="unexmin_robot19.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1559805785682" name="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin" uri="tomasys.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1562170384326" name="http://metacontrol.org/applications/unexmin_robot19" uri="unexmin_robot19.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1562170384326" name="duplicate:http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin" uri="tomasys.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1562170384326" name="duplicate:http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin" uri="metacontrol_unexmin.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1562170384326" name="duplicate:http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin" uri="tmp_metacontrol_unexmin.owl"/>
     </group>
 </catalog>

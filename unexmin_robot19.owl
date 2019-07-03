@@ -9,6 +9,7 @@
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:tomasys="http://metacontrol.org/tomasys#"
      xmlns:unexmin_robot19="http://metacontrol.org/applications/unexmin_robot19#"
+     xmlns:metacontrol_unexmin="http://metacontrol_unexmin#"
      xmlns:untitled-ontology-50="http://www.semanticweb.org/chcorbato/ontologies/2019/5/untitled-ontology-50#">
     <owl:Ontology rdf:about="http://metacontrol.org/applications/unexmin_robot19">
         <owl:versionIRI rdf:resource="http://metacontrol.org/applications/unexmin_robot19"/>
@@ -361,7 +362,7 @@
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
         <tomasys:roles rdf:resource="http://metacontrol.org/applications/unexmin_robot19#role1-fd_move_fw_2m13"/>
         <tomasys:roles rdf:resource="http://metacontrol.org/applications/unexmin_robot19#role3-fd_move_fw_2m13"/>
-        <tomasys:solves rdf:resource="http://metacontrol.org/applications/unexmin_robot19#move_fw"/>
+        <tomasys:solves rdf:resource="http://metacontrol.org/applications/unexmin_robot19#propulsion_fw"/>
         <tomasys:confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9</tomasys:confidence_level_fd>
         <rdfs:comment>FD to move forward with 2 motors 1 and 3 since it is not the pref configuration (see Table 4.3 gonzalo TFM) we give confidence 0.8</rdfs:comment>
     </owl:NamedIndividual>
@@ -374,7 +375,7 @@
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
         <tomasys:roles rdf:resource="http://metacontrol.org/applications/unexmin_robot19#role2-fd_move_fw_2m24"/>
         <tomasys:roles rdf:resource="http://metacontrol.org/applications/unexmin_robot19#role4-fd_move_fw_2m24"/>
-        <tomasys:solves rdf:resource="http://metacontrol.org/applications/unexmin_robot19#move_fw"/>
+        <tomasys:solves rdf:resource="http://metacontrol.org/applications/unexmin_robot19#propulsion_fw"/>
         <tomasys:confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</tomasys:confidence_level_fd>
         <tomasys:realisability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tomasys:realisability>
     </owl:NamedIndividual>
@@ -388,7 +389,7 @@
         <tomasys:roles rdf:resource="http://metacontrol.org/applications/unexmin_robot19#role1-fd_move_fw_3m123"/>
         <tomasys:roles rdf:resource="http://metacontrol.org/applications/unexmin_robot19#role2-fd_move_fw_3m123"/>
         <tomasys:roles rdf:resource="http://metacontrol.org/applications/unexmin_robot19#role3-fd_move_fw_3m123"/>
-        <tomasys:solves rdf:resource="http://metacontrol.org/applications/unexmin_robot19#move_fw"/>
+        <tomasys:solves rdf:resource="http://metacontrol.org/applications/unexmin_robot19#propulsion_fw"/>
         <tomasys:confidence_level_fd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.925</tomasys:confidence_level_fd>
         <rdfs:comment>FD to move forward, has a confidence or penelty of 0.925 (see Table 5.1 gonzalo TFM)</rdfs:comment>
     </owl:NamedIndividual>
@@ -451,19 +452,39 @@
     
 
 
-    <!-- http://metacontrol.org/applications/unexmin_robot19#move_fw -->
+    <!-- http://metacontrol.org/applications/unexmin_robot19#o_move_fw -->
 
-    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#move_fw">
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#o_move_fw">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Objective"/>
+        <tomasys:typeF rdf:resource="http://metacontrol.org/applications/unexmin_robot19#propulsion_fw"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://metacontrol.org/applications/unexmin_robot19#propulsion_fw -->
+
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#propulsion_fw">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#Function"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://metacontrol.org/applications/unexmin_robot19#o_move_fw -->
+    <!-- http://metacontrol.org/applications/unexmin_robot19#req_o_propulsion_30 -->
 
-    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#o_move_fw">
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#req_o_propulsion_30">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#Objective"/>
-        <tomasys:typeF rdf:resource="http://metacontrol.org/applications/unexmin_robot19#move_fw"/>
+        <tomasys:typeF rdf:resource="http://metacontrol.org/applications/unexmin_robot19#propulsion_fw"/>
+        <metacontrol_unexmin:o_performance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</metacontrol_unexmin:o_performance>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://metacontrol.org/applications/unexmin_robot19#req_o_propulsion_70 -->
+
+    <owl:NamedIndividual rdf:about="http://metacontrol.org/applications/unexmin_robot19#req_o_propulsion_70">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Objective"/>
+        <tomasys:typeF rdf:resource="http://metacontrol.org/applications/unexmin_robot19#propulsion_fw"/>
+        <metacontrol_unexmin:o_performance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7</metacontrol_unexmin:o_performance>
     </owl:NamedIndividual>
     
 
