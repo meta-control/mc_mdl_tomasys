@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://abb_scenario1#"
+     xml:base="http://abb_scenario1"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:tomasys="http://metacontrol.org/tomasys#"
+     xmlns:abb_scenario1="http://abb_scenario1#"
+     xmlns:metacontrol_unexmin="http://metacontrol_unexmin#"
+     xmlns:untitled-ontology-56="http://www.semanticweb.org/chcorbato/ontologies/2019/6/untitled-ontology-56#">
+    <owl:Ontology rdf:about="http://abb_scenario1">
+        <owl:imports rdf:resource="http://metacontrol.org/tomasys"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://metacontrol_unexmin#fd_efficacy -->
+
+    <owl:AnnotationProperty rdf:about="http://metacontrol_unexmin#fd_efficacy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://abb_scenario1#cs_camera_1 -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario1#cs_camera_1">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario1#cs_camera_2 -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario1#cs_camera_2">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario1#cs_tags_detector -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario1#cs_tags_detector">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario1#f_detect_tag_poses -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario1#f_detect_tag_poses">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Function"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario1#fd_detect_tag_poses_1 -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario1#fd_detect_tag_poses_1">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+        <tomasys:roles rdf:resource="http://abb_scenario1#r_camera_fd_detect_tag_poses_1"/>
+        <tomasys:roles rdf:resource="http://abb_scenario1#r_tag_detector_fd_detect_tag_poses_1"/>
+        <metacontrol_unexmin:fd_efficacy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9</metacontrol_unexmin:fd_efficacy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario1#fd_detect_tag_poses_2 -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario1#fd_detect_tag_poses_2">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+        <metacontrol_unexmin:fd_efficacy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8</metacontrol_unexmin:fd_efficacy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario1#o_detect_ws1_tag -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario1#o_detect_ws1_tag">
+        <tomasys:typeF rdf:resource="http://abb_scenario1#f_detect_tag_poses"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario1#r_camera_fd_detect_tag_poses_1 -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario1#r_camera_fd_detect_tag_poses_1">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
+        <tomasys:roleDef rdf:resource="http://abb_scenario1#cs_camera_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario1#r_camera_fd_detect_tag_poses_2 -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario1#r_camera_fd_detect_tag_poses_2">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
+        <tomasys:roleDef rdf:resource="http://abb_scenario1#cs_camera_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario1#r_tag_detector_fd_detect_tag_poses_1 -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario1#r_tag_detector_fd_detect_tag_poses_1">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
+        <tomasys:roleDef rdf:resource="http://abb_scenario1#cs_tags_detector"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario1#r_tag_detector_fd_detect_tag_poses_2 -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario1#r_tag_detector_fd_detect_tag_poses_2">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
+        <tomasys:roleDef rdf:resource="http://abb_scenario1#cs_tags_detector"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
