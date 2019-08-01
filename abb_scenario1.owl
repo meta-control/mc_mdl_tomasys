@@ -6,7 +6,9 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:tomasys="http://metacontrol.org/tomasys#"
      xmlns:abb_scenario1="http://abb_scenario1#"
      xmlns:metacontrol_unexmin="http://metacontrol_unexmin#"
@@ -45,9 +47,46 @@
     
 
 
+    <!-- http://abb_scenario1#b1_fg_detect_tag_poses_1 -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario1#b1_fg_detect_tag_poses_1">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Binding"/>
+        <tomasys:binding_component rdf:resource="http://abb_scenario1#c_camera"/>
+        <tomasys:binding_role rdf:resource="http://abb_scenario1#r_camera_fd_detect_tag_poses_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario1#b2_fg_detect_tag_poses_1 -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario1#b2_fg_detect_tag_poses_1">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Binding"/>
+        <tomasys:binding_component rdf:resource="http://abb_scenario1#c_tags_detector"/>
+        <tomasys:binding_role rdf:resource="http://abb_scenario1#r_tag_detector_fd_detect_tag_poses_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario1#c_camera -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario1#c_camera">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario1#c_tags_detector -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario1#c_tags_detector">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://abb_scenario1#cs_camera_1 -->
 
     <owl:NamedIndividual rdf:about="http://abb_scenario1#cs_camera_1">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
     </owl:NamedIndividual>
     
@@ -56,6 +95,7 @@
     <!-- http://abb_scenario1#cs_camera_2 -->
 
     <owl:NamedIndividual rdf:about="http://abb_scenario1#cs_camera_2">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
     </owl:NamedIndividual>
     
@@ -64,6 +104,7 @@
     <!-- http://abb_scenario1#cs_tags_detector -->
 
     <owl:NamedIndividual rdf:about="http://abb_scenario1#cs_tags_detector">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
     </owl:NamedIndividual>
     
@@ -83,6 +124,7 @@
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
         <tomasys:roles rdf:resource="http://abb_scenario1#r_camera_fd_detect_tag_poses_1"/>
         <tomasys:roles rdf:resource="http://abb_scenario1#r_tag_detector_fd_detect_tag_poses_1"/>
+        <tomasys:solves rdf:resource="http://abb_scenario1#f_detect_tag_poses"/>
         <metacontrol_unexmin:fd_efficacy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9</metacontrol_unexmin:fd_efficacy>
     </owl:NamedIndividual>
     
@@ -92,7 +134,20 @@
 
     <owl:NamedIndividual rdf:about="http://abb_scenario1#fd_detect_tag_poses_2">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+        <tomasys:roles rdf:resource="http://abb_scenario1#r_camera_fd_detect_tag_poses_2"/>
+        <tomasys:roles rdf:resource="http://abb_scenario1#r_tag_detector_fd_detect_tag_poses_2"/>
+        <tomasys:solves rdf:resource="http://abb_scenario1#f_detect_tag_poses"/>
         <metacontrol_unexmin:fd_efficacy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8</metacontrol_unexmin:fd_efficacy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario1#fg_detect_tag_poses_1 -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario1#fg_detect_tag_poses_1">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionGrounding"/>
+        <tomasys:realises rdf:resource="http://abb_scenario1#o_detect_ws1_tag"/>
+        <tomasys:typeFD rdf:resource="http://abb_scenario1#fd_detect_tag_poses_1"/>
     </owl:NamedIndividual>
     
 
@@ -100,7 +155,9 @@
     <!-- http://abb_scenario1#o_detect_ws1_tag -->
 
     <owl:NamedIndividual rdf:about="http://abb_scenario1#o_detect_ws1_tag">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Objective"/>
         <tomasys:typeF rdf:resource="http://abb_scenario1#f_detect_tag_poses"/>
+        <tomasys:o_status rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tomasys:o_status>
     </owl:NamedIndividual>
     
 
@@ -138,6 +195,122 @@
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
         <tomasys:roleDef rdf:resource="http://abb_scenario1#cs_tags_detector"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://abb_scenario1#o">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://abb_scenario1#fg">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://abb_scenario1#fd">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">objective in error -&gt; objective added to the fd_error_log of the FD</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S9</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://metacontrol.org/tomasys#Objective"/>
+                        <swrl:argument1 rdf:resource="http://abb_scenario1#o"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://metacontrol.org/tomasys#o_status"/>
+                                <swrl:argument1 rdf:resource="http://abb_scenario1#o"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://metacontrol.org/tomasys#FunctionGrounding"/>
+                                        <swrl:argument1 rdf:resource="http://abb_scenario1#fg"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://metacontrol.org/tomasys#realises"/>
+                                                <swrl:argument1 rdf:resource="http://abb_scenario1#fg"/>
+                                                <swrl:argument2 rdf:resource="http://abb_scenario1#o"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+                                                        <swrl:argument1 rdf:resource="http://abb_scenario1#fd"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://metacontrol.org/tomasys#typeFD"/>
+                                                                <swrl:argument1 rdf:resource="http://abb_scenario1#fg"/>
+                                                                <swrl:argument2 rdf:resource="http://abb_scenario1#fd"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://metacontrol.org/tomasys#fd_error_log"/>
+                        <swrl:argument1 rdf:resource="http://abb_scenario1#fd"/>
+                        <swrl:argument2 rdf:resource="http://abb_scenario1#o"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
 </rdf:RDF>
 
 
