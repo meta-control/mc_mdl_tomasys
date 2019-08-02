@@ -197,6 +197,7 @@
         <rdfs:domain rdf:resource="http://metacontrol.org/tomasys#Component"/>
         <rdfs:domain rdf:resource="http://metacontrol.org/tomasys#ComponentState"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>operational status of a component. For the moment &quot;false&quot;=&quot;ERROR&quot;, later we can expand the status to an enumeration</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -213,12 +214,13 @@ namically vary during system operation, and that is the availability [0, 1] of t
     
 
 
-    <!-- http://metacontrol.org/tomasys#confidence_level_fd -->
+    <!-- http://metacontrol.org/tomasys#cc_unique -->
 
-    <owl:DatatypeProperty rdf:about="http://metacontrol.org/tomasys#confidence_level_fd">
+    <owl:DatatypeProperty rdf:about="http://metacontrol.org/tomasys#cc_unique">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:domain rdf:resource="http://metacontrol.org/tomasys#ComponentClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>if a Component Class is unique, then only a single instance may exist, and if in error, then the Class becomes unavailable</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -226,8 +228,19 @@ namically vary during system operation, and that is the availability [0, 1] of t
     <!-- http://metacontrol.org/tomasys#fd_efficacy -->
 
     <owl:DatatypeProperty rdf:about="http://metacontrol.org/tomasys#fd_efficacy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#fd_realisability -->
+
+    <owl:DatatypeProperty rdf:about="http://metacontrol.org/tomasys#fd_realisability">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
@@ -266,27 +279,6 @@ namically vary during system operation, and that is the availability [0, 1] of t
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://metacontrol.org/tomasys#Objective"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://metacontrol.org/tomasys#realisability -->
-
-    <owl:DatatypeProperty rdf:about="http://metacontrol.org/tomasys#realisability">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://metacontrol.org/tomasys#unique_comp -->
-
-    <owl:DatatypeProperty rdf:about="http://metacontrol.org/tomasys#unique_comp">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://metacontrol.org/tomasys#ComponentClass"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:comment>if a Component Class is unique, then only a single instance may exist, and if in error, then the Class becomes unavailable</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -592,7 +584,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://metacontrol.org/tomasys#unique_comp"/>
+                                                <swrl:propertyPredicate rdf:resource="http://metacontrol.org/tomasys#cc_unique"/>
                                                 <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#cc"/>
                                                 <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
                                             </rdf:Description>
@@ -733,7 +725,7 @@ namically vary during system operation, and that is the availability [0, 1] of t
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://metacontrol.org/tomasys#realisability"/>
+                        <swrl:propertyPredicate rdf:resource="http://metacontrol.org/tomasys#fd_realisability"/>
                         <swrl:argument1 rdf:resource="http://www.semanticweb.org/chcorbato/ontologies/2018/metacontrol_unexmin#fd"/>
                         <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
                     </rdf:Description>
