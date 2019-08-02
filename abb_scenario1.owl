@@ -70,7 +70,7 @@
     <!-- http://abb_scenario1#c_camera -->
 
     <owl:NamedIndividual rdf:about="http://abb_scenario1#c_camera">
-        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentState"/>
         <tomasys:typeC rdf:resource="http://abb_scenario1#cc_camera"/>
     </owl:NamedIndividual>
     
@@ -79,7 +79,7 @@
     <!-- http://abb_scenario1#c_tags_detector -->
 
     <owl:NamedIndividual rdf:about="http://abb_scenario1#c_tags_detector">
-        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentState"/>
         <tomasys:typeC rdf:resource="http://abb_scenario1#cc_tag_detector"/>
     </owl:NamedIndividual>
     
