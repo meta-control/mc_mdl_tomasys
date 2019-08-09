@@ -147,7 +147,6 @@
         <tomasys:roles rdf:resource="http://abb_scenario1#r_tag_detector_fd_detect_tag_poses_1"/>
         <tomasys:solves rdf:resource="http://abb_scenario1#f_detect_tag_poses"/>
         <tomasys:fd_efficacy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9</tomasys:fd_efficacy>
-        <metacontrol_unexmin:fd_efficacy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9</metacontrol_unexmin:fd_efficacy>
     </owl:NamedIndividual>
     
 
@@ -160,7 +159,6 @@
         <tomasys:roles rdf:resource="http://abb_scenario1#r_tag_detector_fd_detect_tag_poses_2"/>
         <tomasys:solves rdf:resource="http://abb_scenario1#f_detect_tag_poses"/>
         <tomasys:fd_efficacy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</tomasys:fd_efficacy>
-        <metacontrol_unexmin:fd_efficacy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8</metacontrol_unexmin:fd_efficacy>
     </owl:NamedIndividual>
     
 
