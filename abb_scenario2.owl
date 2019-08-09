@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://abb_scenario2#"
+     xml:base="http://abb_scenario2"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:tomasys="http://metacontrol.org/tomasys#"
+     xmlns:abb_scenario="http://abb_scenario#"
+     xmlns:abb_scenario2="http://abb_scenario2#"
+     xmlns:metacontrol_unexmin="http://metacontrol_unexmin#"
+     xmlns:untitled-ontology-64="http://www.semanticweb.org/chcorbato/ontologies/2019/7/untitled-ontology-64#">
+    <owl:Ontology rdf:about="http://abb_scenario">
+        <owl:imports rdf:resource="http://abb_scenarios"/>
+        <owl:imports rdf:resource="http://metacontrol.org/tomasys"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://abb_scenario#f_build_pyramid -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario#f_build_pyramid">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Function"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario#f_locate_robot_tag -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario#f_locate_robot_tag">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Function"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario#f_position2_for_1arm -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario#f_position2_for_1arm">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Function"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario#fd_calibrate_workstation_position -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario#fd_calibrate_workstation_position">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+        <tomasys:realises rdf:resource="http://abb_scenario#o_ws_tag_localization"/>
+        <tomasys:requires rdf:resource="http://abb_scenario#o_ws_tag_localization"/>
+        <tomasys:roles rdf:resource="http://abb_scenario#r_displacement_node"/>
+        <tomasys:fd_efficacy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</tomasys:fd_efficacy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario#fd_locate_robot_tag -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario#fd_locate_robot_tag">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+        <tomasys:realises rdf:resource="http://abb_scenario#f_locate_robot_tag"/>
+        <tomasys:requires rdf:resource="http://abb_scenarios#o_detect_ws1_tag"/>
+        <tomasys:roles rdf:resource="http://abb_scenario#r_tag_calibration_node"/>
+        <tomasys:fd_efficacy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</tomasys:fd_efficacy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario#o_ws_tag_localization -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario#o_ws_tag_localization">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Objective"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario#r_displacement_node -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario#r_displacement_node">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
+        <tomasys:roleDef rdf:resource="http://abb_scenarios#cs_displacement_node"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario#r_tag_calibration_node -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario#r_tag_calibration_node">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
+        <tomasys:roleDef rdf:resource="http://abb_scenarios#cs_tag_calibration_node"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenarios#cc_yumi -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenarios#cc_yumi">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentClass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenarios#cs_application -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenarios#cs_application">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenarios#cs_displacement_node -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenarios#cs_displacement_node">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenarios#cs_tag_calibration_node -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenarios#cs_tag_calibration_node">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenarios#cs_yumi1 -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenarios#cs_yumi1">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
+        <tomasys:typeC rdf:resource="http://abb_scenarios#cc_yumi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenarios#cs_yumi2 -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenarios#cs_yumi2">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
+        <tomasys:typeC rdf:resource="http://abb_scenarios#cc_yumi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenarios#fd_build_1arm -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenarios#fd_build_1arm">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+        <tomasys:realises rdf:resource="http://abb_scenario#f_build_pyramid"/>
+        <tomasys:requires rdf:resource="http://abb_scenarios#o_position2"/>
+        <tomasys:roles rdf:resource="http://abb_scenarios#r_yumi1a"/>
+        <tomasys:fd_efficacy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</tomasys:fd_efficacy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenarios#fd_build_2arms -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenarios#fd_build_2arms">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+        <tomasys:realises rdf:resource="http://abb_scenario#f_build_pyramid"/>
+        <tomasys:requires rdf:resource="http://abb_scenarios#o_position2"/>
+        <tomasys:roles rdf:resource="http://abb_scenarios#r_yumi2a"/>
+        <tomasys:fd_efficacy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</tomasys:fd_efficacy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenarios#o_build_pyramid -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenarios#o_build_pyramid">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Objective"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenarios#o_position2 -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenarios#o_position2">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Objective"/>
+        <tomasys:typeF rdf:resource="http://abb_scenario#f_position2_for_1arm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenarios#r_yumi1a -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenarios#r_yumi1a">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
+        <tomasys:roleDef rdf:resource="http://abb_scenarios#cs_yumi1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenarios#r_yumi2a -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenarios#r_yumi2a">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
+        <tomasys:roleDef rdf:resource="http://abb_scenarios#cs_yumi2"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
