@@ -8,12 +8,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:tomasys="http://metacontrol.org/tomasys#"
-     xmlns:abb_scenario="http://abb_scenario#"
-     xmlns:abb_scenario2="http://abb_scenario2#"
-     xmlns:metacontrol_unexmin="http://metacontrol_unexmin#"
-     xmlns:untitled-ontology-64="http://www.semanticweb.org/chcorbato/ontologies/2019/7/untitled-ontology-64#">
-    <owl:Ontology rdf:about="http://abb_scenario">
-        <owl:imports rdf:resource="http://abb_scenarios"/>
+     xmlns:abb_scenario2="http://abb_scenario2#">
+    <owl:Ontology rdf:about="http://abb_scenario2">
         <owl:imports rdf:resource="http://metacontrol.org/tomasys"/>
     </owl:Ontology>
     
@@ -30,185 +26,357 @@
     
 
 
-    <!-- http://abb_scenario#f_build_pyramid -->
+    <!-- http://abb_scenario2#b1_fg_detect_tag_poses_1 -->
 
-    <owl:NamedIndividual rdf:about="http://abb_scenario#f_build_pyramid">
-        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Function"/>
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#b1_fg_detect_tag_poses_1">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Binding"/>
+        <tomasys:binding_component rdf:resource="http://abb_scenario2#c_camera"/>
+        <tomasys:binding_role rdf:resource="http://abb_scenario2#r_camera_fd_detect_tag_poses_1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://abb_scenario#f_locate_robot_tag -->
+    <!-- http://abb_scenario2#b2_fg_detect_tag_poses_1 -->
 
-    <owl:NamedIndividual rdf:about="http://abb_scenario#f_locate_robot_tag">
-        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Function"/>
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#b2_fg_detect_tag_poses_1">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Binding"/>
+        <tomasys:binding_component rdf:resource="http://abb_scenario2#c_tags_detector"/>
+        <tomasys:binding_role rdf:resource="http://abb_scenario2#r_tag_detector_fd_detect_tag_poses_1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://abb_scenario#f_position2_for_1arm -->
+    <!-- http://abb_scenario2#b_build_2arms -->
 
-    <owl:NamedIndividual rdf:about="http://abb_scenario#f_position2_for_1arm">
-        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Function"/>
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#b_build_2arms">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Binding"/>
+        <tomasys:binding_component rdf:resource="http://abb_scenario2#c_yumi"/>
+        <tomasys:binding_role rdf:resource="http://abb_scenario2#r_yumi2a"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://abb_scenario#fd_calibrate_workstation_position -->
+    <!-- http://abb_scenario2#c_camera -->
 
-    <owl:NamedIndividual rdf:about="http://abb_scenario#fd_calibrate_workstation_position">
-        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
-        <tomasys:realises rdf:resource="http://abb_scenario#o_ws_tag_localization"/>
-        <tomasys:requires rdf:resource="http://abb_scenario#o_ws_tag_localization"/>
-        <tomasys:roles rdf:resource="http://abb_scenario#r_displacement_node"/>
-        <tomasys:fd_efficacy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</tomasys:fd_efficacy>
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#c_camera">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentState"/>
+        <tomasys:typeC rdf:resource="http://abb_scenario2#cc_camera"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://abb_scenario#fd_locate_robot_tag -->
+    <!-- http://abb_scenario2#c_tags_detector -->
 
-    <owl:NamedIndividual rdf:about="http://abb_scenario#fd_locate_robot_tag">
-        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
-        <tomasys:realises rdf:resource="http://abb_scenario#f_locate_robot_tag"/>
-        <tomasys:requires rdf:resource="http://abb_scenarios#o_detect_ws1_tag"/>
-        <tomasys:roles rdf:resource="http://abb_scenario#r_tag_calibration_node"/>
-        <tomasys:fd_efficacy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</tomasys:fd_efficacy>
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#c_tags_detector">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentState"/>
+        <tomasys:typeC rdf:resource="http://abb_scenario2#cc_tag_detector"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://abb_scenario#o_ws_tag_localization -->
+    <!-- http://abb_scenario2#c_yumi -->
 
-    <owl:NamedIndividual rdf:about="http://abb_scenario#o_ws_tag_localization">
-        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Objective"/>
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#c_yumi">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentState"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://abb_scenario#r_displacement_node -->
+    <!-- http://abb_scenario2#cc_camera -->
 
-    <owl:NamedIndividual rdf:about="http://abb_scenario#r_displacement_node">
-        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
-        <tomasys:roleDef rdf:resource="http://abb_scenarios#cs_displacement_node"/>
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#cc_camera">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentClass"/>
+        <tomasys:cc_unique rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tomasys:cc_unique>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://abb_scenario#r_tag_calibration_node -->
+    <!-- http://abb_scenario2#cc_tag_detector -->
 
-    <owl:NamedIndividual rdf:about="http://abb_scenario#r_tag_calibration_node">
-        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
-        <tomasys:roleDef rdf:resource="http://abb_scenarios#cs_tag_calibration_node"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://abb_scenarios#cc_yumi -->
-
-    <owl:NamedIndividual rdf:about="http://abb_scenarios#cc_yumi">
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#cc_tag_detector">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentClass"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://abb_scenarios#cs_application -->
+    <!-- http://abb_scenario2#cc_yumi -->
 
-    <owl:NamedIndividual rdf:about="http://abb_scenarios#cs_application">
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#cc_yumi">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentClass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario2#cs_application -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#cs_application">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://abb_scenarios#cs_displacement_node -->
+    <!-- http://abb_scenario2#cs_camera_1 -->
 
-    <owl:NamedIndividual rdf:about="http://abb_scenarios#cs_displacement_node">
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#cs_camera_1">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
+        <tomasys:typeC rdf:resource="http://abb_scenario2#cc_camera"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario2#cs_camera_2 -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#cs_camera_2">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
+        <tomasys:typeC rdf:resource="http://abb_scenario2#cc_camera"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario2#cs_displacement_node -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#cs_displacement_node">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://abb_scenarios#cs_tag_calibration_node -->
+    <!-- http://abb_scenario2#cs_tag_calibration_node -->
 
-    <owl:NamedIndividual rdf:about="http://abb_scenarios#cs_tag_calibration_node">
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#cs_tag_calibration_node">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://abb_scenarios#cs_yumi1 -->
+    <!-- http://abb_scenario2#cs_tags_detector -->
 
-    <owl:NamedIndividual rdf:about="http://abb_scenarios#cs_yumi1">
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#cs_tags_detector">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
-        <tomasys:typeC rdf:resource="http://abb_scenarios#cc_yumi"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://abb_scenarios#cs_yumi2 -->
+    <!-- http://abb_scenario2#cs_yumi1 -->
 
-    <owl:NamedIndividual rdf:about="http://abb_scenarios#cs_yumi2">
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#cs_yumi1">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
-        <tomasys:typeC rdf:resource="http://abb_scenarios#cc_yumi"/>
+        <tomasys:typeC rdf:resource="http://abb_scenario2#cc_yumi"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://abb_scenarios#fd_build_1arm -->
+    <!-- http://abb_scenario2#cs_yumi2 -->
 
-    <owl:NamedIndividual rdf:about="http://abb_scenarios#fd_build_1arm">
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#cs_yumi2">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
+        <tomasys:typeC rdf:resource="http://abb_scenario2#cc_yumi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario2#f_build_pyramid -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#f_build_pyramid">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Function"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario2#f_detect_tag_poses -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#f_detect_tag_poses">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Function"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario2#f_locate_robot_tag -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#f_locate_robot_tag">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Function"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario2#f_position2_for_1arm -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#f_position2_for_1arm">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Function"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario2#fd_build_1arm -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#fd_build_1arm">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
-        <tomasys:realises rdf:resource="http://abb_scenario#f_build_pyramid"/>
-        <tomasys:requires rdf:resource="http://abb_scenarios#o_position2"/>
-        <tomasys:roles rdf:resource="http://abb_scenarios#r_yumi1a"/>
+        <tomasys:requires rdf:resource="http://abb_scenario2#f_position2_for_1arm"/>
+        <tomasys:roles rdf:resource="http://abb_scenario2#r_yumi1a"/>
+        <tomasys:solves rdf:resource="http://abb_scenario2#f_build_pyramid"/>
         <tomasys:fd_efficacy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</tomasys:fd_efficacy>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://abb_scenarios#fd_build_2arms -->
+    <!-- http://abb_scenario2#fd_build_2arms -->
 
-    <owl:NamedIndividual rdf:about="http://abb_scenarios#fd_build_2arms">
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#fd_build_2arms">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
-        <tomasys:realises rdf:resource="http://abb_scenario#f_build_pyramid"/>
-        <tomasys:requires rdf:resource="http://abb_scenarios#o_position2"/>
-        <tomasys:roles rdf:resource="http://abb_scenarios#r_yumi2a"/>
+        <tomasys:roles rdf:resource="http://abb_scenario2#r_yumi2a"/>
+        <tomasys:solves rdf:resource="http://abb_scenario2#f_build_pyramid"/>
         <tomasys:fd_efficacy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</tomasys:fd_efficacy>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://abb_scenarios#o_build_pyramid -->
+    <!-- http://abb_scenario2#fd_calibrate_workstation_position -->
 
-    <owl:NamedIndividual rdf:about="http://abb_scenarios#o_build_pyramid">
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#fd_calibrate_workstation_position">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+        <tomasys:requires rdf:resource="http://abb_scenario2#f_locate_robot_tag"/>
+        <tomasys:roles rdf:resource="http://abb_scenario2#r_displacement_node"/>
+        <tomasys:solves rdf:resource="http://abb_scenario2#f_position2_for_1arm"/>
+        <tomasys:fd_efficacy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</tomasys:fd_efficacy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario2#fd_detect_tag_poses_1 -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#fd_detect_tag_poses_1">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+        <tomasys:roles rdf:resource="http://abb_scenario2#r_camera_fd_detect_tag_poses_1"/>
+        <tomasys:roles rdf:resource="http://abb_scenario2#r_tag_detector_fd_detect_tag_poses_1"/>
+        <tomasys:solves rdf:resource="http://abb_scenario2#f_detect_tag_poses"/>
+        <tomasys:fd_efficacy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9</tomasys:fd_efficacy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario2#fd_detect_tag_poses_2 -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#fd_detect_tag_poses_2">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+        <tomasys:roles rdf:resource="http://abb_scenario2#r_camera_fd_detect_tag_poses_2"/>
+        <tomasys:roles rdf:resource="http://abb_scenario2#r_tag_detector_fd_detect_tag_poses_2"/>
+        <tomasys:solves rdf:resource="http://abb_scenario2#f_detect_tag_poses"/>
+        <tomasys:fd_efficacy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</tomasys:fd_efficacy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario2#fd_locate_ws1_tag -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#fd_locate_ws1_tag">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+        <tomasys:requires rdf:resource="http://abb_scenario2#f_locate_robot_tag"/>
+        <tomasys:roles rdf:resource="http://abb_scenario2#r_tag_calibration_node"/>
+        <tomasys:solves rdf:resource="http://abb_scenario2#f_locate_robot_tag"/>
+        <tomasys:fd_efficacy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</tomasys:fd_efficacy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario2#fg_build_2arms -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#fg_build_2arms">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionGrounding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario2#fg_detect_tag_poses_1 -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#fg_detect_tag_poses_1">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionGrounding"/>
+        <tomasys:hasBindings rdf:resource="http://abb_scenario2#b1_fg_detect_tag_poses_1"/>
+        <tomasys:hasBindings rdf:resource="http://abb_scenario2#b2_fg_detect_tag_poses_1"/>
+        <tomasys:typeFD rdf:resource="http://abb_scenario2#fd_detect_tag_poses_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario2#o_build_pyramid -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#o_build_pyramid">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#Objective"/>
+        <tomasys:typeF rdf:resource="http://abb_scenario2#f_build_pyramid"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://abb_scenarios#o_position2 -->
+    <!-- http://abb_scenario2#r_camera_fd_detect_tag_poses_1 -->
 
-    <owl:NamedIndividual rdf:about="http://abb_scenarios#o_position2">
-        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Objective"/>
-        <tomasys:typeF rdf:resource="http://abb_scenario#f_position2_for_1arm"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://abb_scenarios#r_yumi1a -->
-
-    <owl:NamedIndividual rdf:about="http://abb_scenarios#r_yumi1a">
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#r_camera_fd_detect_tag_poses_1">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
-        <tomasys:roleDef rdf:resource="http://abb_scenarios#cs_yumi1"/>
+        <tomasys:roleDef rdf:resource="http://abb_scenario2#cs_camera_1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://abb_scenarios#r_yumi2a -->
+    <!-- http://abb_scenario2#r_camera_fd_detect_tag_poses_2 -->
 
-    <owl:NamedIndividual rdf:about="http://abb_scenarios#r_yumi2a">
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#r_camera_fd_detect_tag_poses_2">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
-        <tomasys:roleDef rdf:resource="http://abb_scenarios#cs_yumi2"/>
+        <tomasys:roleDef rdf:resource="http://abb_scenario2#cs_camera_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario2#r_displacement_node -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#r_displacement_node">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
+        <tomasys:roleDef rdf:resource="http://abb_scenario2#cs_displacement_node"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario2#r_tag_calibration_node -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#r_tag_calibration_node">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
+        <tomasys:roleDef rdf:resource="http://abb_scenario2#cs_tag_calibration_node"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario2#r_tag_detector_fd_detect_tag_poses_1 -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#r_tag_detector_fd_detect_tag_poses_1">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
+        <tomasys:roleDef rdf:resource="http://abb_scenario2#cs_tags_detector"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario2#r_tag_detector_fd_detect_tag_poses_2 -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#r_tag_detector_fd_detect_tag_poses_2">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
+        <tomasys:roleDef rdf:resource="http://abb_scenario2#cs_tags_detector"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario2#r_yumi1a -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#r_yumi1a">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
+        <tomasys:roleDef rdf:resource="http://abb_scenario2#cs_yumi1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abb_scenario2#r_yumi2a -->
+
+    <owl:NamedIndividual rdf:about="http://abb_scenario2#r_yumi2a">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Role"/>
+        <tomasys:roleDef rdf:resource="http://abb_scenario2#cs_yumi2"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
