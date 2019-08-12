@@ -285,6 +285,9 @@
 
     <owl:NamedIndividual rdf:about="http://abb_scenario2#fg_build_2arms">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionGrounding"/>
+        <tomasys:hasBindings rdf:resource="http://abb_scenario2#b_build_2arms"/>
+        <tomasys:realises rdf:resource="http://abb_scenario2#o_build_pyramid"/>
+        <tomasys:typeFD rdf:resource="http://abb_scenario2#fd_build_2arms"/>
     </owl:NamedIndividual>
     
 
