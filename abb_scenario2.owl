@@ -273,7 +273,7 @@
 
     <owl:NamedIndividual rdf:about="http://abb_scenario2#fd_locate_ws1_tag">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
-        <tomasys:requires rdf:resource="http://abb_scenario2#f_locate_robot_tag"/>
+        <tomasys:requires rdf:resource="http://abb_scenario2#f_detect_tag_poses"/>
         <tomasys:roles rdf:resource="http://abb_scenario2#r_tag_calibration_node"/>
         <tomasys:solves rdf:resource="http://abb_scenario2#f_locate_robot_tag"/>
         <tomasys:fd_efficacy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</tomasys:fd_efficacy>
@@ -288,17 +288,6 @@
         <tomasys:hasBindings rdf:resource="http://abb_scenario2#b_build_2arms"/>
         <tomasys:realises rdf:resource="http://abb_scenario2#o_build_pyramid"/>
         <tomasys:typeFD rdf:resource="http://abb_scenario2#fd_build_2arms"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://abb_scenario2#fg_detect_tag_poses_1 -->
-
-    <owl:NamedIndividual rdf:about="http://abb_scenario2#fg_detect_tag_poses_1">
-        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionGrounding"/>
-        <tomasys:hasBindings rdf:resource="http://abb_scenario2#b1_fg_detect_tag_poses_1"/>
-        <tomasys:hasBindings rdf:resource="http://abb_scenario2#b2_fg_detect_tag_poses_1"/>
-        <tomasys:typeFD rdf:resource="http://abb_scenario2#fd_detect_tag_poses_1"/>
     </owl:NamedIndividual>
     
 
