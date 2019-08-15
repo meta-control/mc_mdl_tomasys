@@ -145,6 +145,7 @@
     <!-- http://metacontrol.org/tomasys#solves -->
 
     <owl:ObjectProperty rdf:about="http://metacontrol.org/tomasys#solves">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
         <rdfs:range rdf:resource="http://metacontrol.org/tomasys#Function"/>
         <rdfs:comment>a FunctionDesign solves a Function</rdfs:comment>
