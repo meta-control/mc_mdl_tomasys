@@ -125,6 +125,7 @@
     <!-- http://metacontrol.org/tomasys#roleDef -->
 
     <owl:ObjectProperty rdf:about="http://metacontrol.org/tomasys#roleDef">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://metacontrol.org/tomasys#Role"/>
         <rdfs:range rdf:resource="http://metacontrol.org/tomasys#Component"/>
         <rdfs:range rdf:resource="http://metacontrol.org/tomasys#ComponentSpecification"/>
