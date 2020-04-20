@@ -523,6 +523,12 @@ Example: the Yumi configuration with two arms might not be available, but it may
     <rdf:Description rdf:about="http://metacontrol.org/tomasys#o">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#fg">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#o">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If a required objective by a FG is in ERROR -&gt; fg in error</rdfs:comment>
@@ -748,7 +754,7 @@ Example: the Yumi configuration with two arms might not be available, but it may
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://metacontrol.org/tomasys#fg_status"/>
-                        <swrl:argument1 rdf:resource="http://metacontrol.org/tomasys#fg"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#fg"/>
                         <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INTERNAL_ERROR</swrl:argument2>
                     </rdf:Description>
                 </rdf:first>
@@ -757,9 +763,10 @@ Example: the Yumi configuration with two arms might not be available, but it may
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://metacontrol.org/tomasys#FunctionGrounding"/>
-                                <swrl:argument1 rdf:resource="http://metacontrol.org/tomasys#fg"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://metacontrol.org/tomasys#solvesO"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#fg"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#o"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -767,10 +774,9 @@ Example: the Yumi configuration with two arms might not be available, but it may
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://metacontrol.org/tomasys#solvesO"/>
-                                        <swrl:argument1 rdf:resource="http://metacontrol.org/tomasys#fg"/>
-                                        <swrl:argument2 rdf:resource="http://metacontrol.org/tomasys#o"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://metacontrol.org/tomasys#Objective"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -779,8 +785,8 @@ Example: the Yumi configuration with two arms might not be available, but it may
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="http://metacontrol.org/tomasys#Objective"/>
-                                                <swrl:argument1 rdf:resource="http://metacontrol.org/tomasys#o"/>
+                                                <swrl:classPredicate rdf:resource="http://metacontrol.org/tomasys#FunctionGrounding"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#fg"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -799,7 +805,7 @@ Example: the Yumi configuration with two arms might not be available, but it may
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://metacontrol.org/tomasys#o_status"/>
-                        <swrl:argument1 rdf:resource="http://metacontrol.org/tomasys#o"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
                         <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INTERNAL_ERROR</swrl:argument2>
                     </rdf:Description>
                 </rdf:first>
@@ -1375,5 +1381,5 @@ Example: the Yumi configuration with two arms might not be available, but it may
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
 
