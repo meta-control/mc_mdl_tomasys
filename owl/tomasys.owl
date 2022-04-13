@@ -865,8 +865,8 @@ Example: the Yumi configuration with two arms might not be available, but it may
                                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
                                                                                                                 <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
                                                                                                                 <swrl:arguments rdf:parseType="Collection">
-                                                                                                                    <rdf:Description rdf:about="http://metacontrol.org/tomasys#nfrv"/>
                                                                                                                     <rdf:Description rdf:about="http://metacontrol.org/tomasys#qav"/>
+                                                                                                                    <rdf:Description rdf:about="http://metacontrol.org/tomasys#nfrv"/>
                                                                                                                 </swrl:arguments>
                                                                                                             </rdf:Description>
                                                                                                         </rdf:first>
