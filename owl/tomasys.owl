@@ -1515,7 +1515,7 @@ Example: the Yumi configuration with two arms might not be available, but it may
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                                                         <swrl:propertyPredicate rdf:resource="http://metacontrol.org/tomasys#c_status"/>
                                                         <swrl:argument1 rdf:resource="http://metacontrol.org/tomasys#c"/>
-                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UPDATABLE</swrl:argument2>
+                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RECOVERED</swrl:argument2>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1537,7 +1537,7 @@ Example: the Yumi configuration with two arms might not be available, but it may
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://metacontrol.org/tomasys#fg_status"/>
                         <swrl:argument1 rdf:resource="http://metacontrol.org/tomasys#fg"/>
-                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INTERNAL_ERROR</swrl:argument2>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UPDATABLE</swrl:argument2>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
