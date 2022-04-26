@@ -331,11 +331,11 @@ Example: the Yumi configuration with two arms might not be available, but it may
                 <owl:oneOf>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                        <rdf:first>IN_ERROR_COMPONENT</rdf:first>
+                        <rdf:first>EXTERNAL_ERROR</rdf:first>
                         <rdf:rest>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first>IN_ERROR_NFR</rdf:first>
+                                <rdf:first>INTERNAL_ERROR</rdf:first>
                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
                             </rdf:Description>
                         </rdf:rest>
