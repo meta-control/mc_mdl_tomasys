@@ -8,4 +8,6 @@
 
   <license>Apache</license>
 
+  <buildtool_depend>cmake</buildtool_depend>
+
 </package>
