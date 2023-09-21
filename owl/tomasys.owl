@@ -354,6 +354,15 @@ Example: the Yumi configuration with two arms might not be available, but it may
     
 
 
+    <!-- http://metacontrol.org/tomasys#o_always_improve -->
+
+    <owl:DatatypeProperty rdf:about="http://metacontrol.org/tomasys#o_always_improve">
+        <rdfs:domain rdf:resource="http://metacontrol.org/tomasys#Objective"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://metacontrol.org/tomasys#o_status -->
 
     <owl:DatatypeProperty rdf:about="http://metacontrol.org/tomasys#o_status">
