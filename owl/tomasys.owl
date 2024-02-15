@@ -416,6 +416,7 @@ Example: the Yumi configuration with two arms might not be available, but it may
     <!-- http://metacontrol.org/tomasys#o_updatable -->
 
     <owl:DatatypeProperty rdf:about="http://metacontrol.org/tomasys#o_updatable">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://metacontrol.org/tomasys#Objective"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
