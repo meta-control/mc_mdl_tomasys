@@ -426,6 +426,7 @@ Example: the Yumi configuration with two arms might not be available, but it may
     <!-- http://metacontrol.org/tomasys#qa_comparison_operator -->
 
     <owl:DatatypeProperty rdf:about="http://metacontrol.org/tomasys#qa_comparison_operator">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://metacontrol.org/tomasys#QualityAttributeType"/>
         <rdfs:range>
             <rdfs:Datatype>
